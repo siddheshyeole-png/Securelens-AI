@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import path from "path";
+import fs from "fs";
 import rateLimit from "express-rate-limit";
 
 import detectionRoutes from "./routes/detection.js";
@@ -113,15 +114,35 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-// Mount detection routes under /api and /api/detect with rate limiting
+// Mount detection routes under /, /api, and /api/detect with rate limiting
+app.use("/", detectLimiter, detectionRoutes);
 app.use("/api", detectLimiter, detectionRoutes);
 app.use("/api/detect", detectLimiter, detectionRoutes);
+
+// Serve static frontend assets in production or if dist/ exists
+const distPath = path.resolve(process.cwd(), "dist");
+if (fs.existsSync(distPath)) {
+  console.log(`[SecureLens AI Server] Serving production static bundle from ${distPath}`);
+  app.use(express.static(distPath));
+  
+  // Wildcard SPA route fallback for React Router (excluding /api routes)
+  app.use((req, res, next) => {
+    if (req.method === "GET" && !req.path.startsWith("/api")) {
+      return res.sendFile(path.join(distPath, "index.html"));
+    }
+    next();
+  });
+}
 
 // Centralized error handling
 app.use(errorHandler);
 
-// Start server
-app.listen(PORT, () => {
-  validateStartupEnvironment();
-  console.log(`[SecureLens AI Server] Running on http://localhost:${PORT}`);
-});
+// Start server locally (skip on Vercel serverless runtime)
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    validateStartupEnvironment();
+    console.log(`[SecureLens AI Server] Running on http://localhost:${PORT}`);
+  });
+}
+
+export default app;
