@@ -211,22 +211,24 @@ router.post("/analyze", singleMediaUpload, async (req, res, next) => {
       else deepfakeClassification = "LOW MANIPULATION SIGNAL";
     }
 
-    const confidenceLevel = result.confidenceLevel || (aiScore != null ? (aiScore >= 0.80 || aiScore <= 0.20 ? "HIGH" : "MODERATE") : "UNKNOWN");
-    const rawConfidence = aiScore != null ? Math.round(aiScore >= 0.50 ? aiScore * 100 : (1 - aiScore) * 100) : null;
+    const confidenceLevel = result.confidenceLevel || (aiScore != null ? (aiScore >= 0.80 || aiScore <= 0.20 ? "HIGH" : "MODERATE") : (deepfakeScore != null ? (deepfakeScore >= 0.80 || deepfakeScore <= 0.20 ? "HIGH" : "MODERATE") : "UNKNOWN"));
+    const rawConfidence = aiScore != null ? Math.round(aiScore >= 0.50 ? aiScore * 100 : (1 - aiScore) * 100) : (deepfakeScore != null ? Math.round(deepfakeScore >= 0.50 ? deepfakeScore * 100 : (1 - deepfakeScore) * 100) : null);
     const confidence = rawConfidence != null ? Math.min(99, Math.max(1, rawConfidence)) : null;
 
     let evidenceList = Array.isArray(result.evidence)
-      ? result.evidence
-      : (result.evidence?.details || []);
+      ? [...result.evidence]
+      : (result.evidence?.details ? [...result.evidence.details] : []);
 
     if (evidenceList.length === 0) {
       if (aiProbability != null) {
         evidenceList.push(`AI-generation model returned a ${aiProbability}% AI-generation probability.`);
+      } else {
+        evidenceList.push("AI-generation model analysis was unavailable (N/A) for this media file.");
       }
       if (deepfakeProbability != null) {
         evidenceList.push(`Deepfake model returned an ${deepfakeProbability}% face-manipulation probability.`);
       } else {
-        evidenceList.push("Deepfake analysis was not available for this media. AI-generation analysis was performed separately.");
+        evidenceList.push("Deepfake face-manipulation analysis was unavailable (N/A) for this media file.");
       }
     }
 

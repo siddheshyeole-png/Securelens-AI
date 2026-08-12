@@ -32,10 +32,15 @@ export const History = () => {
 
   const filteredScans = scans
     .filter((scan) => {
+      const scanTarget = scan.target || scan.filename || scan.file?.filename || "";
+      const scanId = scan.id || scan.detectionId || "";
+      const scanType = (scan.mediaType || scan.type || "IMAGE").toUpperCase();
+
       const matchesSearch =
-        scan.target.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        scan.id.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesType = mediaTypeFilter === "ALL" || scan.type === mediaTypeFilter;
+        scanTarget.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        scanId.toLowerCase().includes(searchTerm.toLowerCase());
+
+      const matchesType = mediaTypeFilter === "ALL" || scanType === mediaTypeFilter;
       
       const cat = getClassificationCategory(scan.classification || scan.verdict);
       const matchesResult =
@@ -50,8 +55,8 @@ export const History = () => {
       if (sortOrder === "confidence") {
         return (b.confidence || b.riskScore || 0) - (a.confidence || a.riskScore || 0);
       }
-      const dateA = new Date(a.timestamp).getTime();
-      const dateB = new Date(b.timestamp).getTime();
+      const dateA = new Date(a.timestamp || a.createdAt).getTime();
+      const dateB = new Date(b.timestamp || b.createdAt).getTime();
       return sortOrder === "newest" ? dateB - dateA : dateA - dateB;
     });
 
@@ -145,7 +150,7 @@ export const History = () => {
                 <th className="py-3.5 px-4">Size</th>
                 <th className="py-3.5 px-4">Type</th>
                 <th className="py-3.5 px-4">Detection Result</th>
-                <th className="py-3.5 px-4">AI Score</th>
+                <th className="py-3.5 px-4">Model Score</th>
                 <th className="py-3.5 px-4">Analysis Date</th>
                 <th className="py-3.5 px-4 text-right">Actions</th>
               </tr>
@@ -160,25 +165,34 @@ export const History = () => {
               ) : (
                 filteredScans.map((scan) => {
                   const badge = getVerdictBadgeInfo(scan.classification || scan.verdict);
+                  const scanType = (scan.mediaType || scan.type || "IMAGE").toUpperCase();
+
                   const aiPct = scan.percentages?.aiGenerated ?? scan.aiProbability ?? (scan.aiScore != null ? Math.round(scan.aiScore * 100) : null);
+                  const deepfakePct = scan.percentages?.deepfake ?? scan.deepfakeProbability ?? (scan.deepfakeScore != null ? Math.round(scan.deepfakeScore * 100) : null);
+
+                  const displayScore = scanType === "AUDIO"
+                    ? (aiPct != null ? `${aiPct}% Voice` : "N/A")
+                    : scanType === "VIDEO"
+                    ? (deepfakePct != null ? `${deepfakePct}% DF` : (aiPct != null ? `${aiPct}% AI` : "N/A"))
+                    : (aiPct != null ? `${aiPct}% AI` : (deepfakePct != null ? `${deepfakePct}% DF` : "N/A"));
 
                   return (
                     <tr key={scan.id} className="hover:bg-zinc-900/60 transition-colors">
                       <td className="py-4 px-4 font-semibold text-blue-400 font-mono">{scan.id}</td>
-                      <td className="py-4 px-4 font-medium text-white max-w-[180px] truncate">{scan.target}</td>
+                      <td className="py-4 px-4 font-medium text-white max-w-[180px] truncate">{scan.target || scan.filename}</td>
                       <td className="py-4 px-4 font-mono text-zinc-400 text-xs">
-                        {scan.fileSize ? `${(scan.fileSize / (1024 * 1024)).toFixed(2)} MB` : "N/A"}
+                        {scan.fileSize ? `${(scan.fileSize / (1024 * 1024)).toFixed(2)} MB` : scan.file?.size ? `${(scan.file.size / (1024 * 1024)).toFixed(2)} MB` : "N/A"}
                       </td>
                       <td className="py-4 px-4">
                         <span className="inline-flex items-center px-2.5 py-1 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-mono font-semibold">
-                          {scan.type === "IMAGE" ? (
+                          {scanType === "IMAGE" ? (
                             <ImageIcon className="w-3.5 h-3.5 mr-1.5 text-blue-400" />
-                          ) : scan.type === "AUDIO" ? (
-                            <FileAudio className="w-3.5 h-3.5 mr-1.5 text-violet-400" />
+                          ) : scanType === "AUDIO" ? (
+                            <FileAudio className="w-3.5 h-3.5 mr-1.5 text-purple-400" />
                           ) : (
                             <Video className="w-3.5 h-3.5 mr-1.5 text-indigo-400" />
                           )}
-                          {scan.type}
+                          {scanType}
                         </span>
                       </td>
                       <td className="py-4 px-4">
@@ -201,10 +215,10 @@ export const History = () => {
                             ? "text-yellow-400"
                             : "text-emerald-400"
                         }>
-                          {aiPct != null ? `${aiPct}% AI` : "N/A"}
+                          {displayScore}
                         </span>
                       </td>
-                      <td className="py-4 px-4 text-zinc-400 text-xs">{formatDate(scan.timestamp)}</td>
+                      <td className="py-4 px-4 text-zinc-400 text-xs">{formatDate(scan.timestamp || scan.createdAt)}</td>
                       <td className="py-4 px-4 text-right space-x-2">
                         <Button
                           variant="ghost"

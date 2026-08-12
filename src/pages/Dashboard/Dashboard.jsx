@@ -28,32 +28,40 @@ export const Dashboard = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filterType, setFilterType] = useState("ALL");
 
-  // Dynamic statistics calculated directly from authentic user reports
+  // Dynamic statistics calculated directly from user reports
   const totalAnalyzed = scans.length;
-  const deepfakesCount = scans.filter((s) => {
+  
+  // Synthetic = AI_GENERATED + DEEPFAKE
+  const syntheticCount = scans.filter((s) => {
     const cat = getClassificationCategory(s.classification || s.verdict);
     return cat === "AI_GENERATED" || cat === "DEEPFAKE";
   }).length;
 
+  // Authentic = AUTHENTIC only
   const authenticCount = scans.filter((s) => {
     const cat = getClassificationCategory(s.classification || s.verdict);
     return cat === "AUTHENTIC";
   }).length;
 
-  const inconclusiveCount = scans.filter((s) => {
+  // Uncertain = UNCERTAIN / INCONCLUSIVE / UNAVAILABLE
+  const uncertainCount = scans.filter((s) => {
     const cat = getClassificationCategory(s.classification || s.verdict);
     return cat === "UNCERTAIN";
   }).length;
 
   const avgConfidenceVal = totalAnalyzed > 0
-    ? (scans.reduce((acc, s) => acc + (s.confidence || (s.aiProbability != null ? Math.max(s.aiProbability, 100 - s.aiProbability) : 90)), 0) / totalAnalyzed).toFixed(1)
+    ? (scans.reduce((acc, s) => acc + (s.confidence || (s.percentages?.aiGenerated ?? s.percentages?.deepfake ?? 90)), 0) / totalAnalyzed).toFixed(1)
     : "N/A";
 
   const filteredScans = scans.filter((scan) => {
+    const scanTarget = scan.target || scan.filename || scan.file?.filename || "";
+    const scanId = scan.id || scan.detectionId || "";
+    const scanType = (scan.mediaType || scan.type || "IMAGE").toUpperCase();
+
     const matchesSearch =
-      scan.target.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      scan.id.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesType = filterType === "ALL" || scan.type === filterType;
+      scanTarget.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      scanId.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesType = filterType === "ALL" || scanType === filterType;
     return matchesSearch && matchesType;
   });
 
@@ -70,7 +78,7 @@ export const Dashboard = () => {
             Welcome back, {user?.name || "Analyst"}
           </h1>
           <p className="text-xs sm:text-sm text-zinc-400 mt-1">
-            Real-time media authenticity platform active. {deepfakesCount} synthetic media flag(s) out of {totalAnalyzed} audit record(s).
+            Real-time media authenticity platform active. {syntheticCount} synthetic media flag(s) out of {totalAnalyzed} audit record(s).
           </p>
         </div>
 
@@ -95,8 +103,8 @@ export const Dashboard = () => {
         />
         <StatCard
           title="Synthetic / AI Flagged"
-          value={deepfakesCount.toLocaleString()}
-          change={`${((deepfakesCount / (totalAnalyzed || 1)) * 100).toFixed(1)}% detection rate`}
+          value={syntheticCount.toLocaleString()}
+          change={`${((syntheticCount / (totalAnalyzed || 1)) * 100).toFixed(1)}% detection rate`}
           icon={AlertTriangle}
           color="rose"
         />
@@ -110,7 +118,7 @@ export const Dashboard = () => {
         <StatCard
           title="Average Confidence"
           value={avgConfidenceVal !== "N/A" ? `${avgConfidenceVal}%` : "N/A"}
-          change={inconclusiveCount > 0 ? `${inconclusiveCount} uncertain` : "High Precision"}
+          change={uncertainCount > 0 ? `${uncertainCount} uncertain` : "High Precision"}
           icon={Activity}
           color="indigo"
         />
@@ -164,7 +172,7 @@ export const Dashboard = () => {
                 <th className="py-3.5 px-4">Media File</th>
                 <th className="py-3.5 px-4">Media Type</th>
                 <th className="py-3.5 px-4">Detection Result</th>
-                <th className="py-3.5 px-4">AI Confidence</th>
+                <th className="py-3.5 px-4">Model Score</th>
                 <th className="py-3.5 px-4">Analysis Date</th>
                 <th className="py-3.5 px-4 text-right">Action</th>
               </tr>
@@ -179,22 +187,31 @@ export const Dashboard = () => {
               ) : (
                 filteredScans.map((scan) => {
                   const badge = getVerdictBadgeInfo(scan.classification || scan.verdict);
+                  const scanType = (scan.mediaType || scan.type || "IMAGE").toUpperCase();
+                  
                   const aiPct = scan.percentages?.aiGenerated ?? scan.aiProbability ?? (scan.aiScore != null ? Math.round(scan.aiScore * 100) : null);
+                  const deepfakePct = scan.percentages?.deepfake ?? scan.deepfakeProbability ?? (scan.deepfakeScore != null ? Math.round(scan.deepfakeScore * 100) : null);
+
+                  const displayScore = scanType === "AUDIO"
+                    ? (aiPct != null ? `${aiPct}% Voice` : "N/A")
+                    : scanType === "VIDEO"
+                    ? (deepfakePct != null ? `${deepfakePct}% DF` : (aiPct != null ? `${aiPct}% AI` : "N/A"))
+                    : (aiPct != null ? `${aiPct}% AI` : (deepfakePct != null ? `${deepfakePct}% DF` : "N/A"));
 
                   return (
                     <tr key={scan.id} className="hover:bg-zinc-900/60 transition-colors">
                       <td className="py-4 px-4 font-semibold text-blue-400 font-mono">{scan.id}</td>
-                      <td className="py-4 px-4 font-medium text-white max-w-[180px] truncate">{scan.target}</td>
+                      <td className="py-4 px-4 font-medium text-white max-w-[180px] truncate">{scan.target || scan.filename}</td>
                       <td className="py-4 px-4">
                         <span className="inline-flex items-center px-2.5 py-1 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-mono font-semibold">
-                          {scan.type === "IMAGE" ? (
+                          {scanType === "IMAGE" ? (
                             <ImageIcon className="w-3.5 h-3.5 mr-1.5 text-blue-400" />
-                          ) : scan.type === "AUDIO" ? (
-                            <FileAudio className="w-3.5 h-3.5 mr-1.5 text-violet-400" />
+                          ) : scanType === "AUDIO" ? (
+                            <FileAudio className="w-3.5 h-3.5 mr-1.5 text-purple-400" />
                           ) : (
                             <Video className="w-3.5 h-3.5 mr-1.5 text-indigo-400" />
                           )}
-                          {scan.type}
+                          {scanType}
                         </span>
                       </td>
                       <td className="py-4 px-4">
@@ -217,7 +234,7 @@ export const Dashboard = () => {
                             ? "text-yellow-400"
                             : "text-emerald-400"
                         }>
-                          {aiPct != null ? `${aiPct}% AI` : "N/A"}
+                          {displayScore}
                         </span>
                       </td>
                       <td className="py-4 px-4 text-zinc-400 text-xs">{formatDate(scan.timestamp)}</td>

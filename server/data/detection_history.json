@@ -1,5 +1,403 @@
 [
   {
+    "id": "SCN-2026-E34075",
+    "detectionId": "SCN-2026-E34075",
+    "userId": "anonymous_user",
+    "filename": "vidssave.com_deep_fake_video_of__aliabhatt__viralshort__deepfake__ai__cybersecurity__awareness__celebrity_480p.mp4",
+    "target": "vidssave.com_deep_fake_video_of__aliabhatt__viralshort__deepfake__ai__cybersecurity__awareness__celebrity_480p.mp4",
+    "mediaType": "VIDEO",
+    "type": "VIDEO",
+    "fileSize": 2177331,
+    "sha256": "e34075176afa7bb38304a7e101dc20d0a7ce638a9a18450cc00a00249b0a89ac",
+    "genaiScore": 0.008,
+    "aiScore": 0.008,
+    "deepfakeScore": 0.601,
+    "scores": {
+      "aiGenerated": 0.008,
+      "deepfake": 0.601
+    },
+    "percentages": {
+      "aiGenerated": 1,
+      "deepfake": 60
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY DEEPFAKE",
+    "classification": "LIKELY DEEPFAKE",
+    "confidence": 99,
+    "provider": "SecureLens PyTorch Local Video Detector",
+    "model": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:52:34.375Z",
+    "timestamp": "2026-08-12T17:52:34.375Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Deepfake Neural Network (ResNet-18 CPU) executed real model forward pass tensor inference.",
+      "Video Preprocessing Layer inspected 15 keyframes (Resolution: 480x854 @ 30.0 FPS, Duration: 14.97s).",
+      "SHA-256 cryptographic digest verified (e34075176afa7bb38304a7e101dc20d0a7ce638a9a18450cc00a00249b0a89ac).",
+      "No face ROIs detected in keyframes; performed PyTorch spatial tensor inference on full-frame keyframes.",
+      "Temporal aggregation classifier returned an overall Deepfake manipulation score of 0.601 (60% probability).",
+      "Forensic Disclaimer: Deepfake likelihood is derived from real neural feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs.",
+      "Frame-level AI Classifier sampled and analyzed 8 representative keyframes using Sightengine GenAI neural detector (1% AI-generation probability).",
+      "SHA-256 cryptographic digest verified (e34075176afa7bb38304a7e101dc20d0a7ce638a9a18450cc00a00249b0a89ac)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Video Detector",
+      "requestId": "req_pt_vid_e34075176afa",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
+      "requestId": "req_pt_vid_e34075176afa",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 2177331
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.008,
+        "rawDeepfake": 0.601
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "vidssave.com_deep_fake_video_of__aliabhatt__viralshort__deepfake__ai__cybersecurity__awareness__celebrity_480p.mp4",
+      "mimetype": "video/mp4",
+      "size": 2177331,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_vid_e34075176afa"
+  },
+  {
+    "id": "SCN-2026-209746",
+    "detectionId": "SCN-2026-209746",
+    "userId": "anonymous_user",
+    "filename": "vidssave.com_cute_baby_at_chai_stall___________funny_ai_baby_video__shorts_720p.mp4",
+    "target": "vidssave.com_cute_baby_at_chai_stall___________funny_ai_baby_video__shorts_720p.mp4",
+    "mediaType": "VIDEO",
+    "type": "VIDEO",
+    "fileSize": 2119967,
+    "sha256": "2097469c3a656a1e4804088c52a882b670aab5aeb4f7cf57e1d602b8e9729e7c",
+    "genaiScore": 0.99,
+    "aiScore": 0.99,
+    "deepfakeScore": 0.341,
+    "scores": {
+      "aiGenerated": 0.99,
+      "deepfake": 0.341
+    },
+    "percentages": {
+      "aiGenerated": 99,
+      "deepfake": 34
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "HIGHLY LIKELY AI-GENERATED",
+    "classification": "HIGHLY LIKELY AI-GENERATED",
+    "confidence": 99,
+    "provider": "SecureLens PyTorch Local Video Detector",
+    "model": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:51:42.821Z",
+    "timestamp": "2026-08-12T17:51:42.821Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Deepfake Neural Network (ResNet-18 CPU) executed real model forward pass tensor inference.",
+      "Video Preprocessing Layer inspected 10 keyframes (Resolution: 720x1280 @ 24.0 FPS, Duration: 10.0s).",
+      "SHA-256 cryptographic digest verified (2097469c3a656a1e4804088c52a882b670aab5aeb4f7cf57e1d602b8e9729e7c).",
+      "No face ROIs detected in keyframes; performed PyTorch spatial tensor inference on full-frame keyframes.",
+      "Temporal aggregation classifier returned an overall Deepfake manipulation score of 0.341 (34% probability).",
+      "Forensic Disclaimer: Deepfake likelihood is derived from real neural feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs.",
+      "Frame-level AI Classifier sampled and analyzed 8 representative keyframes using Sightengine GenAI neural detector (99% AI-generation probability).",
+      "SHA-256 cryptographic digest verified (2097469c3a656a1e4804088c52a882b670aab5aeb4f7cf57e1d602b8e9729e7c)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Video Detector",
+      "requestId": "req_pt_vid_2097469c3a65",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
+      "requestId": "req_pt_vid_2097469c3a65",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 2119967
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.99,
+        "rawDeepfake": 0.341
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "vidssave.com_cute_baby_at_chai_stall___________funny_ai_baby_video__shorts_720p.mp4",
+      "mimetype": "video/mp4",
+      "size": 2119967,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_vid_2097469c3a65"
+  },
+  {
+    "id": "SCN-2026-5EFB6F",
+    "detectionId": "SCN-2026-5EFB6F",
+    "userId": "anonymous_user",
+    "filename": "chatgpt_image_aug_12__2026__07_42_44_pm.png",
+    "target": "chatgpt_image_aug_12__2026__07_42_44_pm.png",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 1655331,
+    "sha256": "5efb6fbabd9e01fc33d7a28d1203f54138fdb07dfe307a39d6e2c96455fe511a",
+    "genaiScore": 0.99,
+    "aiScore": 0.99,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.99,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 99,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "HIGHLY LIKELY AI-GENERATED",
+    "classification": "HIGHLY LIKELY AI-GENERATED",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:50:47.608Z",
+    "timestamp": "2026-08-12T17:50:47.608Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 99% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (5efb6fbabd9e01fc33d7a28d1203f54138fdb07dfe307a39d6e2c96455fe511a)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld9QuqcEIiMUkVVpOd14l",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld9QuqcEIiMUkVVpOd14l",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 1655331
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.99,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "chatgpt_image_aug_12__2026__07_42_44_pm.png",
+      "mimetype": "image/png",
+      "size": 1655331,
+      "dimensions": "1672x941",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAHCAyADASIAAhEBAxEB/8QAHQAAAQQDAQEAAAAAAAAAAAAAAAEEBQYCAwcICf/EAGAQAAEDAwICBAYLDAQLBwMDBQECAwQABRESIQYxBxNBURQiYXGT0RUyUlRzdIGRkrGyFiMzNDVCU3Khs8HSCCQlYjZDRFVjZIKDoqPCFyZFdZTh4kaE8JW08RgnN1Zl/8QAGwEAAwEBAQEBAAAAAAAAAAAAAAECAwQFBgf/xAA7EQACAQIFAQQHBwIHAQEAAAAAAQIDEQQSITFRQQUTYXEUIjJSkaHwFUKBscHR4TOSBiNDU2LS8TQk/9oADAMBAAIRAxEAPwDzHRRRXccwUUUUAFBpBS0AY0tLiikMSjNFGKACiiigBDS0UUAIaSsqKQCUUUqUlSglO5OwoAxo3rpfCHQ7xRxPCZmQIJMR32rziwhJ8o7a6Ja+ge1WXD/G/EkOG2Nywyoaj8+/zCrUHexn3y6K55yDayCQlRA5nHKscGvVw4s6PeH2vYWzcMpnWpzxZMl1I1uDvGdz+yoi49FHAnF4MjgziBu3Sl7+ByjjB7gDv82a1nhpwWaSa819fMiOIjJ2TT8n9fI80YorsN+/o/caW5K1xorE5oDIUw6MkeY1yGSy5GfcZfQpt1tRQtChgpI2INYNWNlK5jSUDesy2ruqSrmAoNBooAKSssUYoAQUGlxSUAJSVkaSgAooooAKKKKACkpaKQxKQ1lSUAJS5oooAKKKKACiiigAooooAKKKSkMWikpaBBRRR20AFFZutONEB1taCeWpJGa10ALRSVk22p1xKG0qWtRwEpGST5qBiUlZutOMuKbdQpDiThSVDBB81YUAFFFGKACis3WXWcda2tGeWpJGawoAKKKSgDKkoooAM0UUlABRRRQAUUUUAFFFFIAorYhh1bZcQ0tSE81BJIHy1rzQMSilpKACkpaSgYUUUlAC0UUUgFopKWgBKWiigBKM0UtACUlLRQAUUUUAFFFFADmgUtFbmIGkopaBCUUtIaBhRRRQAUUUUAFFFFABikNLRSASiiigYVthjMpFaq3wfxpvy7ULcmfss9PcTXCdbOgXgcQJb8XrU4c6lZTqGORxXMoMV+4ym06lvPuqCU6jkkk10ji3MroC4IebGUNq0K8hwfUaadCHDrV+4vQH3ltohN+FgI5qUlaQB5t69/AzhSw8qsls2eJjFOrVhTj1SJObYOBeGZCLRxE7c5d10p8Ifi4DUdRGcAZ3x5jVI4/4UPDV7Mdt/r4ziEvR3xtrbVyPnru/F/A3B0nigm8XWRHuVyXqSyHEjJ2G21QnT/wlHicNwLrHfd1Q0twg2rBCkeMQfPtWeHxsZThFybzb32v4F1sJKMJtJLLtbe3iUz+j7eLh93aILs6U5DMd09Sp0lGQNjjlXB+krH3fcQYGB4c99s12v+j+nT0ihzGUtxXVKPcNh9ZFcQ6QnkSOOL862cpVOeIP+2a4u0IpVXZcfqd2Ck3TTfj+hBx0anBXbLxKh8BWWImPa0ylOHSt3OnJA3KlYPPsFcQSSk5FdGsXSE/Chsw75DVJa0AJcIwpSOzIOyvPRgKsKblmdm9na9jz+2sLVr5HCOaKveN7X/HwI7jLiS1cRwI4h2oRrjr++ObbDuBGM/KK1WPgO7XRhL7TB6lXJSlBIPmyd6tt+s1mutjZvlpYTGGtOvSnQCkqAORyBGeyrDxeWYse3sLvvsSylGUoQCOsxjtBGw7vLXRUwcqk5VKzvotrK9/M8v7T7mnChg04ttp5ryatutNTk194TnWl4IebIz3/AP5g1IwOj28yoyX0RToUMjUtKSR5ic1fpd7tV1escNqaxOkpeSlwgbrGNzjykCq/0gcX3a28S+CxHlMMtISUpSNlZ7T31hPCUaalOUm43SVrGlHtHtDEONGEUp2bd09k7bb6kM3wLNdZfDTSlyGsBbZUlBTnPPJHdVZtlhn3eWti2Mdc4lOsjWlOB8pFdM6LLm7cXb9JluKdeV1RJUfhKg+h5xTt/mEjYMAf8QpUsHTm6Wr9dv5M3XaGKoRxGezdNR+a8ypROGbtMjy340XrG4hUl4hxOUkDJ2zk/JWFz4cutsELw2KpC5mepbBClnGNiBuD4w2rqHAClxbZxRKbIUpmQ64AeRKUZ/hUN0eXWVxFxf1t4f69cVhxxhOkAIKikHGB3VawdJqCu80vhv8AsafauJUqsssclPfe7utPnv4Fac4C4jRDMk28lIGooS6grA/VBz8lT/QzHS5cbml9lK9KEbLTnByqrGJ8K28TvS5XFmSlZSuGoYQke5xns78Vhwa/Fkcb8QPWpaHIriWlhSORJzn9tdNDDUqdeDi+rVm0+j10OHE9oYjEYSrCqtMqaaUkt1prv5o5HewBep4SMASHMD/aNZ2a0T7zK8HtsZT7gGTjACR3knYVhe971cM7f1hz7RrqvR6zHj9HkqQmWITrq1ByVjJRjABrzsPh1XquL0Suz3MdjZYPCxnFXbsl+Plqc6v3Cd5sTKXrjDKGVHHWIWlaQe4kE4+WljcJXuTAjzI8FTkeQcNqStJJ3xyzkbjtrokW42iPw9crfN4lRc0PtqCeuJKkkp2AJJ7cEeWtZusu2dD8KRDcLT2kJCwNxlwg4rp9Do3bu7Wb3TenyPO+1sXljFRWZzUbtSSaaetnr013Of33hS8WNhD9xiaGVHGtC0rAPccHas7NwbfbxFEmFCJjn2q3FpQFebJ389XuFNkXjomuL1wdLzyApIWrmcKGK2W67W3iHhe229u8vWqdGSlJS2vRqIGO8ZHy01g6LmrN2auldJ+V9hy7Uxcack4rNGTi2k2krb2vc5bd7TOs8sxrlHWw9jICsEEd4I2NMkpKlBKRlROAB2mrR0g2+6QLo0btLMzrG8NPd6R2Hy71j0b2g3biuKFDLLB69fycv24rilQbr9zFPe2p68MYlhPSZtPS+m34XOr26zWyPY41ikNNKlrhqKjpGo8gpWf1lbVxBqKuNfURXx47UgNqHmViu2yrPcVceR7uh9gQ2WwwGyTqKCDq+XJJ+QVROkq1JhcbRZTQw3LWhf8AtAgH+Fer2hQbgpKNsrt5rk+c7FxSjVlTc8zqRzeUtbr4G7pkjssPWvqGkNgoVnSkDO9c4rpfTQoly0j/AEavrFMOii18GXSdPRx5c37fHQ2kx1NKxqVncHY9led2naOIlbw/JHudhXlgad/H82UOivRA4Q6C8Z+6yf6UfyVFcUcL9Dsfhy5vWPiWa/dG461RWluAhbgB0g+L315+c9fKcw6OuIYvC3F8G73CALhGjlRXHJA15BHaCO2vX/Rxxrw1xxwveryxwrHiItYUVNLCFFzCCrYhO3LFeHM4r05/Rh36KuPMjbS5+4VUzS3HFlU6ROOYvSxDgcOcIcGuRroJYeBYKFFaQhQI2SMDxgck4GKpfFXRDxvwta1XG72RaYaBlxxl1t3qx/eCFEgeXlXZP6IsCG1ZOLrwHEMzkEMB9SdXVNhBVnHdnc9+kVP8FcT8N2M3VN+6T2uIIs5pSVR5KThKj2jc4GMjA2qVK2iHa55d4R4Qv3GE4xOHba9NeSMrKcJSgd6lEgD5TU/fOjPizgufb3+I7Q5GirfQkPoWl1vORsVIJAPnxmu5W2ceC/6OVxu3B5SmTIkrPhKE5KElwpCvkTgDz1weR0icW8QRYFmvF5ky4AlpdKXDus5GAo8yBzAPafNiszYrJHdf6SnAd94v4tskbhe1qkrbjOFxSSltCBqTjKlECvO944G4ks/E0awXG1usXWStKGGipOHSo4GlWdJGe3Nekv6T/HfEfC9zsMSw3FcFtxC3nC2BlZSQADkct6lOllZmXvoguDyUqlPTmytYGM56sn9pNSm0htJnnqF0K9IEu6PwEcPOoeZQlbilvNpQAeQ16tJPkBzWzo/tfEXBnSzboj3D5lXllZAgPrSjXkHdKz4vmO4rsH9ITpG4l4d6VbTbLPcVxYTTDLymkJGHVKWoHVkbjAAxVn6Rmm0/0gejyQkAOOtuhRHaBy+unmfULHnXpgRfuIulaY1I4fMG7yC2hNujqDyvajG6dlEjc0t16EuP7ZaVXCVYHCwhOtaWnm3FpHlQlRPzCvS3B0KK/wD0heOZ7raVy4saM2zkbpC0+MR9ECvNs7pk49cud2WbzIbErrG1sFI0sgnGEDHikcs/PTTeyBpdSC4M6N+LeMm1u8PWd6RHQdKnlqS03nu1LIBPkFNOLODL/wAG3FmLxLbXoTjhy2okLQsDnpUkkH567N0bWbipjoyRPunHA4Y4cfeLjKlburJO+DzAJ7M1a+nvqpXQPYJKrkm9rbmMaLjo0l0FKwVfLihyaYZStf0yW225vC3VtpQC0/7UYzu3Xm/ma9J/0zd53C3wL/1t1xjop4eVxVx/Z7VoKmnHwt74NO6v2DHy04u0RPc9X9EHCNhsnR5w9ZL9EjKu17ZekYdbBWrKdSk5O40oIHyV5B4q4dkWPjG4WDSVyI8pUdsHbWM+Id+8EH5a9n8ccFcRXXpM4Wv1omQmbZZAAGHFkKUFHDvIY3RhPyVyT+kvw2Lf0r8PXtpvDNxW0hxQ5dYhYH7UkfNURlYpo5nH6FeP37kmCnh90PFvrNSn2tATnG6tWM+TOarnEXBXEHDl9Zs95trsWe8QGkKKSlzJwClQOkjO2c16L/pR8c8ScOXKxQbBPfgR3GC+tbOxWrVjGe4Y5U/6SZK+IOifo64hvLaRd1T4airTgnWnx/kOkKx5BTzsVkcIY6FOkB65GCnh50PBHWFSn2ggA8vH1ac+TOard24L4htHEkew3K2OxrrIWltllZSA4VHCdKs6SCe3OK9F/wBKTj7ibhviKz2+xT3oEYsl9Smti4rVjBPcO7y1M9IzgvHD/RPf7khKbs5doYUcYJCyCofOkH5aMzCyPPKuhzjpMuXHcsTiFRWBIeUp5vQlBzjxtWCfFOwOfJTHgroy4t40jqkcP2hx+Kk469xaWkE9wKiMnzV3f+k90i8R2Tiq38O2aZ4FBehJefUhKSpzWtaSCSDgAJ7O+nHTrxHdOAejzhC28JPrt8Z1pIU9HABVhAOM9mSSaMzCyPNvF/B9+4Pnph8R252E8sakaiFJWO9Kkkg/Iastk6F+PrzbEz4XD7wjLTrQXnW2VLHYQlagf2V2bi9+Xx5/Rfg3e8pL18akNpjuaQFuLLwa2/WBz8gp6i28T2CTw792/Sei2zkJbDUBA1dYAcYWfzyeRJzQ5sMp5YulmuVquy7XcYT8e4oWEKjrQdeTyAHbnyVem+g7pDctPsgnh13qinWGy82HSPg9WrPkxnyV6Yv9nts7+kZYn5TTanm7W6+nUPbLSoBJ+QE1wvpH6XuOLX0oXlMK5vRmIslyO1EKAWwgEgZSRue3NCk3sFki6dCdtcc/o/cbRVRFKnB59oNlvxwvq0jTjnnPZXG790Q8cWHh83q6WN1qAlIU4oOIUpsHtUkKJHzbV3ToF4gnxehHjS+JfU7c0SX5HWueMVOdWk5Py0vQBxdfOMuDuMY/E05dwbbYXpLoGQFNqyNhyqbtMdjyXS1k8MPLA5BRrGtiBKQ1lSYoASilpKBhS0lFABRRRSAKKKKAFpKKKAFopKKACiiigApKWigB3SVlQa6DASkpaKAEoNLQaAMaKU0lIYUUUUAFFLSUAFFFFABSUtFACGlaUUOJUOaTmkopD3PUHRatPGfQlduHmjruVsX17CO0j2wx8moU/wD6NidHGU8LOFeAqGD8IiuG9EfG8jgrieNcWcuMD73JZH+MaPP5RzFd4414TF4ZHGXR/IL8OUOteZjqwttR9spOOzvHMHycvSw1SMqcqEnZS68P+Ty60ZQnGoldx6cr+DqnFnCfszxrYrqI7K2IhPXlSyFH3OB24NQf9JBY/wCzvAUATLb7eeyq87P3i7NZCrlOSocwX17ftqd4Q4TvXGshDlylS0WZpWpyQ+4SMdoRq7fLyHb3Vs8BKg4VKk9Ikxxka6lCnDWRMdFITwxwbxNxhOwlCWTHjavzyNzjzq0Dzg15plPKkyXX3DlbiytR8pOTXX+nbjiDNRG4T4XITZLdgLUg+K4sbADvA337SSa43Xn4qp3k2z0MPTyRSQqTpUk4Bwc4PI101jj2yTorTd8sqFLbSEgtpCk7dwO4Fcxo3qaGInQvk6/iZYvA0sXbvL3WzTaZd+L+NUXS2pttqi+CQgRnsJxyGByFP4PHlvnWpiFxRbvC1MDxXUgHPlx2Guc0ua09OrZ3NvfTbT4GD7Iwvdqmo2s7p3d783LbxJxVHlzoL1lt7cAQz97WPbHyHHZVhPH1kuCWZF6svWz2h4qgAQT8vL9tcwopRxtWLb018FYJ9k4acIxafq7O7vrvqXaw8atWziS4TUwEtQpuNbDR3SRyUPLuc+ep2J0hWS3S1m32YtMueM4tOEqUr1VyyinTx9amrRfjsupNbsbC1neSeyW71ttfmxd7FxjGt1vvkdyO6oz1OKQUqGE6k4GarfD15kWK7Mz4mC43sUnkoHmDUZS1i69R5dfZ2OqGBowz2Xt7+Oljpj3G/Dcl4z5Fh13LHMgEE+f/ANqheD+LItju1yluQ1BEogpaaOAjcnG/nqm0hrV42q5qel14I549kYeNOVLVqWmrey1suDpz/HPDzy1KcseVKOSSE5J+aoiycbM22fcG1QustEpZUGMgFG2NuyqvBstzuEcvwbfKkMhWgraaKgFYBxkdu4pi4hbbim3ElC0kpUlQwQe6nLtCtKSd1deCFHsbDRg4WbT5b+XBeb3xVYFWaVBs9jbbVIG7iwAUHsIx2im03i2NI4Cj2ERnA+3jLpI07LKuXy1TfPSGoli6jbemqtt0NIdmUIqK1dnm1beqLdbeKY8TgmZZFR3FPPlWHAoYGSDy+SpC3cU8OOQYrV1sSS5HSEpLYBBxVGajvPMuvNMrU0zjrFpSSEZ5ZPZmslxX24zUhbS0sOlQbcKfFUU4yAe3GR89EMZUTWzsrbIdTsuhO71Tbvo2tXoT/HPE/wB0s1laGOojsJKW0E5O/Mk/IKccCcTxeGmpjjkZx2U8AEqBAAAGw+eqxFiSJanRGZcdLSC6vQnOlI5k+QVoqViqne99f1jR9n0Hh/Rbepx8x27cZrr63Vy39alFR++HnVq4h4tiXm3WxLkZ0TIi0LU4SMKxjV8+KpVb0RZC4bkpLLhjNqCFuhPipUeQJqI15wTjffcupg6VWUZtax2toWfj/imPxKYXg0dxnqEqB1kHOaqNLpOkKwdJ2zikxSq1ZVpuc92VhsPTw1NUqaskFFbn4kiP1XXsON9akLb1JI1pPIjvFYyWHor62JLS2nkHCkLGCk+UVmdBrrrXRL0pQuCuDuIrNMgPyHLmFBC21ABGWynfPnrlUeM9IKww0twtoLi9Cc6UgZJPkFPnrBdmbe3Odt0pMNxBcS8WzpKc41Z7vLUtJ6MFdFt6Iekyb0dXyRIZjpmW6WAiVFUcagM4IPYRk/PV8vnSn0dItNxTw9wM2i4T2lIcW+lIQjPdj+GK4HitwiyFQlzEsuGKhYbU6E+KFEEgZ79j81JxXUd2db6IumBvhGyyuH+ILYLrYJBJ6rIyjPMYOxHkrPpF6SuD7nZYlo4S4Sat7DUlMkyVgBxJBGQnHfjG5Ncvt/D15uMUSYFrmyI5JAcaZUpJI57gVGKSUkpUCCNiDRlTegXZ0/p16SYXSLdbZKt8J+KiI0tCg6oEnJB2x5qsHFXTJbr07wKpq3Smxw/IQ88FLB60JCdh3e1rh1LRkQZmdG6YOP4fHHHse/RIb0dlphpotuKBUShSiTt56ufE3TZa7x0i8LcRNWuU3HtCVpcaUsFS9Xca4NitkmO9GKBIaW0VoC0hacaknkR5KMqC7OwL6aXoPS9O4vs0NQiTEIafiPK9ugADmORyMg1Z750y9H6olxmWzgdtV6ntqQ8p5KdBKuZJHP5AK88Ro78pS0xmXHVIQpxQQknCUjJJ8gFK1GfeYefbZcUyzjrFhOQjJwMnsyaMsQuzt3C3S/w290fx+GOOOHnZ7EJRVGLCgBjJIB7sZxmmvSR0w2zivo5jcN2+xqthjyUONJQsFtDaNQA8+CK4sRW+BCk3CUiNCYcfkLzpbbTlRwCTt5gTSyIMzOw9LnSzZukLgy3xnrM4xxBHKcyMgoSNtek88HA2qD6DuO7R0f3yZdLnAkTJC2eqZ6pQGjJ8bn37Vzd9h2P1XXtLb61AcRqTjUk8iPJsa16VadWDp5ZxtVKKtYLssV/4yvV2vs+4ruMxsyn1vaEvqATk5wADXUbl0rW/i7g7hjh64QZJvEGRH0zCsFKilQTk9u6f21wutsV9yLJafYVpdaWFoOM4IORScU0CZ7O6auOeGbBfLVbeMuHW7tCXH8IacCQVtK1EYweYOK4xx50tK6QeK+G7fAg+x9igzGlNMZ8ZatQAUcbDA2A7Mmubca8a33jSXHk8RS0yXo7fVNlLSG8JznGEgVBQ5LsOWzJjqCXmVhxCsA4IORsalQ0HmPZvTZx3wrYOKIFu4y4bRdWAx4Qw8EhS21ZwRg9nKuHcf9Mp4q4y4eltwDFsVllNvtRUqGpelaSSezOE4HdXP+NuM75xrcGZvEUpMmQ031aFJaS3hOc8kgCq7TUF1ByOi9OPH0XpC4si3aBFeiNtQ0Rih1QJJStas7frCrtwd02WZ/hOLw90jWEXiLEASw8AFKwNhkHtA2zmuCUU8qtYVzsnSj0zniJq1W3hi2ptNltj7chprbK1oOUZA2AHdVsvfTlwbfRAvF34QXJ4khpAb1rHVJOc5zzIzkgYrzfRRkQZmdo476al3bj+xcUWCG5EetzJaW08oKDgJyRt2GrhK6cuAZb5vkrgkO8R6Ma1BBBOMe2/9q8z0UZEGZnZeFelu22jgHiuxOWhbbt4eedaEdQDTAWkAJAO+Bio/ob6TIPAlpv8SZBfkquLehBbUAE+KRvnz1ymijIh3Yrh1OKUO0k1jS0GnYQUUUUAFIaWigDEUUtFAxKKXFGKAEooxRQAUUUUALRSUZpAFFFFABRRSigB3RRRXSYCUUtJikAUUUlAAaSiikMKUUlLQAUlFFABRRRQAUUUUAFJS0UgBClIUFJOCORq+dHvSTeeC5fWWx8hhZy7GXu2vy47DVCNFNScdiZ01Pc9OHpP6Or2z7K32zli7NDUWkpyl5XybH5a5v0h9Ml24kYXbbUgWu0Y0hprZSk9xI5DyCuVGitHWk1YmNFLf68wO5pMUtFYmwUUUUCAikpaDQMSlxQKKACkpaKAEopaSgAoopKQHTbBOgQeiuGq4zLtF1XeToNvWElR6ln22SKfQLVYZjfDkZduL0mfGemPPrdV1rykFRSgdmVYGTXKVyXlRUxlOrMdKy4lvPihRABOO/AHzVmmbJCo6hIdzH2ZIUfve+du7es8rLzHU7NZLRc4bN3uViTCcRGuSlQUqWhLoYj9YhwZ3HjHSezahUGwz49rbbsUaO7dbQ/MccbcX95cbU6lOgE7A9Xkg551zaVe7nLfU/JnyXHi2pkrUsk6CMFPmIJpui4S2y0USXR1TZabwo+KgkkpHkOT89GR8hmRbOCY7s3g/i2NGZU7ILUdwNoGVFKVnJA7cZFWrh2yMybLwxbrxbnpDiYt3mohElC14aBbPeMqbOPNXKYE+Xb5CZEGQ7HfTyW2opIqWtHFVxg3l+5yHnZct2K/FDjrh1JDjakZB8mrIolF9AUkdAskCMq0O3Nu2C2TJVvnMrjICtK0pQnDgCskcyD5qbTeG7atFxtTVq6pmJbkymbsVKy65hOAT7UpUVEAVzuRf7rImCU9cJK5AQWw4XDkJPMeatS7xcV29MBc6QqGk5DJWdI+SlkaHmR2JXA1nkRRDnxmIMmFc4cN9yOHMYc1BaVLX4qjkA5GMVBcRBCujq9dVw+bOhu5tNJA1YWAFc9XNQ7SK59Mv12mspal3GU80kABK3CRty+akuF8ulxZDU+fJkNjHiuOEjblRkfVhmR0bhiLDvXBnCVplwWUMSbu4w/MTq1Ng9X25wCrOneojieDDkcKzbgqxewUqHPbitIBXh5CkrJBCuak6Bkj3VUlm5TWITkNmU8iK4oLW0lRCVKHI479q2XS8XG6hoXKbIlBoYQHVlWmmotMV0dF4NiMcR2O0zJKgpPDby1ys9sfGtHyaxp/2qlJFqsEmxs3C6tLffusJ+e9KbYdccbdwogJKfFCUkAEHszyrj0aZJjNPtR33Gm306HUoUQFjOcHvpyxebmxbnIDM6QiG5nWylwhJzz2pODHmOnyYFkYub9uiWwMdRw2mc68Hl6nXVw0rOd/a5Ocd+alL8zBvlxlMOR24TbViinrGlrGNSkDcZwQATtXFlXCYp1ThkvFxTQYUrUclsJ0hPmwAMd1KblNPWZlPHrGwyvKz4yBySfJtRkYZjsV54P4WXeY9lDbkVSLpHiIfbZcT1jalEKC1q8UkjcEYqAv51dGFwxYPYcJu7TYT4wCwEObHV+cO0+WqHMvt1mxWI0u4SXmGCC0hbhIQRyIpLlfLpc2+ruE+TJRkHS44VDI5bfKaMjDMdDZuEKD0Y8PCZPvEZxTknQIDgSk+P8AnbitvsBbllm0C0FcR20eyCr0SrUHOoLuc+10hXiaeflzXK1yHlsNMLdWplrJQgnZOeeKdpvVzTbDbhOkCCf8RrOjnnlRkYsx1pnh7hty9Soiba02m3WxiZ43WOl9xbSCrKUnOkas4FR11icMWq3Xi6RLQmW40uIlDEhLjTbalpWV4ScKKTp2zXNGbvcGJ6ZrM2QiWkBIdSshQAGAM+YAVhMuc6YXzLlvvF9QW5rWTrIzgnzZNGR8jzI61I4Ws7V4vNrt1rS7LdlJ8F8KDhaDa2EOdWhxOyVhS+as7YrRNssGHam7mbYq7S2LdEAiuLWtKdZXqWQDnGwAA2Ga5q1xDd2kvhu5SkiQAHcOHx8DAz8gArCLe7pEkJfjT5LTyWw0laXCCEDknzUZGGZEzw/dkcP8ex570FUSKh8okRDk4ZXlLiN9/aKUN66TD4QhWeXD4RuT2oT5Mm5OFBJ8IYZStMZO25CyFqwO8VxB952Q8t59xTjqzqUtRySe8mnDlznOymJLkt9UhhKUNOFZ1ISn2oB7AKco3EnY6q7bOF2m5lx9iuudjW5b64wbdYZKw4kJKdW/I71I8ERoUTijh1qDYEuJmW9ycuegrPVrUwslIPLSk+Lg7+WuPzL5dJq3Fy58h5biOrWVrJ1JznB8lLFv12iQ0xItxlMxknUG0OEAGlkdh5kdJ9gLcxYI12MBV1mMWeItENxa1JJcccClkA50gAbDA3pjOfbHRhcWUcPNR3RdPGBCypjLYIO/Lu3qgRLzc4chp+NPktPNNhpC0LIKUe5Hk35UC83ICWPDZGJf4fxz99/W76MjDMMKSlorQgSloooAKKKKACiiigAooooAKQ0tFIBKKKKBhRRRQAlApaKAEoxSmigBKKKMUgCkpaBQMSisqSgBKKWigDEiisqTFA7hSUtFABiijNFAh1S0UGugwCikopDA0UUlAErYbK/eJBQ0QhtPt3DyH/vVof4BSI+tuU4FH2qlt+KTTjo+U37DrCMdZ1p1fMMfxrqvEE5c3gaw9cpvrG3n06UADCRpxkCvqcF2bh3QpynHM59b7aP9j53FY6v3s4wllUfDfY82T4b0CW5Hkp0uIOCO/wAopvVu6Ri37KRgjHWBnxvpHH8aqNfP42gsPXlSi7pM9vCVnXoxqSVmxaKSiuU6AooNFABS0lFAC0lFFACUUUUhhVr4e4NfucdD77imm3PaISnUpVVVOnUnV7XO/mr0NwAiY/dYLdofZYdUjAdcI0tp07q37hXr9k4SlXc51dVFbbfE8vtPE1KOSFLRye5yi+8EvwmVuxHVOlG6mlp0qA8nfVOxXpvpJeLl8R1zRT1cZDfWqKSp8JyOsVpOMnf5hXmyeUGbILWNBcVp82Tiq7VwdKjCnVpK2bpe4uzsVUqynSqO+XrsN6KKMV4p6oGiijNABRmg0UDEozRRQAUCiigBUJKlBKQSonAA7avVn6P3pbKVSHnA6RnqmkaikeU1V+GlNJv0EvY0dYM5r0X0eqmi6qXCWsNDSXkNPIbWpOewq7O+vd7KwdGrSnXqq+Xo3ZHj9o4qrCrCjTdr9bXODcTcKP2drr2nOvjg4UdOFI847qrIrvvScuMJ/EZ1suMFx4hTQwggk8q4EK5+1sJTw84ypaKSvbg27MxNStCUamri7X5FoozRmvJPSCikpaAENGKWigBKKDRQAUhpaSgYUUUUgLFw1ww7eEF513qI2cBWMlXmFTN16P3Y8frIj61uY1BDiMax5DV06PGrdLj2dua+I8Ito61zBOMDxuXlzXQOk91h9uyPxZcZ5Pg5QEMggJSFbfsr66j2ZhVGnSlFtyV82vF9Oh8xVx+Jcp1IysovbTn4nlFaVIWUrBSpJwQeykqU4pUhXEM4tY09aeXf2/tqLr5WtDu6koJ3s2j6SlPPBSfVBRRQKzLFpKKKACiiigAopaSgAooooAKBRTu1FsXOIXsdX1qc57s1UI5pKPJMpZYtlssXAb85hLspxxC1DUGm0alAeXuplxNwfItDSnmlqdaR7dKk6VI+TuruvRvKkRLjNXCY69xcNTaUh5LShlaDkE9u1RPSSYyLvdQZCpDejKlrUFEHQMpJGxwds+Svrp9lYb1qCjZpXzX1v4r68D5mPaOIsqzldN2tY87UUpx2cqSvjz6gKKKKACiiigBKWikoAKWkzRSGLWTbanXEttpKlqOAB2msO2pjhJTaeIoReI069vPg4rWjT72pGDdrtIzqz7uEppbK5ZbZ0frfZSZUhYfUM9WyjVj5aheJuFJNmb69K+ujZwVacFJ8or0j0avsN267lhsuXLUwGwh1La+r1HWUqP8As5rnvSSlps35sPiRHSpwJdOPH3519VW7Mwso1KUIWcFdO++l/h9I+cpY/ExcKkpXUntbxOGiijlRXyB9OJRRS0AFJS0UAJiilpKAFpxb4b0+Y3GjJ1OuHAH8abVbOjdTYvbwXjrCwdGfOM/srpwdBYivClJ2TZz4qs6NGVSKu0iai9HBXHCnJD6lEbqbaykH+NVHiSwyLJISlxQcZX7RwDGfIe416P4VvMy12G5yTLUI7SOqZj5GFOL2zjyDJrk3SKWzYMrIKy6nT39ua+kxvZVBUKkoRy5Nnd6+dzwcH2hXdWmpyzZullp5WOYig0UGvkT6cKQ0UUAGKWkooAd1Jx4DCIiJVykLYacJDSGm+scXjmcEgAeUn5KjalL+MJtg/wBSb+tVbswuY6LL+nuXoEfz0hTZux+4fKwj+etvCfD83ii+sWm2Bsy3krUgOK0p8RClnfzJNTlu6OL5Nt0WapDMZmR1xT1y9JAaHjkjmORHyVDaW7LSb2RXCm0fpp/oUfz1iU2vOz070KP56sUfo+ucmMHY8q3uKcccbYa67C31IGVBAPM1oi8C3iVOmRGUNF6LARcFjXgFC0JUlI71EKG3kNLMuR5XwMLXdWbQ/wBbAckrCtltutpCVfMo1NO8dFTWEQ8L7CpzIHyYFRnCnB904oIFrDRJfTHAWvTlRSVD9iTT2P0f3csh+WY8OOErU66+5pS1pc6vCvKVDYdtd1DtOvh4d3TnZHHWwFGvLPON2Qcl+HNeXImSJin1nKtLSCPk8blWkotvY7N9Ej+arCvgWai3S5y5sBMdiS5FCutyHVoQlZ04HLC01t/7PLim6w7a9PtrU2SBpaW9gpJSFAH5DXHKpmbbd2dcYNKyWhWAm3drsz0Sf5qzSi0/nPTx5mUfz1YEcAXJZDjcmCqIFPByUHh1TYa061KPdlaR5Sayd6O72Ic2ZHEeVFjNsv8AWsuBQdacKgFo7wChWe7B7qnMuR5XwQHV2bH4xcPQI/nrJECHMy3bpL5lYyhl9oI6z+6khR8buBAzyBzgHVfLXIst2k26Zp8Ijq0L0nIzjPP5aws5IvEApOCJDZBHZ4wp+Ir62Yxp3Gh9YwqQ851UdKtOrGoqV3Af+4rXOSETZCUjCQ4oAdwzTh8q9i4Y/N1LP7apakydjXoh/pJHo0/zViURexb/ANAeutNFAtTaURfdv/QHrpNEX3b/ANAeutR5Vc3+ju5tTGIfhMEyVt9c4jrcBlvq+sK1k7ABOPnFS5JblJN7FS0xR+e/n9QfzVYLJxc/a2BHLZkMp2QSdCkjuzvtUlD6NLrKdWW5dv8ABerQ63K67706FL0DSe/VtitEno8usOJ1016IwsvKYS0pfjKUleg4wO+tqGLnh5Z6UrMzrYWNeOWorob3jjOTPYUwy0Y7axhS9WtZHcOWKremKea3/oD11dXuiziNu7ybctplMiPKRFVlwaSVIWsKB7U6UKOaZR+ArnJdWmI9EkNof6hTqHfFT4hWSSeQABzTxGMqYmWarK7FQwsMPHLSjYrBTE92/wDQT66AiJ7uR9BP81OL1bRbJnUJlxZaSkKDsZzWk5/jTEVitTV3Rv0RP0kj0af5qA3Dzu5Jx5G0/wA1aKKLCubZcUMpbdaX1rDmdK8YORzBHYdx31rjMOSZDbDKdTjitKRnH/8AFO//AANZ7pKcfRVWfDoKrokDn1Lx/wCUupLFXHtTJLbsyS64nYqZYGjPkKlAkecCsCi0/p5/oUfz1HnnRRYLj8t2vsenfKyj+esNFtz+GmY+CT/NTM1KcNWOXxFeGrdA6sPuJUvLisJSlKSpRPyA0PQE7mkC2IIKXpuobg9Un+arHC44fjtBt5gv6RgOBWhRHlG9IeApqbdKnGdAMdh0shSXCesXp1YTt3Vg7wJcEPiKJcBU5LTjrsUPguMhDSnTqH6qT8u1b4bG1cK26UrXMa+Ep4hJVY3sNbzxMu8IDDyVx4uclLeFqV5ycVEFFtxs7M9Cn+arJZej27XS3MTkvRGIzzKXkKecxkKeUyB5ypBrC9cCXGy2gzri/EZOpaQxrytRSrScY251FfEzxM89WV2VRoRoQyU1ZFc0QP0sr0Sf5qNEDP4WV6JP81NcUYqLGlx6EW3G7szPwKf5qVyEw7HddgPrcLQ1ONOthCgnlqGCQQMjPI9uMAkMakbEP68sd8aR+5XSegJ3IwU8jQ0qYMiU71LGdKSE6lLP90ZHzkimfbT+fkRIA7OqJA/2jTE3YOrtZ5vzvQI/npeqtf6ab6FH89MhS0WDMOy3bOx6bn4FH89YFu3djsv0Sf5qbGpy18L3C48OXC9x0o8DhLS25lWFKJIBKR2gak57tQpOyGm2RfVwP0sr0Sf5qAiD+klejT/NVhjcET3blc4b0iHGNubS4+687pQArGN/lFOJnR3dYMCTLnyIUZtlxbY1u/hClCV5TjmCFJwfLU3Q7MjbLxG5ZgWY4U/FJzocASQfIQTipCfxs+/HLcdjqFEY6wr1keYYFOWujic6qMGrna3A/GXMSUPZ+8p1Ar5csoUKj3ODJLUZyQ/cLcwzqUllTr2nr9PttAPMCu+n2piKdPuoz9X6/E459nUKk+8lDUroTEUcrdklR3J0J5/SpSiF2OSfRp/mq1P9H9wQwlxmbb5JVBXcEoZd1KLKeasfJitqejW8OTWocd6E9M65Ed9lDwKoziuQc7t9vIdq4brk7LMp+iH+kkejT/NSdXF7Fv8A0B66lL3w1cbJGaeuLQa6x1xkJzuFIOD8lQ9NWZLbRs6uL7t/6A9dAbi+7f8AoD11roxTsK5tEZt3IjuqLnYhaNJV5iCd/JtTWt7ZIcSQcEEYNJMSEy3wOxxQ/bSaGmYtNFwKUTpQnmr+HnpdDWfbr+iPXTvTiysq75Dg+ZKPXTKhBds2JRH/ADlvfIgeusgiJ2rkfQHrqatvCsydw+9d0ux2oyHC0kOLwpxYGdKR30/VwDcRLTFMu3eEISpcpvwgZiJSnUoudwA/btzpNoaTKvoh/pJHo0/zUaIf6SR6NP8ANVvj9HF1kLJalQDGUhtbMnrvvbwWooGk9+oEEdlM77wTPsVrRMuL8ZtSycMBeV7KKT5OYNCcWOzNtp41fhMJZeaVISgYS5q0Kx5eeab3vilV1aMcoXGjK9vowtSvlOKbcQ8LT7Exa3ZqmAi4IDjeledIwlW/yLT+3uNS0To3vUifKiKVGZVHfUwpbjmEqKUFZI7xpwc+UV3S7VxEqXcufq/XXc449nUI1O9UNfrpsVbRbv0sz0Sf5qQt279LL9En+arW10d3J+I8/GlwHgguBCUu4LvVo1r057hWZ6NbyqU1GYehPvlxht5tt4FUcvAFsrHYDkDPea4M0eTtsypBu3drsz0Sf5qzS1avzn53yMI/nqad4OkxmI651wtsNx4JWGXnwFhCiQFEdxxTHivh97hu5eBSZUV94JyoR16gjyHy0XTFqholq0E4MmenPb4Og4+TXTa4QlQ3EjWh1pxOttxHJQ/gfJWmn07PsNbyfdugfOKbVgTuNYER2dLbjsAa153UcBIAyVE9gABJPcKeKj2hB0mZNcI5qRHSEk+TK8484B8gpeHVaZMo9vgb4HytqFR1K1wvYf8AVWf9PP8AQI/npC1aex+f6FH89MKslv4SlzeGl3wyYjEMOONJDqyFLUhKVEAY7lCh2W4JtkQW7X2PTfQo/npEi3NrCkvTAQcghpOQfpVZI/R7enpsuN94QuO8hjUpfiuKWgrSUntBSM+anR6Mrup2OyxIgvyHCzrabeBWyHSAhSh2DJG9F1yOzNMLjp5hGh2OXinYOBXVqI8o3381Rt84jXeQGX9ceMDnQ0AoqPlJIqQkdH11SxdXYbsWam2NIekhheSlKlKTsCN8aCT5K1zOALpBbfXPkwYoQvq2+ueCeuUEBRCO/AUPlNd9TtXE1afdTndfXXc4qfZ1CnU7yMNSt9Xbu12Z6JP81Gi3djsv0Sf5qmOKOE5XDvUJmSYq33cfeml5UnIB3+etfGHCs/hOczFuZZLjrfWjql6gAFKSQflSfPzrgun1O3UierhZ/CScfBp/mrMN27852YPM0k/9VNKKdibmyZGDGhbTgdYczoXjHLmCOwjbby9opbfDMx1QK0tNITrccVySnzdp8lbHfyS15Hl4+imt1u/I9zPla+0aRQhatIJAkTleXqEDP/HSdXa/0070KP56YnarxL6N7rGluRDJgrlNNda40h3dCcA7/SFDstwV2VRTdr/Nem/Kyj+es4zsWG8iRDkS0yGzlBLSQM+XxuVT906Pr7bJzkSWy2H0zG4QAXnWtftSO8eWml74OuloN58KDJTalMB5SF5Cg7nQU94OKcZZWmnqJxurNEozx6tLQS9C1qHMpd0g/Jg4qCvF4RepAVOW80yj2jbKAoD5yK38P8Izr1AEtt+JGZW94OyZLoR1zuM6E955fOK3Dgi6omIjSAyw6qKuYrrF40NpOFZ8ortxHamIxEO7qzujko9n0KE+8pxsyELds/Nem/Kyj+agNWzG7030KP56tqujicHW0IudqWFwzcNSX8hLHuz5DTSXwDeIdwiQ5HUB2U6tpohzIOlAXnPcUqBrgvHk7LMrhatf6eb6FH89Yvw2FMLdgvOOBsZWh1AQoDlkYJBH7fJU5feE3bRZo1ycuNvfakkhtDLupasEhW3kIwahLd+EeH+gd+wadk9gu0R9LQaKQx1UrfjkW3yQmx+1VRVSV8OfY8DsiNj9proOaXtI2cMXpywXNU1lAW4Y0iON8Y61lber5Nefkq62/pXna9d3jmU6VOlTjS+qOFtJRtjlyz5ya5nRWbinuaKTWx0ZvpEisMsKZs6lzIj7siI8/IUrq1LGMqH5xHZmiJ0oSoK0vQ7bE8JUuIXnHU69aY7IbSkZ5b6jny+SudUUsiHnZc+HuNxYjNTDgpDT8oyEJ1n72NK0hI82v9lSb3Se/PiQYl2t7ciO2wGZBQsoW6pK9aXMjkoH565xRRkTDOzpNx6Sm7lbrhElWxbaJMhT6QxIKAAWWmgFe62aBPlJrQ/0hoxYxGtpAtr4fy8+pxROnToSo7hPbiuemihQSDOy62zjkxrWbbJgIkQHlSBJbKykuIdUhWARyKVNpINPWekuTBS0zaoLcaJGMdMZorK9LTZdUUqz7bWXVE+eufUUZEGdktxZePug4jn3UspY8Kd6zqknIRtjH7KaWf8AK0H4dH2hTSndn/LEH4dH2hVbIXU03H8oSfhVfWacyR/ZMA+Vz66bXH8oSvhVfWacSvyTA87n2qcdiJ7rz/RjKjnSc663Yrjw5bOBbG1coseVKml5BZEFlSirrEhK1Pk60ad9gDmplLKXGNzkh251eZHSPMkcRKmyWevtzkUw1wVLOktKaS2sAjcE6Qc99dUcicPzb4fA4sGSUNzEpcat0ZBaUnRobDROhwjchSueaofDVvs3/ahH9mHVCSJhDkORbWENdX1ZIUoIVoB5eKE48tZOSl0NFFrqabZ0qv2dIYs1ubiw2m0NMNqXrISHNatRPMq5eSsZXSPHk2YQfAZKSiQt9GmUdJKneswofnYO1XHhu5cJ3ZpxaWoTbgdjR3JD1njJ8KUdZIDWdLQUMJ1J37cVGtQLcIJ0W60M8MGDIVOcWGlPsysLKUhw+OFhegJSDgjsIzSuuB2fJASOlKTMZdZnwOubVdV3FtaHlNuNoV1hDQWN8JLqiPP3UP8ASi4uQ4oWxoMuLHWIWskuo6soIUe1RBznyVb4MRn7s7Q01b7EvgwuNCG8GI63HR1R3KleOtRVkqCsgHu2rVDtiZT14jyIMeKtSEqE+VbYKeqRoV4rjKThCSeS0HOcc6Lx4Cz5OO32VbpUwKtEEwoyUhIbU6XCT2kk1Ggmu8Q7bbXGbK/Jh2uHHS2834G5HjLDxEJ4h1t5PjLTqCSQsbKKcHNOXrfwVKZmvvtW+IuJCtzEppIADmrqFl5GOSt3ELx3DvNWqngS4Hn+g10bpTt6o1vhSJKra0+qS6huLDhsNAM80LC21EuJxjBUAfPXODVxldEuNmPv/p9w/wCtI+wut3Co1XgD/QSP3K61f/T7nxpH2F1s4W/K23veR+5XSB7EVS1iDWVMAqT4ZuTdnvUec8y46lok6W3S0obYyFDcEc6i813OJZbdP6J7ekRYaJD1qWQ+uMwkeECUvGXvwvWFAACfakEZqJSsVFFZuPSkm4wZkZdscZ61wOIUzIKTkICQV+6O2TTL7uoCL01eU2FsXN3Wmcsvq0vIW0ptYSn83IUTnvxV6n2bhfwq3uWldkkv25p2CEJThDskIBbU7rSAslQX3g7U0sUSK7BmDiqDZWOJDMbRBQGGUMl4sK0B4I2AKsZGMFWnUMZrNOK6F68lbgdK71oSI9ltzcaGyyyww2tZWQhDynVaieZUpavNTLiDjli78MC1CFJa0KcU2oSSU+MvV4ye3GcVfbTbIjdm4Lck2+OWT1JuAXb4paUvwlYUHHT99CsBI0gYxjvNOYsCwOwTL4XiWx2TKExxmO+y04phwaQGyFgggHJTnbBoTXANPk890tW3pMbhtXyMIzcNqYYjRntwtPUokY8cJCfFHZkDYHNVIcq2TurmTVgqRsP4+v4tI/crqOzUlw+M3BfxaT+4XRLYI7kV21J3UYj28f6uD85NRlSt42Rb/iqKaBkcKKBS0xCVebHx+q02KLZ0W2K5ASy+3I1Jy46p07qCuzADY/2BVHopOKe4KVi5McatLu17kXC2+ER7o0204yl0o06QntH6tSk/pM9kbDMtsyAptLq1lsR3yhKUltLaUEfnABA5+WucYJ5V6AhQLbHf4Pedt8R22+DtOSEu2+KGHFCMskKdH3xRKhuDt+ys5JR6GkW5HN7Jx2bfKtrphKUiJal2z726UKUFLcVrB7D98/ZWi6cWQLnCVHuNoVIUyXDDdXIVqb189fusHcV0Bq38PC0wHuF2be/PlRZEi3tSUNuLQVOt5bWley3G09YEhWxxkc6fxrbw/bHZLt1YtlyCVPuPIEZpg/gU+IEpKglQOcYOxqbrgdnycvjccORgwWYw1tWZdpSdXuiTr+TPKpRjpKRGuT1wiWdtmZNfEmevrVEOrBKvFB9qCo6jXQoVksMa1PJsiIs1fgEJbL7ECPJdIU7IKiUPYAVpCAo8xgV5+lpWmU6l1ISsLUFAADBzvsNhVRSl0E24lj4s4xlcS2i0w5rKA7ACx1w5uhR21eUDbNVikFKK0SsZt3CiiimIVHt0+cUs/wDH5Pwq/rNI3+ET5xWdyGLjL+GX9o0mNbjlzbh+N5ZLp/4UVH1Jv7cPwvK+6f2JqNxQgTLZwjxeOHLZMZahqekPAhKlunq9xgFTfIkcwakVcc29d0enmwt9fPbcauY69Wl9CwAoIH5m4Cs94HZVCxSVORFZmdNh9KTtobbjWW3ojQWEttstKXrOhLilr1E8yoqO/ZtiobiXjdF84fYtgiSGuoyEEyCpJGoqyU9p351U7elCp8YOgFBdSCDyxkV6CvsOwW+63R2521lyyphLDaRCisYypsamlNeMogEkFW+1RKyexcbtHN+MOkJviThtFtetbbDzam1NvpXkoCQR1ac8m/GJA7DW6L0pPt3CzSHYQUIMRcZfVuFKnlKQEdYT7rSlI+SroqyWxiaiHw+LRKmpEBEh/wAFZk/1Ux/GcQ26Qk5cxrOQRtuMmtQtXCcGwS2J6LfKbUwuOJrKEoUlRmKSl5OM8k4OMnxdqnMtkh2fJTm+kp1qJIgsRHBBk9eHkuPFS1dYgDOrmCCM/srerpRRHvCbhbrM2zIecirmLU6VF1LGnSgdiQSgE+YVcuLbRBh8M3VFoYiuONOOIU7Dt8Z9KkhpO5WvCkDmQU71wDz1UUpEybRaL/xJDvcBpUq1JF2bbQz4Wl1QBQn2vics42zUZxPdjfL1IuBaDReI8QHOMAD+FRXZS1oopEuTYlSE78hW/wCEd+sUwp/NP9hwPhHf4UMS3F4eTl+Z5Ib5/wCA1HVJ8OD77O8kJ77NRlJDYmcVcrTxk3G4Jd4dfiPLQp151LjT5QCXEJThQHMDQPnNRHBb8SPxPbzc2mnYLjnVPhxIUAhY0lW/aM5+SuxWCzWm2yrvZI7ESXLtduZ/rDESPKccfckJWspDviqwghG/IA4qZvlFRRRG+keQhrh1LkNBNrQQ4oKOZCtGhClfqowKdJ6TmWJ8edAsyG5n9WTJdU8VdYhkghIHJOSkZNWxLVlXwehiVHguXIMSHHIioDDbhV4WpPWdancFI/xY2wNtqb8SO8PW2BHjsoiNuybi6nQ1bY7qVoDicBTivGQMZ9qDUNp9CrPkqzvSW6zImSLdEdaekqjqKn3y7jqlrVp3/NIWQR3Vq4j6RIfESpPspYWlgOqdhhDykBgqQlJSce2T4oNWjiWIkwZqOD7bY3oxkzxc1vNslTR6xQbAK920hvSUaCMqzzO1bpdssdstVjatjtleu1peYRPR4Mlxa0vH74HNaNCtJUACCcAHlRoGpR+KuNGb7MtswwFh2K4hZbeeK2lBIT4unsB071l0jceo4wiQ2TA8HejuKV16l61uJPJKj2hPJPkq6xFWW43G4m6RrOOqvDjMQdQ0w0dLCuqQrSANBXpznY9tb7fGs0SKqRxva7Uq8ptkwyY0dtpo9TraDSylA0pd8Z3BABICc07rgLPk4TS1delWBb7bd7XHtDkZ6MLcyrrmEgB0kqOpWPziMZzvVJrRO6uZtWHTv5Ja+GV9lNOLaP7Cu3nZ+0abu/klr4ZX2U05tu9hu3nZ+0aXUb2IyugSukufK4hnXGQ0VsvsdS3HK9mhpSDj6P7a5/S02k9xJtHTv+1mSsZkW1h51qY5MjLWc9WVJISk94STkU3d6Ro1ytsiLfbK2/4THYYdVGc6kK6la1IIA5YCwn/ZFc5pKWRDzMuHD/FsS325uHcLSma1FlGZDy6pBbcIAwrHtk7J28lPZnSGqZb3zKtraru5HchiWHCAlpatSho5Z7M91UKihxQZmXSFx7LgyG5ENkNPt2UWdCwc4wc9Zv2+St1p4/cYioVdYZuFxjuuPxpLjpBStxISdQ/OGAMVRcUUZEGZkxdb2qfZbZb1NBPgXW+OD7fWsq/jTC3fhHvgHfsGm1Ord+Ee+Ad+wadrCvcYGig0VJQ6p/ePbQx3RkfxpjTu7HK42/8Ak6P410W0OZ+2jSGEhGp50NkpJSnSSfID3ZoDbG+ZH/LPdRcFapz++fHPbmrBD4C4jlxW5DNuw04NSdbzaCR2HSVAj5qajKTtGN/iRKpGEVKpO1/L9SvaGPfHf/izSlEccpOdj/iz8lWc9HPE/wDm9H/qmv5qx/7O+Jv83o/9S1/NV9zV9x/BmfpeH/3V8UVooYycSNuz72d6C3Hyf6x5vvZ76kr3wveLIwl65Qi0yo41pWlYB8uknHy1CVnJODtJW+JvCUaizQldeFhz1cfVjwnbOM9WeXfSaGMHEj/lmpqFwVxBMjNyI9uUWnBqSVuoQSOw4Kgadno64pAybX/z2v5q07mq1fI/gzbuZ+P1+BW+rY98/wDLNHVsZP8AWO39GasKuj7idIJNs2+Ha/mpjdeFr1aopkzoKkMA4K0rSsJ8+knFDo1Yq7g7eTE6M1z9fgRa2k6CtpwOJHMYwR8ndWy0H+14Pw6PtCsIIHXnUcJUlQPjYztWdl3vMD4w39oVi9rkx3sYXH8oyvhV/WadTU4sttV3l37VNroP7Tlj/TL+0afXBOOHrQe8vfapDkrsiRRgd1LRTAQ+ascDupxFjPzJDceIy4++4dKG20lSlHyAVNngniUc7NLB/Voyt7EyqRj7TsV2kIBqx/cTxJ/maX9EUfcVxH/meV9GjJLgXfU/eXxK4UjupQAOQFWIcFcSH/weX9EVFXS1zrU+GbjFdjOKGQHE4yPJ30OLWrQ1UjLRO4z59lJilpaRRiBjkKDWVIaAH4/wec+NI+wutvCgzdz8XkfuV1r/APp1z40j7C62cKjN2OPe8g/8ldT0LIcUtIKWmIKTA7qVIKiAkEk7ACpZPD1yUAeoAz2FY9dVCnKfsq4nJR3ZEEA86WppPDF0V7VhPpE+utqeELyrlGT6RPrrT0ar7r+BPeQ5K9pHdS1Pq4SvCecZPpE+utC+HLmj2zAH+2n10vRqq+6/gHew5Iiinc23SoSUqkNaUqOAQQRn5KaVnKLi7NWKTT2CpPh38or+Kyf3C6jKkuHvygv4tJ/cLqJbFLci+2pS88oI7orf1VGCpK8c4fxVv6qaJe4wFLSClFUhBS0lbcJ205x5auMbibMAD2VkGweYFS9isVxvTymrXEckLA8bSBhPnJ2HymrSbFa+F4zH3TxXpd0fTrENt7QlpOcAqUM5J7v/AMPXSw0pnFWx1OlLIneXCtf68Xoc/LWOQoDZI3FXS9W20T7M5dbG07E8HcSiRFcc1gavaqSo7nfsp1Ht9ksdsiOXqK9cJspHWhlDvVJaQeWSNyTW6wLzZSF2hFxWjve1ut9/LbxsUAtgdgrEir3N4aYvcLw/hJh86V9W/DWoKU2SMhSVHmn9tVCbCfhyFsS2XGX0e2Q4kpI+Q1hWwkqfQ6aWIjUWm/HUZYopywhg9b4QpxPiHq9AByrsz5Kb9tcko2NlK4lJSmkqCjJr8Ijzitlz/KUv4Zf2jWDP4ZH6wrbdx/as3H6dz7RpDRvkKzZYKe5bh/aKYU9kfkmF5VL+umIoQhaQ0uaQmgYhrDSM8qluHbFceIrk3As8ZciSvfSNgB2kk7AV2zhroBbLSXeIrmsrO5ZiDAHk1Eb/ADCvNxvamFwWlaWvG7Omjhqtb2EefzypMb16e4n6K+ErPwrOkMQXDIaQkpcW+snOoDvx205u/Q9whIQtMaK/FXnZbT6iR8hyK86H+JsJNKVpWvbZdLePida7LrtuKtc8s7d1KK6zxT0K3SAhb9jkJntJ36lY0O48nYf2Vyl5pbDy2nkKQ6hRSpKhgpI5givZw2Mo4qOajK5x18NVoO1RWMeyiiiuo5wp/NH9hQD/AKR3+FMKkZ3+D9u+Ed/hUsaF4dzruBHvJ36hUZUpw5zuXxJz+FRfbQhsKTA7qypKYhMDuFLTiDBlT5AYhMOPvEZCG05OKuXBvB61znneIoMlEZlGpLRBSXVd3f8AN5KqMHJ2SE5JasoePJRgd1dLfs9q4m4blyrPaHbfOjrIaTqJ67GMjB25Z8ucb1Sp3Dt2gRjImQH2mUkBSynYefuocGgUkyKxRgd1FLUjEAxS0UUAOnh/Y7R/06/sppxbR/YN287P2jWh38itfDr+ymnFtGbBdj3Fn7RqepT2IyikpQCSABkmqJCkqxs8D8VvNIca4Zva21jKVJgOkEd4Omtn3AcYYz9y19//AE97+WldDsysUtWX7guL/wD/AFa+/wD6e9/LR9wXF4H+C1+//T3v5aLoLMrVFK4lTa1IWkpWk4KVDBBrHNMQtPLWMuv/ABd77BplT+zfhpHxV792qkxojDSYrI0lIoc06umy4/wCf402pzc/wjHwKf410dDmftIR1Wq8KKvGBe3zvnevSMuc3HivyXSQ20FLVjngV5udI9mVEnP37n3713mZKZaivLfKeoAJXq5Y7a93sWGZVX5fqeB2z/pK3P6Dfhji+Pfnn2m2XGXGgFYXg5B81WFT4qk2CTZGID863IQyzupxXaMdhqv2vjd5ziJapa8QHjoSjsa7j669CNeNGMFXkm5dVt5nBLCOtOboRaUej38i5dIboVwdcBz8UfXXCGQFPthQ2KgP212Tjl7XwrOHYUj6643H/GG/1h9deP25DLiIrw/Vntdhf0X5/oj0Mu1R3Ls1cevlB5tstpbDn3vG+5Tjnv391MXLLDVBNqM6aNbnX/jA6z5Djl8lSiHcVzDpQkPM8RRHY61NOJZBStJwRvXr4zu8PT7xxvr+e59NOSWp0Zq0sNptyFSJpEFRU3l72/6+3jcvJTK621iDaL8+09Jc8LacWtDzmtCScnCRjYb004IuF1m2/N3ZCQAOrdVspfnH8akOJFH2AuI/0C/qq1CnUo95GNtOvlYpNNXRwqET4QMK0+KrfOPzTWVm8W8QD3Pt/aFEA4kgg48VXf7k91Fn/K0H4dH2hXxr9k86Ptv8P1EuZzcpZ73l/WafXA/937QPK99qmFy2uMrP6Vf1mntwP9g2n/e/aqeC+SLpaQcqWqJOh9DCUi73BwpBWllISrtAJ3+oV1rrCTzrkXRAvTcbj8Ej6zXZ+HG7dIlOC6P9U2EZTvjJz317uAajh7nzPaKcsS15fkNesx21gp7HbVrMLhc/5Zv8KfVVOvqojNzdbt7hcjjGlROd8b11wqKbtZnG6dle5tD5xzrXdLDB4q4cciTQEupcUWXgPGbVt+zvFMOvIFbrTeI7CHGZLnVnWVDIOCDTqQjNZZbE3nD1obo4JxFZZdhubsKcjS4g7KHJY7CD3VGA16F4rt9n4ntimH3kpfSCWXwk5Qf4jvFcBnxHIE5+I/jrWVltWk5GQcbV8/isK6EtNmfTYDG+kwtJWktzTRmig1yncPx/g858aR9hdbeFDi7K+LSP3K61jbhx34239hdbOFTi6qP+rSP3K6joWQ4paxBrKmJl14bjWyHb482Sy49JXnxteAnfsGP21M+zVtSraM6T8J/8arkZebHET3Zq6cc8U2a8WS3xbdbWoz0cjCkNBBSnTgpJHtt8c+6vapPJBKNlojz6jvPVN3GqL9ATuIrnpP8A41sPFUJGxiL9If5ajbpe7ZK4bhwYsBDMxojU8E7nvye3NQTfgS0ky0uFfIFPdWsq81omiIRUldpotp4qgq/yVXpP/jTdy/W1fOMv0v8A8arKm7Z2JerAi2gHSl7VjbJ7ajv6nVovu49Llgfn2qW0pl2ItSFbEFw7/wDDVK4gisQ7gW4oWGlICglatRTzGM7Z5d1PmnPvgx3imfEatdwSf9GPrNcmKkqkMz3RvSjllZEXUnw6M3FfxaT+4XUZUpw7+UV/FpP7hdebLY6luRfbUnefbxPirf1VGZ3qRu5y5F+LN/VTQmMaUUgpRVIkyA7eyncOK7KfbZjoU46s6UoSMkmtCXFlsN58QHUB5avPRuy+w3fLmyyouxILhZdxshw45Hvxmu2hTUpJHHi67oUnPr++iJmZap0WxWyyRXmY2UKfuCUuAr19ygncgDsqMsL67Ne34LmXlLb8Vba9JwlJWEbg+KrABTjtqLdgyY9tbuyJSw6rCyQCCMkjZfadtxTuyWy8cWTDJjusNKhpSXJryw0lO/ilS/dV7KappWPJpYWVVShdNO99Lete/wBa7Gu2uJVwlxCdITqcjnCeQ8c7CpG7PFu/8PFCArMZlGD2Z2yPKM5HlFT0vhAptlyabu9iS5MDCylM1GkLTkrx3Anceetj/DandLrF3solNREMsqVMR4qwfGPzcjVqcbXudiwblNya3v8AOKX6FR62ZdrjO8FfVDjlSEOAuKIWvYJKtI3USnJOPLTu6W65XXhVCpTfhFxhuEJIWFuFrtCt8nBqNvnh/DMn2NAMV8JSt11Csl4ke2Cu1O5xWT0B+wSIU2JLJfLqE5xpCtQCspP5yd8ZqnacWmddOhl0S2Ka4CkkHnWo1ZePYhjcTTAGi0lZDgGMDcZOPJmq4VHTpztnNeDiKeSTTOq1tDA0lLSVxMZmx+Hb/WH11tu/5Wm/DufaNYRvxhr9YfXW29/lq4Y98OfaNS9ykbZQ/seB53PrqPqRlj+xLf53PtVG0IGhTVk4D4TlcW3lMVklqM3hUh/GQ2nyd5PYKrXbivTvRvaI1h4WitxlNuOOgOPOoIUFLPZkd3KvK7Xx7wdH1Paei/cic8iJVuwQLDYW27KlqAuCevaeUdysDcrV26hkHyHGwqr8RdPcWMylqx24yZJT463laW0K7QMbq381ULpg44du89y0W50pt8dWl0pP4VY5/IOVcyrycB2DDERVfG6t6pefJ04fFVaMWovcv/EXS1xVfIzsd+THZjOgBbTLCQCM55qyezvp5bumjimMsGWYk1OfGDjIQT5inA/ZXNKO3bnXu/ZeDy5O6VvIuOLrxlmU3c9DQOlVniSG3AiIXb7pIV1ZK1ApbTjdSVdp7AO+mfGHBdvu9uQiM03GlsI0tOpHtgOxXePLzrkNz4Zu1nskO63BsRESlf1dtxWl5aR+eE8wny10Ho64pdusdUC4u6pbKcoWebifWK8nEdn+hLvcJolv9cH03ZGMo42TwuMV3LZ/p4PxOUzYz0KU7GkoKHm1aVJNaa6d0q2uOuO1cm1ITIB0LSSAVjsPlxXMM17eExCxFJTPn+08C8DiJUXqunkLUjO/wft3wjv8KjqkJ35Bt/wjv8K6GcCNnDZ3uXxJ3+FRVSnDgybj8Sd/hUVQtxseWthMq4R2XCdC1gHHdXd+Cui2RxXb3n7XDtjbDCuq1voHjKxnGcEnYjc99cNsB/tmJ+vXtj+jsgHg6aQf8tV9hFdMZ93RlNLW5i45qii9jhl86PLx0evpuV0VB8GkK6hPgoPinnv4o22pt7OMEbub+Y16dm8XcOSnDGlEvJCsYUzqSSKlmLZZ3ozTotsZsLTkJcZSCPPUrFzp+rOOo3ShOVos8mG+Mk5LpJ7yDWTCH+KnRY7aULlTPvaOsB0jynblXrT2Es5G8KH6NNbodttsNzrIseM0vlqQhIPz0SxzatYaw1nueaU9BN7iQHHn4tnfU0grKUJBKsd2UiuM8b2yLETHkxWktFaihaEDCTtkEDs7f2V9BZp/qL5TjHVq+qvAvHpzbIh/0p+zV0qjq0Z5ktLEzh3c426lIopKWuY1Hbv5Ha+HX9lNOLb+QLt52ftGtDv5Ea+ML+ymt9t/wfu36zP2jUlEXVz6G2W3+lHhlt5tLjapreUqGQd6pgq79CZx0rcMfHW/rpy2Etz36QDzApMDuFN58hyOxraZU6c4wKjl3aSkZ8BWfkNc9ja5M4HcK1TlFMN5QHJB+qoYXmUR+T3PmNSUpxTtqdOgpWps+KezanawXOE9PvQ6m/su8ScMshN3CdcqKgYEke7SPd9/uvPz8nuIU2tSHElK0nBBGCDX0YYucVbKCt9CTjko4IrhvTz0UxL6y/xDwsGk3JALkmOg4D4G5UP7311pGTWjIaueV6kbL+Gk/FX/AN2qo8gpUQRgjYipCy/hpPxV/wDdqqnsQtyMpDSmkNAx1Tu6jDsf4BH8aZ08u5+/R/gEfxrfoc79tfia5Sk+yziytJT1uchWoc+/tro/F7V0uLDUa3oSqMcqcPWBJJ7OZ5VzW459kJGoknrDknt3pzHvl0jspaZmupbSMAHBwPlFd2DxdOjGpSqp2lba19PM48RhZ1XTqU2rx521JpHDV7Sy40hAS25jWkPowrHfvWocJ3jsjo9Kj11HDiK7j/L3PmT6qDxJeD/l7n0U+qrdXs97qfxQKnjls4fBl0uqpTHA7zFzKQ8kBAIUDkZ23765u0oJdQc4AUKdTbnNnJSmZJcdSncJJwPmFMxWOPxccTOLgnaKS13NsFh5YeLzWu3fTY763JcVIbaS06oLTrDiUZQPIVd+31VGyFQXnkXKXa5rj7Z6pKVMkqGPzgnPLy1yuJxJeIbCGY1weQ0gYSnZWB3bitp4qvivbXBw/wCwj1V60+2qNRWlF/BP9T0+9TOwImJWmOpqNLHXEjBa/B4933CmF6nldpuzbjL7KWmlp1uo0pVsd0ntG1cuTxXfE+1uDg/2Ueqm9wvlzuLJamzHXWzuUnAB8+BvSqdt05QcUn8Fx5h3yG8AoEgZKcaVe2O3I0tlyu8wUjAy+jn+sK1wAoSQWyc6Vcv1TW6wLCL3A1fp0fWK+db9U5Yr13+H6nU+H+hO/X2d4YzOtCWS9r0uuO5I1ZxgNkVaf6QXROu1WuNeeGYubcwFGXHbBPVKUclaR7nPzV0fo2vNtTHSlyfFbVnGlTqQc589XTpF44tPBHDD067aHS4goZjbEvqI5Y7u81y5nc6cqsfPwZpac3SWmfcpUtthqMh5xTgZaBCGwTnSM9gprXSjnZeOi1zq587Pa2n6zXXeHbZ7NSnGfC0R9CNeVDUVb42GRXGOjpembM+DT9Zrptitki9yXWGHGm+rRrJcO3PFe9gnbDrW2587j43xD/D8i8jglAyV3dAx/oB/PULbuH3b1dHI1ofL0do4elLb0IT5tzk9w+ob1C8RWF6yQhJkPR3UlQThvOf2irPxdc3eEeALZbbUosTLgPvjqdlAYBUQe85Az2CtKlSUF6srtmVKlGb1WiHkm18EWl3wa739RljxVpQsHSfKlKVFPmJrVc+CYM2AbhwncUXJpI3a1pWo+QKTtn+6QDXH0tNhO4BPeamODL0/wzf48yM4oMLWEPt58VaCd8jyc6zcasfWUrmyVKXq2sS7O2QU6SNiDzFcW4t/wouvxlz7Rr0Z0ossQuIGpMYANzmutIHLXyPz7H5a848VK1cS3M98hf2jWGPmp0YyNuzabhXkvAjKWkFLXkHtlx4N4Sm8V2l6Nb34rTglIOX1KA9oruSe+u3dFnQVKgpvCOJn7c8zNjdUw7EUtTjCyFAqGpCRyVVA6DJUaMw+qU82ynwlHjLUE/mnvr1hwvc4MtnRCmMSFoSCoNuBRA8uK55ya0N4rS54T6ReCrlwJxE7ars3/eYfSPEfb7FJP1jsNVfevSP9KbpDs12bb4XtsZibJjO9Y9NO/UKHNDZHae3s7OfLzfWkW2tSJJJ6FltEe6LtqFN+DBk56sOqwojPdnlTgwbqvmIGf1//AHpsw9myxUKGQM1beMuGbPaLHBl225qlSVkJdQUAJOQTlPkGMV68INwVruyX1scE6kYys7JvYrRt12T7x+maxMO6Hsg/TNSlxtECJw1EntXHrpbpHWMaAAnPcc747dqgDFekDUwUBPlIFE4OOmvx/gIVIzV1Y3Kh3MdkL6f/AL1h4Fcz2Q/p03VClI5lv6QrDq3+WUfOKyfjf4/wa/AeCJcEEahEH+3/AO9Q10S+mYpMnTrAGCk5BHkq2HgriVmxt3t6zzE21RwHuqPz4548tVa8uByYCn3AH7TWNSSlDRlxTUtUMRU5wdEcm3xLDRSlS2H0gqO27Kx/GoOrL0eOhrilhSlBIDbuSfg1VyPY2W507gDoNvT95t1wkzLK7CaeSt1lS3SVp7Rjq8H56w/pDdFb/C072bs7RXYHQEFKASYyu4/3T2H5K7t0cXe2qjMoNwi9arASjrU5J82addNnH1o4N4VkMz2WZ0yY2ptmC5uHMjBKh7kVjnlc1cVY8IisxQ4sLWpQSEhRzpHIeSgeSupHOza2N99qvN9kuxeEuHLbDJEV9lUl3RzddUrBz36eWKpC3VPK1OYzjGwxVvlSl22zcLojAOOo1zBnfdS9kjuG24769XCWTdvrVHn4pNyp35/RjBl5y3uyINxjyRFdAC23EdW4ntCgk8jVlIio6Kp5t65GhV1bCuuAST96O2xO1QfsxcZkpMZlltvQDhD7aHSkcySpaSQKnZpkf9mkvwpcZavZJsgMJQBjqzz0ADNehZNX3NaMXq7WI3hrg9y+WCbcBKSy40VJjsFvJkKSnUoA5GMDHYaj2bCXOE3734TjqpKY/U6OeQTnOfJ3Vbo/F1msosENiOqV4A2SuQ27pT1jn4TbHjc8eaom8zbajhu7QIMxtzrLil9lKTzRg/VnFQ3c7oU42NvFqramLwwu5eGOO+xLJ0tacKGVbFROR8xqsuvLu8uVLkofShI1BMdorSgckp5gJAAAz5Kt19Et238ONwjCP9ltApfQ0pROVctYJqutXqc2h1lyHqUwvX96bDIQrBHjhCQCN+2q9nc3lSjm9b8vAWa65P4Iaelq1ORZPUtLVzKCMkZ7hVRVzq0yj1/A8dWdPg0pSCkbBWoZz59qq5VjOO3avPxrTkr8IzqxtbyRgaSg70GvLZiO7VHVLuMdltSUqUsYKuVdv4E6HbrM40Yuk120v2rwpbjzCluFS0EnbGjGd++uM8MLSi+RFLICQsbk17T6PrrblhEdM2MHyspDfWDUTnlisKja2NYK5566e+jGTwSYj9ubcesLjiy27jPUqUc9Wo/Ue35641569vf0hOPrXwrwhItUhli4XC5NKbbiOjKEpP56/N2duR2c68RHenTbaCa1LF0fQkz+Lrc24nU2lfWKHkTv9eK6/wAdoZtPD866wFuQpiUgJVHXoC1KIA1Dkeedx2Vy/ooUEcWoPb1KwP2VfOlpTi+D14B0h9sq82/8cV4HaF546nB7afmeTiJP0mMb6afmcRzvvzpaKTzV9EemWXgrgjiHjWW8xw5blyiyAp1wrS2hsHllSiBk74HM4PdXZbXwHYOiXh5PE3HRZuN9P4pbkqCm0udg/vEdp5DszzqodDfSLbeF7HdbHfUvohzHkyEvsDKgoAApIG+Nh+2q90v8Zsca8TNy4LbzcGMwmOyHTuoAklRHZnP7BUO70LVlqQHF/E1y4svj90uzut50+Kke1bT2JSOwCmNmkqh3KO+hxbZSoZUg4ODsf2UyrJHtk+enKKcXF7DpzcJqa3TO0TIMVyBJaba1KdQQXFEqUrbvO9cYcSUOKSeYOK7TGWRHaCtiEDPzVxuaQZb5HLWr668fsiTvNPwPrv8AFdOCjSnFW3/Q0iugcNcB3DiyyQEW6VBZUlbhPhCljmR7lJrn3bXoHoOlxI9qieESGWvGVu4sJ7R317E3ZHx8VqWThToHkJ6Prpb571vPEDi3FQ5bCllAQpCRoWSkHBKT2HHPfcHzTfLROsV1k227RnIs6MsodaWN0n+I7QRsRuK+htjuERy3KkMymHGGwdbiHAUpwMnJ7Nq8df0iuPbXxtxc37DRWjHgpLPhwGFyd/sjs85rOnJ3LktDm1jIF3ifr17T/o5eNwXNIVj+uq+wivFdkAN1i/r17T/o4HTwRNBGR4cvf/YRXZL/AOd+Zzr+qvIbReBuIUzBqRE0JdyXA7zTqz3Zrp12tMe4qbU8p1CkDA6tWP4VwxjjK8uzk67y/pcd0aEBORlWMctq7FcZ9xtjUZiDb3rgkJwpxS9xjv2OTWFVSz6fH/0zw0qbzZE7dRDwtDP+Pl/THqpPuUhjlIl/THqpn7PXw/8A0+55tZ9VJ7P34Hbh5wj9c+qptU5+Z03hwWBqK3AtD0dorKAhZys5O4NeCuNVarbF3/xv/TXuqPMfmWh1c2MYjxQsFsnONjXg7ixYVbo6QeTn/TXRh/6dS/gZ1fbhYqopaQUtZFF34N4HuHGFrQ1bZENlSZCsmQpYG6U+5Se6u1sdAsk9FMi3KdgniRLpeQ6wpRQ8gHKWyVJTg898bVUOgWdGiwAZL7TOZCt1rCewd9eqLfdbc3ZVz1zGDCZSVOPhYKEgc8msJtpmsVofOu4QpNunPw5zDkeUwstuNOJwpKhzBFW/oTH/APdbhjJ/y1v66kOnbje3cccaOTbRCbYjMp6lL+nDknB9ur6h24/ZHdCqSrpV4Y328Nb+utb3jqR9495zTIU1iIpAXnmrlimQRdPz3o4+f1U4uaIrsXq5S9DYIOc43qEXbLSs/jZ+mPVWSNCwtuFLSQ4pJXjxinlmkcVqQR3iq4bTZhzln6Y9VJ7GWccpZ+mPVRZBceqtrKlkqSKJ0NDVonFKQMR3PsmmabZZifxo5/XHqqUuelFimIbOUCMsA57NBoYI+dUz8be/XV9dPLEMvyvij/7tVMpn409+ufrqQ4d/GJfxKR+6VWr2M1uRBooNFADmnN1/Cs/ApptTi4nLrWf0Sa36GD9pGu5fj8jbH3w7fLTanFw/HpH65/O1dveedNxUS3ZUPZRsjMrkSGmW91uKCE+cnArqkToyt/g6BJmyVPY8YoACc+TaubWIf23b/jDf2hXoJLmkcs4FeL2pialGUY03Y+t/w52fh8VGc60c1rIpaujO0pH41M/4fVQno0tSuUqX86fVXWYfDUh91tEl1ttL0FU1tTeVbAZAOcb1Ky7R7Kt8NxUvojrVa1OlWjOdJUa4I18W1fMz2p4PsyLS7teO+mjf6HEv+zS0e+5mf9n1VW+N+CGrJbxNgPuutJUEuJcAyM9oxXY34T0e3wprqcR5mvqFZB1aFaVbcxv31Tekd3VwnKA3GpP108PjMR30Yylu0RjuycF6LUnTgk0nquUcUFZCsRS19Ofno6t50yQcZ8VW2nP5potJzdYW3+OR9oVhE3fGe49nkNZ2j8qwvhkfaFP7pMV67/AykOFi7uOpAJQ+VY78KzVo6Q+LLlxgm3XC7OZXpW222n2raQcAAVU7h+PyfhVfWaeThix2s9/W/aqWtUzS+5G0UVdOjjhGLxQ7LVOkvNMxgnKGQNS8/wB45A5dxqatWNKLnLYynJQWZjHgMq8PkJbSpS1IACUjJO57KuIlrSToWpB5HSSDV/sFhtfDrKkWqKlpahhbyvGcX51H6hgeSsbnaYNz1OS2T1na82dK/lPI/KDRhf8AENOn/lyg8vP8fyeNiFGrUc0c7mSXFMnU64vtAUomuk9Iifug4FsN8hp1txkYeCd9IIAyfMRg+eudcTw2rRObjtuLcQ4jWNQwRvy8tSfA3Ha+GFOw5zJlWh8nW2MFTZPMgHYg9qT/APz7qrRrwjWp6oUIWViBDo7DTq0wn7xdokCKkrcecAOOxOdz81Xldv6OLooy4938ACzksplJZA78JcSSPq7hSM8W8G8HZbsKXZktw6XJPt8J7yrYEeRIq5VrrQcaVmZdK01Cr/CgJVqMOOAvB5KV2fMBXAOIyFX+4Edr6z+012G8WSRcZUy6W2WJPhB64NqJK1k7kJPb5B8ndnjN4CvZaYVgg9arIPnrnx0HClGLRtgJRnVk4voNRQaKDXlHrEgN+HHQeXhbf2F1OdHfFVw4aN3YtSg0u4xVtLdHtkJSlSvFPYc9tQaf8HXfjSPsLpeHgFXBWf0Dx/5aqlq6LTIxalKUVLJUonJJ5mkopaZJLxZzKobbCiUqR5KwXMjkAF9ZA5A52p7CdQza4+G2+0k6eZ7z31J3SDcrfFjvzISWWXx4hUkfMR2Htwa9BRk4q76cHM3FMrhlxiMF5WB2YrBU1kbIdVU2/DlsxG5b0XQw57VZRgGmDs4IGkoRnyJqJKS3dvw/kqLi9kXvoj4Qs3Fduv104iuUqHbrUltSywkEq1ajvkf3ezvq1M8RcAcKjXwjw47cp6fayrmrISe8J3/hUZ0Qkv8ARh0knbaOycf7LtQ/RpZHr/xlbYLcYyGutS48jIA6tJBVnPZToU4VFKdR3SFWqSg1GC1ZZ0dInSC1J9npCZSrYsBGhyKoRFJ9yNseTOaLnfujfiw9ZxFw9ItNwVsqRbz4hPeRt/GumQLLx870iLcuiSrhd51bLsVUttUfwYgpwGdW22OQz+2vOvFdll8P3ubbZzRafYXgoKgrY7pORscgitVTpVfVSV/BmbnUp63dvEOl/guBwdcraLRNflwp8bwhtTyQFAZ8lVXhsA3Jefe0n9w5XS/6Qaipvg7VzFqT9YrmnDf5SX8Vk/uHK8uStc7karDc3LNfIVyYQlbkV1LqUq5EjvqW49v0/iO/G53V9Tsl9pCz3JyOQHYKrQ51J3kYdi497N/VRbW4m9LEeKUUlLVohmafLyq5WN1Nzt0KMw421dbesqjdacJdQTnT5weVUzUdIGTgdlOIj5YfbcHNCgqu/C1lTl4HNXpd7G3VFkumphMlu4PtpnPaGuqaOdAB/OP8K12S6x49vlWm4NOvQ33A4lTPt0uDYEDtyNqf3Aqj3c3mOy4/Clp1JcaVhTZI3GrBwoU3gp8Iu7k19txgkFbbaUgqOoFOvJIyE8ya9rI3PR63+XJlh5uKWmlvpD82vh1DMlx1y4YjaA6AlOQVchz5jtrdKsfDzA2duC19QJAQlKclB7vN21AQ8I4evaNYVhxoBQ5Kwo7in87xr/ZVdbo0Rm1bc1YGdI8pxj5aqeVJNL6u0exSs1dr6uRfEVzRd5jHgzKmo0ZhLDKDuQhOTk/OanYqp0x2U/Z3IzrMhKVvJdWEqZITpJVnmNzvvUfDU5aJ1wdajPyooKNbjKy0ps5CgkqAVjuI/bW6IXbdbLtdZTSYwmoU1HaxjUVHOQPciudeq3KT8/wOmktc0nzfpa3jsMOIpEWPb41pgvB5DJLjzyfarcPd5BVaNZKNYE7Y7K8avV7yV2cNWpndxKKKK5TI2R/xhr9YfXU5bryvhzjtV3jtoceiTHHEJVyJ1KxmoON+MNfrD6623v8ALM/4w59o1DWpa2Jji28zuIW49yuj6n5b63VLWo/3uQ8lVupSZ+RLd53PtVGUR2BkpwtcxZr7GmrCi22TrCeZBFWbi3j32atr1vYhhthzGVrVlWxBGPmqi0Vz1MJSqVFVktUYToQnNVJLVG2JGXKlMsN+2dWEDzk4rsFw6PeGvD7rwrb3Z/3T2yEqWuStQLLq0JClthONsA7HNcghyVxJbMhG6mlpWB5Qc12efx7wim5XjjCC9cV8S3SCqL7HLjgNsOrSErcLucFOBsAM99bTvfQ6Y26lD6MOE2OKb9MauTrzcK3wXrg+iOMuuIbA8RA7ySP21Zx0dWu/fctcuHzNt9rvM1UFxqWQtbSkjOpCsDUCM/LUFw/O4dsnEtgn2ziK/QFeCFU6WzHQVx5JBGEpyNTfLI3yMjt2sfHvSLDvHsFa0Xu73GNClmXKu5YSw6tZwB1LWcICR2EjfJqXdvQatbUZ8T8H2GRwleLvw0xc4q7LLTFkomkKDwJxrBwMHP5vlrlyFFC0qGDg53rsnSJ0jwpnB0qx26/XfiB+e6hbsqcwlhLDSN0thIPjKzzV24rjIqo3asxNpO6LqzxprjuIkx8OlJAU2ds47qphUVKJPM70lFZ0cNTotumrXOrF9oYjGKKryvl2FFSc844et2APwjv1ioupKaf7At/wjv8ACtmcaLJwvxjcYvBF24XjqDUGQHZTyk7KWdKAE57vF+WqTgdlSVgGTcPJEcP7RUbSirMcmPLOcXOMf71eyf6OLilcEzAD/ly/sIrxravyjH/Wr2N/RwUEcDy1cz4cv7CK3f8AQfmZL+qvI2scRcFLuSks2NapIcJDiY43UD7bn310gXFluMy7NcbircTq6t5wAjyb1yqN0cXtMpP9o2wR0va8jWFlOrOPa/szjy10m62K33VaFz2euUgYSdak4HyEVjVyuS10+IUe91cklwPU3S3qGROiemT663pfbUgKQ4hSDuFBQINQKOFLIkaRCPpnP5qbcVJbtnDpRDT1SUjSkBROB8tYVZRhFyXQ2cnFOUiUvdziRojwdeQFlBATnflXlmT0ZwptrSw9eS3ch4yV6PvGfcnt+X5fJVmfuL7yiXnlL35Z2+am63S8pKUnJOwArxJ9q1tqeiPNqYtyd0tjinEnB184eWszoDpjp5SWQVtEdh1DYeY4Pkqvc69RTGLvww5HEtL8RbqOsbSVA5B8nYf21wrpVUhXG89TaEoCghStIxlRSMnzk16ODx0q83TnGzR0Uq/ePK1ZkA5tYmR/rC/spqyROK7ivo0l8OtrDVvZkJfIRsXFLVvq8m3Kq07+QmfjC/sprfbh/wB37qf7zP2jXfY6iLxV26FjjpU4ZP8Arrf11SRV26F//wDKXDPx1v66p7Erc9z3ZMNUUGcoBrUMc+fyVCKc4eBwp0/8XqqWukmHFihc/SWSoDCka9/NiodVy4ccOerYz8VP8tZpaGjMT9zqj+FP/F6qzS3w+eTh/wCL1U+t7VomtrXEjxlhJwfvGMfOKpHSVxdG4YWmFBt8ZUx1GrrVNpIbycDCceMf2Vth6E8RUVOnuY1q0KEM89i0FFgSd1/aqWuKkKsMvqMdX4KvTju0HFedVcVXxqQq4uNKAWnBOhBGPgynQPkrqvBXGJ4q4cuTbjaW348VWVIOzg0kZxjxfNXbjOyquHh3l7pb+ByYXtOniJ5LWfT6R4jl/jT365+un1gOJErHvOR+6VTKZ+NPfrq+unlh/Dyvij/7pVee9juW5FUUHnQaAHFObn+Ga+CTTenFyH35r4NNbvYw+8jXcvyhJ2x98O3y03Fb7kCJ8gEBJCzsOQ3rRUS9plQ9hD6wnF7t5/1hv7Qr0Pa7sq3qlKbZadMiO5GPWDOkKHMeWvOdtfRHuEV5zOht1K1Y7gc13GLITJYS9GUHWlDIUjcGvn+2LqcJI+1/wvlnSqU3ytDqVqurEyZFSw7tHsi2XNW2FhJ2p5a3Y7EvhlyS8hCfYR0ZWoAZ8auTZcPux2bA08u1xk3GPAZfQAmEz1DelJGU5J38u9efHFJLXf8A8PcqdnOTsno7/k/3LJ908aLZuGEw2Uuy7aJPWIeRlH3xeR59q5l0gulzhmYcAalpOAMDnUyNY5pV8xqrdIM1puxuRnHAHnVDSjtO/PHdTw85VK0F4r9B42lChhKr2upb+N3+b0OWCloxRX1x+XjiCB4SOftVch/dNLafyrC+GR9oUkAEyRjOdKuQz+aaytO10h/DI+0Kr7oo+2/w/UxuH4/J+FV9Zp7cD/YVq/3v2qZT950k/wCkV9dPrkMWC0n4b7VS+hS6kVXUuhF5KXLu1qwsoQvHkBx/GuWipzg6+GwXxqUQSyoaHUjtSf8A8zXPi6bq0nFbmNaDnBxR6vj8JzLja4Uu1Oty+vVodQk4LJ8vkrDjC4RLJbfuas5Q4QoLnSSAStwb6R5v2fPVSsfE8mCwuTZJ5DUlvGpByFA9vkI+cVXLhcmYUd2VMfCG07qUo7k93lJrw42taC1ehwJxStFavR/XiVvpDka71GTtqSzv8pqsqXkb02uN4TcLi9LedSCs+KM+1HYK0eHMfpU/PX2WCSo0I05PYfdNdB2QnPKsHUgoIFNvDWP0qfnrEzWP0qfnroc48jUJcF84N4nUQiFLOHk7Nr92O7z1r4/4fauyXLnBSETgNTqBsHh3/rfX56oDkplPjJdGRuMHepBPGc828x1JSp0gp60nfHrrpeNoVaLo4nps0cnoNanWVbDacordBooNeAe6P04+59z40j7C62cNAG4uZ97vfu1VrSP+7zp/1pH2F1t4Z/KLnxd/92qp6FdSIopRQRTES8YlcBpIGcVJ3a9z7hHbZkHKUnUT7o9/7aqoddbGG1qT5jQZT36Rfz11RxbhFxV1fcylh1KSk+hPyblMkQ0RnVZbRjHlxypmFKSn2gPnFQ5ffJ/CK+ek69/9Ir56zni3N3ldlxoKKsjtv9Hqe1KuPEPDUrS2m8wlNt+VaQcD5lK+apvoNC7L0nORripEd5lh5pYcOnxhjbeuBWi7TrTc40+E8tuTHcDjaweRFd9Ui29LNvTdrM+1C4qZbHhUNatIdx+cD/H5DjnV4esnmhLRSIrU2rSXQ7GIymekaZenLpm3uwUspaMoFAc1DOEZ22SDnvJrhHSZDVxH0zSocBxL3hDjDeUHIx1aM/NvVbHDXEj15NqTbrh4YNygggBOcaio+KE/3s48tXGYbZ0S2h556Q1O4wltlLaEHIjg9u++PKcE8gMZNbSUaGua+ljNN1dGrFS/pA3NiVxk1boiwti1xkRQR3gb1ROGxm5L+Kyf3DlR8h52VJdkSFqcedUVrUrmSdyakuG9rkv4rJ/cOV58tUdS3IrtqTvY++xfizf1VGDnUneQVSIiQCSY7QAA57U+omR1LUsmwv8AJyRFaX2oUpZI+ikj9tZ+wDuPx2F/zP5K6Vhqr+6zmeKpckLmsweWKlTYXPfsP/m/yUosLnv2H/zf5KqNCqvusXpNLn8zXbLvPt2RCluMhXMJO3zVLvzIF6aQ7PfXGuCUhK3NOpDmORPcajRY3B/lsP8A5v8AJWfsKsf5dC/5v8lejQqVoLLKLa4I76le/wCjNk96HFty4UF1T6nlJU86RgbcgKdiTbbtAjomvKizWEdXr05QtI5Z7jUYqzrz+PQ/+b/JWxuyqxvPhf8AN/kqnWqOfsacHRHG01vt5Mk03tixQHI9gedMt4guylJxgDklI+XnVduNwlXB8uzZDj7nes5x5h2VIKsazynwj6X+StKrG579h/8AN/krCvKvUVrO3BVTtCM1lvpxrYiCaSpf2DX79h/8z+Sk9g3PfkP/AJn8lcTw9V/dMvSafP5kTRUsbG777if8z+Sk9hHvzZMRR7BlYz8pSB85pejVfdYek0+SOj7yG/1h9dbb0P7Zn/GHPtGsGkLbmpbcSUrSvSoHmCDyrZe9r1cPjDn2jXM9zoT0N03ayW3/AHn2qYsx3ngSyy44BzKEE4+an038i23/AHn2qnIWtm3w0NnQlTYJwcbknc1zV6zoxTS3IqzyFY8Cle9ZHoz6qPA5XvV/0Z9VdOmcOSoSSqZcI8dsISvrHA8Ekq5BPieNnvGR5a3wuEZ8p5TTUxhx5rIfbbLq1MkNrcAICMkkNqHi6txjurm9Mqe6R3k+DlXgUo/5K/6M+qk8Bl+9ZHo1equpXXhS5WqMl+U74i3iyChLunUFY3UUBIP90kKHaBST+FLjA65cyXHjx2jhb6nFqRggEEaQSc57uw0/TKm2UO8le1jl3gUr3q/6M+qgw5XvV/0Z9VdYY4FvLyGCZMZHWuFsFa3EpHjqRnWU6DuknAOcb4xnGhXB94bDSX1IZdWwt/q3HCFJ0nGkjsUTyHlFHplRfdH3k/dOW+CSvez/AKM0ohyvez/oz6q6GiwSy86hcltAa6vUolavb+1wACT81OXeGZbSp6lTY5ZhPJZcdC1kEkpCikackIK0BW35wxkUemVPdF3suDmngcr3q/6M0eByvez/AKM10yVw1LjPSOtucIRo6yh2Rrd0IVnGMaNR3PYKS6cL3S3wnJT62i0htThKHSfauJRjz5WCPJ81HplX3QdSfBy91txpWl1CkK54UMGpCaf+79u+Ed+sU94gSV25txzdaXQkE88EHP1CmEwf2Bb/AIR36xXVRq97FSNacs6uZ8Pf+I/E3PrTUZUnw+Pyj8Tc+tNRhrZblMdWw4nsfrV7A/o3K18Dy9RwPD1/Ybrx7A/HWf1q9d/0bZDTnBM6OhaVPtzVKUgHxkgoRgkdxwfmNbP+i/MzX9ReRVmL1NVcEZuc1ZW9pKevV2qxyzj5K7XcZFygsx2LTEQ+0lOklazkYpw3bI7bvWJhNhWdWeqHP5qfYWr8xX0TWM5xlLNYKVHI227tldan8SHc25j6dQnGEi9yLWpMmAhtoHKlpXnAq+kLH5ivmNNbjDVLhuNLbWQoY9qayqpTg423NJQzRaucP4CiWi43t6BxC86wHklthxKgEpX5T9VXm2cJQeAhLv3EjzT4jK0wm0/4xXYrHf5Ozc1zfjTh2TaJq1qC+qUcpOCMioK9cQXK7sxWbjNekNRk6WgtWQkevy185CUafqyj6y+tTzYSUNJR1RK8RX+dxLe1zJq/GWrShA5NpzsBXE+PJKZXFlwcQcpC9APfgYq+3q7IsdtVIcV/W3EkMN9ufdHyCuSuKU4tS1nKlEknvNd/ZdKTlKtI1wsW25sdufkJn4wv7KacW4j7nbt36mftGm7v5Ea+ML+ymt9vH/d66H++z9Zr1zvIwVdOhnbpS4a+Ot/XVKq2dFMxi39I3D0qY6hmO1MbUtxZwEjPM1T2JW57wfQ2+jQ62haeeFAEU2TGihZSIbAA7erTvTkFSkpUhJUkjIUBkEd4NAbc7UL+iayNTFptDYIaQhsHmEJAH7K839K7b8LjmS/IX1gLgcGTySRsPkr0ioKH5i/omuLf0gOract/VMIVNUCpZVsdHID569bsaq4Yi1r3X8nm9qU1Ohe+xUn79EEBS1EKKk4CPL3VIdDLTz9wujyF6GkRH1rTnmCnA28+9c9VHfRbW5xt7ojrdLKSfa6wAT9fd2GuzdEcu1R+BL5IlFmLLabcMh1RwNBSdO57M7V7naWISw08mt9PI8bs7C5a8U9Op5LmD+tvfrq+un1hGX5XxR/90qmElQVIdUk5SVkg+TNP7Af6xK+JyP3Sq+Rex9OtyJPOilNJQA5pxc8h1vP6JNN6d3cYfa+CR9Vby2Mbaje4D+uOqSPEWdaDp05SeRxTet7ch1DfVpV4mc4IB+vzml8IcxjI+iKl2buEc0VYb0ZNby+4RgqGP1R6qC+4eZHPPtR3Y7qVkVeSNAJ76XUrvNbuvX3j6IpC8skkkZPkFLKh55GrUe+kHPetvWryDkbeQVl4QsciM7fmijKgcpM00lbuvcznUPoil8JdyDqG390d2O6nZC1MoSfHW4oDQhJJJAI5Y7fPS2r8qQ/hkfaFa3X3XEBK1kp7hsP2VstX5Uh/DI+0KG1ayCKd7sJ349I+EV9Zp9ct7BaP999qmM78ekfCK+s0+uH5BtP+9+1SfQpdSJopaKZJJ2W+z7Oo+Bvfe1bqaWMoV8n8Rim93ucy7Ph2a8V6faoGyU+Yf/hpnRWfdwzZrahlV81tTHTSaazoq7DuY6aTTWdFFguY6aUDFLRSC4UGig0wJJP+DbvxtH2F1nw1gXBwn3u9+7VWCR/3bcP+to+wul4d/HnPi737tVLoV1Isc6U0gpaZIYFIQKKWgDHSKCkd1ZYopBcwKa3QpcmDKbkwn3Y8hs6kONKKVJPkIrUaKLDudFe6Y+LnLOIPhUdLvbLSyA8R9kHyhOfLXPZDz0p9x+U848+4rUtxxRUpR7SSdyawopvXcNhRUnw7+Ul/FZP7hyoypPh38or+Kyf3DlTLYI7kWOdTr6v7ZtJ7kx/rFQfbUvNUG7pblrOEpbZUT3Darg7SRNRXg0S61DUcCpfhazJvkiQ0qUWVNN60tob6xxw55JTkZxzON8dhqJEd5W4aWU94TkGnlpuFwtDy3ISNLihzUyF4xyIyDg19JUzteqePTcE/WJ+PwPcXZTKcobYcKCVOrQhZSSkKUlGrKgNQ/wDatjnAVyPX+DvQ3dLqG2UiQjL2pa0ApwcbFtQIzsQe403h8a3qNAksuIdekO7IkOc2hlJ8UY5+KO2o2Lf75H0+Dyn0lJBT4g8UhanARt7paz/tGsE67N26A9PBN8UlWhmOsg4SlElslY28ZIB3T4w3G1ZDgm6dSVqVGGPG1+EtdUEAKJUV6sDGk02TxJfES0SHH3yoHcJTpyCQSNhtnSKcX3i263RS0tIXFjLa6osoGQRgg5OBzyfnp/59+glKhY03Pg6722IqRNYbbbDxZP31JOQsozgHOnUkjVy2py7wXLW4hm2rXKcSpSHlrb6plCkgE4cUcEDIG+N6i7jfL3c4vg86S+8zrLgSpA2UVFRwcZ5kn5a3N8T8QMKQWpLqSkYJDSfG2A8bbfYDn3U331ulxKVG45TwTeQ/DbdbZR4S+2xhLyVqbK9WkqSDkDCFnJ9yaS48MKhSOrVK1JVMRGbWWynUhaNaXME5GUkHHlpq3xJfkqWpEuQha0hJUkYIAStIwQNiA4sZHuq0Sbxd5QZ8KkSXi0pK0KcGo6kggEk7kjPbSSrX1Y3KiWC5cAT4bT6vCYy9EhTSSVhCVNgEl0qJwlO2N61wuj+7PtTOs6pqQ02lTLHWoK3iX0MggashGVnx9x4uO2oRi9XmO4tbch861FSgtOoKznIwRjG52p4ni7iMAhM18K1BWoNp1DCw4BnGwCwDjlmpar7XQ1KhvY0X7h6RZoMd2YtHXOuLRoQQpOAlJCgoEg51fsqCUPFNSt0ul0urYbmqcdQletI6sDBwBtgdwHzVHmM+EklpzGPcmtoKdvW3Mpyhf1diEuIxfn+/rz9qtF6/LM/4w59o1umrS7fXlIIKS+cEdvjVqvYxerh8Yc+0a+fra1ZW5Z6tHSnG5tmfka3f7z7VTkRR8Chk9jSeYzUHO/Itt/3n2jUzGP8AUInwQrzMd7K8ya+yLB9007qAwUQzGAwGPA2erBznVo0ac57cVqPE11wQ3JCFLBStTbSEKcJQpvKiACSEqUATuMkjck1DjJqxcELjt3aQVuNNSlQ3kRHHcaUvlOEnJ2B5gE8iRXAm77mSbvuR868z7poEjqVupWVhwMIC8lWo7gZ3USceWnSeJ7yGVMvyi9HKlKU06yhbeVYzlKkkdgq2NLjNcYrfZdhuKcjJjuONuoRiQlhHWOI1DT7bVvyJzipWXdrNJi3stpYEJIeTlK2/vzhQAklONWQrkU7c6uzfUpJvqc9VxRdlZKpeo8xqbRsdS1ZG2xy45v3KI5VhH4p4hZbSiPdpaDnJWlw61jbxVK5qTsNicbCtVqTZm2gbomep4K5MFGjHy71LrnWZnjliRY459jQ6kpblEAZxv3gDPLNJN8kpvoxuxxTdWJIeyz4QnSVKEZvJ05wT4vZnY9lYL4mu6oi4seQtiE6FhUZpIQyvUACSgDSTsMEjIwMYxXQoNztKb2ht5xGWksKmyFOM6lBKla0nbSoadjp35VE2q4W6829uLIRHg6Q7HiqbUnXgNgKV42ySRpAzzKlnmBVZX7xeX/kUocQ3EKeK323A8srcQ4y2tCye9JSR2d1YL4iuzzMpl6YtTUlAbeRpThaQvWM7divVypjNZaYlvtMOh5tDikpcAwFgHAV8vOm5NZ3e1zO72G9+INpBH6dP2VVGy/yDb/hHfrFP73+Sh8On7KqYTPyDb/hHfrFelg1/l/ib0PZM7AceyPxNf1pqMNSVhO1x+KL+tNRprrW5qzNpam3ErTzScipdF1b2K216sdgBqGFLWsKko7GcoqW5N+zTeMBDmPMKBeWx+Y58wqDNAqu/kLu0Tnsy17hz5h66xXeUEYCXPmFQprGl30g7tE1FvbkOUmREU424O0Ab+Q94qed4+WY2W7awmZy6wnxfPp7/AJao9LXJXw9Ku1KpG7E6MHuhxOmSJ8lciY6p15XNSvq8gpvRRWqSirI0Stoh47+RGfjC/sppzb/8HLr+uz9Zps7+RGvjC/sppxAP/d26eVbP1mkadCLoooqiDILUNgaXrV+6Na6WlZDuzLrF+6NTlq4ket7DLAYbU0FZcJJKlDtx3VA9lFbUa06Es9N2ZlVpRrRyzV0TTV8UjiBU/Ci0pRBR/c5AfVSXe/OXSMWX47acK1IUknKfX+yoWitHjK2WUM2jbb/EhYakpKdtVovwCpTh78Yl/E5H7pVRdSvDozJl/E5H7pVcktjpW5EUlKaKYDkVLyo6H7iylZIQlgLVjmQE5xURU6k5uH/2h+zWstjJboijMI2bYjpT2AtBWPlO5pPDF/o4/oEeqntmsMm7QLtLjuxkN25gPupddCFLBVjCAfbHyCn1m4cRcYsF0vLQZDj7ajp8VHVpQQSfLqPzVndItJshPDnP0Ub0CPVR4c5+ijegR6quCujW6DUTJjBAWlKVqCkhYONwSOW48/ZUNbeFpVzOYTzLjfXPMhe4B6tvrCeWwI5Us0R5ZEOJrg/xcf0KPVWRnufoo3oEeqrk50eOtwHHVTmDoeKC8ArQlKQvXtjUSFJxsK0K6O7mxHEma6yxGBV1i1BR0AFIBGB42StOMd+9LNEMsip+GrP+Kj+hT6qXw1f6KN6BHqqe444VVw5JJbfD0VyQ+02QDlIbWUgKOMFWMHaqtVqzV0S7rRjozFn/ABUf0KPVSCWv9HH9Cn1U3zRTsK7HBlKIwWmMeRpI/hTmM2hNztrjKdCXXEK05zpOvB+Tao6pKJ+N2b9YfvTS2KQznD+uyPhFfWakHWS/b7KyFaesWtGe7KwKYzvx2R8Ir66kUL+82LyOq/eCnLYFuMlyktLUhlhkIBwNaAs/KTWBmudjUf0CPVT2zWOVezdVxXIyBAjLludc6EakJIyE55q35CpHh7hlFztyHlOPKkPurZZaaSk7pTqOokjGdsDz91TdILMgRNWP8VG9Aj1UGas/4qN6BHqq1y+j64R8pclRQ71ZUlvJypQSpRTy7knc7UTujm5wnwzIkRw4XW2QlIUpWtRcBGAM7dUsk8sDbnSzRHlkVTw1z9FG9Aj1ViZi/wBGx6FPqq6udG8xOUInMKfbSpTyClQCMEBO+O3I83bTfhfg9i9x448KcElclLTqUhOGUlwI1HJBKfGHjDYEgUZo7hlkVHwpf6Nj0SfVS+Fr/RsehT6qu8Ho7dkITomtPqVAVJC4ykuNl0vONobCgcHPVkk9m+21QVssbbzEn2S8JirQ2HEOBCS2AeWo5zk9wFGaIZZEL4Wv9Gx6FPqpfDF/oo/oU+qrungJl1qU/HmFbISlMXC28yFnrOXjdnVEY51QCMU4tPYUk1ub/C1fo2PRJ9VZMLEl1LLjbY6w6EqQkJKSeR25/LTWnNtGbhF+FR9oU2hLccoA+5hw9vhjf2F0WDaW8f8AV3fsGhP+DDh/1tv7C6SxfjL3xdz7JpdCuqNWERYkZxLaFuvAualjUEpCinGOXME7+TGN84ia4N+qjegR6qfRYaZzljiLkMxkvp6svvHCG8vLGpR7hzqYsPD9vd4muVtnS2ZLERKgl9h/q23CCACFFJ2+SldLVg027IrJnLP+KjegR6qxExzOQ3H9Cj1VfpHRs31za41xQWHHFENkjrEtgE53xuMb5xzFN3OCItunvQ7lMfccbalLCorWpClNpc0gKPM5aOR5R5cLNFjcZIpfhzna1G9Aj1UeHL/RRvQI9VPW4cVqzR5UxDhXIkYQlKsfek+3PLnkgCrjA4HtRubEOXJePWrS71ja05DS3AhsAY3JG/PkRQ2kJJsoHhrn6KN6BHqoMtf6OP6FPqqzX3hFm0MWh96ehxE1beptBHWIQsaht2EAgEHkran8/gy3uXZ9u3znUs9cW22y3qUkay2CSOzIyT2CjNEeWRSRLWOTbHoU+qjwxf6OP6FPqq7fcRDZZkl+4KdeaYUdLKP8YA2QN+acObnyHson9HzcWUqMq8R1OlxLCAgZBcIXuT2J+9nfngjajNEMsikGUtWxbYwef3pI/hUla0pbuv3sYSuG+vHdmOvIp5xXYI9jhQOqddcfd6wOqWjSCUnHijtHl7aaW0YuTRPvB79w5Q3pdAlrZkEOdSt+GHovxVr6qihzqVvx+/RfirX1VXUkjusXjCVqx56sNp4bcuNuYdYmf16QXeojFJ++aNOQFe6OoYB28tVvfsqYg8SXSBBREiPoabQoqSoMoK0kkE4WRqGdI2B7Kbcugkl1JdXAPEhaQstRPHWUaTcWBgBIUVElekJAOCSdjscEjOk8EX5sSA8iMw+w2XVR3ZzKXsBaU46vXqBJUCAQNQ3GdqxTxxfkvKdTLbC1K1KxGaAJ06Tnxe0Y+UA8wKZr4nuy/wAI9HXlBbJVEZypOQQknTuBgYB5YAGAKnNUKtA3QOGrlMu8u2uussvxUKU4evS4nUB7QKQSConbGedZucJ3dDraW2lFpTKXjIdcDDKAUgkKccIQCCoDc8yBzIrQOLb6mc9MZuLzEl7RrcZw2SEe1GwGwxy5VstnE8uPeDOngzQtrqXWiGwHEDGAQpCk4BSk7pPIdu9PNPkLQHh4C4l8bXEaaKFKSvrZzCNBBIwrUsac4OnONQ3TkVod4N4gjsF2TGaYbTgLL01lHVknASsKWNJ8isHG/Lesbtxle7m864/JQAtxTmEsoyMr1adWNWAeWTyAHZWUnji/ynG3JE4LdbUFhZZb1Eg5BJ0770ZqgWgOVdH/ABGpDam2oi1LKvETcGMpA0eOTrxpOtICs4JUAPbJy2f4RusaJBW6EiXMe6pEUPIK0+KFArwrxDgjZWDjesvu74hDqnDNbKlbEGM1jGEDGNOMfe0bd6QaZP8AE93fMMrko1RFBTRDDYOQkJBUQnxvFAHjZpXmHqDxrgziB4/emoq0ZI1puUcoAAJ1FXWYCNj4+dJwd63v8A8RNJbwxHcWtClltuayVIIWpGgjX7clCtKRkqAOM6VYj3OLL0thbHhDLbSwUqDUZpHikEafFSNtzt2Zrd92l9LTjS5iFocSpKgphs5ClKV7nmCtZB7NSsczReoFoC3Tg+92m3yJtwERlthSUKSJzTiySSMAJUckEbjmO0VXCtw81q+epadxFdJ0Z+PLkh1p5xTq0ltHtirUSCBkb91RG9UnLqxO3Q2xRiS1+uPrrdffy3cfjLv2zWmJ+Mtfrj66334f25cfjLv2zU9RrY2Td7Lbv959o0sK7BllDT7KnEoGElCwk48uQaSaMWW3f7z7RpmmK4UhSi2gEZGtQTkVnOEJq0xTipaMlvZuP2RH/Tp/kpFXuOf8keH++H8lRfga/wBLH9KKQxFD/Gx/SisvRaPHzZHcwJMXljtivEfDD+WtovsZI2hvemH8tQxjK/SsekFCYqlf4xn0gpei0ePmxdxDgnoNxYuE1mKhh5tx1QQk6wvc8tgkU1durSHFJSw6QDjJcAz8mnatFnfk2e5MzYy4xcbzspYIIIwRTWWt6ZKefecZLrqytRCgBk+SoWGhnd16tueod1G/gP8A2Zaz+LO+lH8tZpvjWCDGdx8KP5aihGUf8Yz6QUeDK/SM+kFaei0ePmw7mHBKm9MdkV30w/lpE3lnO8Z30w/lqLMZX6Rn0gpBGV+kZ9IKPRqPHzY+6gOLlPMsJQhHVtJOrSVZJPlO1Zyz/YUD4R36xTNyOttOo6VJ5ZScgU+mAewNv+Ed+sVtCMYpKOxpFKKshbAnIuPxRf2k1rXphsRihtC3XUFxSnEhQA1EAAHbszny1nYyQm4496L+0mlfZ6821oFIUtkJBUcAZcXzNV1G9jT4c5+ijegR6qPDnP0Ub0CPVU29wuqDxaqyzJLLimslbkVYcCsIKsJI2JOMU+g8GLvTrarc4qGl5xKG2ZiFawCpCVKKgMYBcHPBI5ChuK3Ek2Vbw1z9FG9Aj1UGc5+ijegR6qvEfo8bXBkvG7MPANNLaW007hKnNBTqBTnBSvs5dta09Gs12S2w3NiofUkr6pWsnSlWlSs6cbHs5nspZ4jyyKV4a5+ij+gR6qTwxz9FH9Aj1VcbFwE5P4iuVsdkhSIbIUXmhsVr0pbHjYxusEg7gJV3U0b4NelXg26M91b6YiJBQ4hRUVFIJSAAe2nmiFpFZMxztbjehR6qTwtfY3H9Cn1VbGeAJT7qmm57BcCigJUy6kFYTqUMlONh28jyGTTg9HEjqozjd2hLTIUtLelDmVBJcGQNO51NKGOfI8qWaIZZFL8KX+jY9En1VujOJlPtsPNNAOKCApCAkpJOAdufmNNpTK40p5hwELaWptQIwcg4OxrZbPylE+GR9oVZNzJ05sjXxhf2U1uhf4P3L9dr6zWl1OLEyf8AWFj/AIU1uhKxw9cR3ra+s1JZpfV4E+thDbZKPFUpaQrUe/flWvwpf6Nj0SfVUxCsNx4jv06NaIq5L7aHJC0J5hCBlRrTYrA7emnDEdT1rbzaFII5IWSNfmBwPlp6InVsjfC15/BsehT6qy8MX+jj+hT6qvDfR8lS4KUSZDglMqfS4hkaVJAJwnxsk7doFNJHBCGZDcNdwAnyJTkWO2WzpK0IbVpUfzVEuBPcCDk0s0R5ZFQ8KX+jY9En1UnhS/0bPok+qrLdeF4loYQq43Lq1vAKYShoq1DQhZz3e3AHmqN4ltUa1ORExZLkjr2EP+M3p0hQyBzpppiaaIzwlZ/MZ9En1UeEK9wz6NPqrTRTJN3hCjzbZI+DAqTtSUIlyFNApQ5AfUEn8370oEfOD8lQ1TlsT99P/lr5/wCByplsVErx50UpopjHNTjO9wVn3qfs1B1NsH+vq+Kn7Nay2Mo7og+2paEq8tW4eAeEmJIWpOlnKtRTjVsNx7YVEHerLYeLJFmtqYbDCFBLhc1lRB3U2cbfB/trN36FRtfUbPzr+oOJdXPHjpQoFChhf5qeWx8nbWiFIvVmbfVG8KYaStJeBQQkKIOArI2yM+cZq2WvpBS1GTHlW9lJWEtuSkpC3NHaRnB1YzyWBy2yM1q4k46al2qRabfFV4IUNNtyHUo60pDbKVhRKVKwSykjSpPbkHYCXfZorToyJ9luJ5LpmGW+VyELkAJUBlCSckJ7tz5963NjilcmNGQ9KU8tOoJC9WgE4yvGcDlz8lRw4hW3fYVwjxkJbioQ0iOtRUkpSnBBO3tiVE/rGpiFx281+MwkulLpeQUPKQQrUogHnlOFkY8g35glmug7rkr8s3m4JQ3KEx9KUqkpCkKPik5U5y3H96mQivGIqSEfeQ4GtXeojOPmq9yukt+QtpSraynRpe0tFLQ68HIV4qQSg4GUqJJx7YYGKqxeUttW5vwVJTEdL6gVbOqJB3GNgMYx56avtYl25G9ztE62SVR5sdbbyUpUU89inUDkeTetjliuTcKPJXEdS3IVpaSUnWsnBGE8yCCMd+asTnHr0pDirhbo70koUhDreGgMocQCpKRg4S5gcvajOd8u5XSKp9LjYtmGnnHXXsyVFWXc6whRHijKlaeeNs6jkl3lwFo8lBcQptakOJUlaThSVDBB7jUlFH9asvlUP3prTeZ6rnc35akBvrMAIBzgABIye04Aye+t0Q5l2TyKH7002JbjKf8Aj0j4RX1mpBlOW7H5XlfbFMLh+PyfhVfWakWT97sY/wBMf3gpvYa3Ih04cX5zUrAN6j2h2VAXIRBcX1TimskBWO3u54z5aiXBlxfnNWLh3ih2yxBGTGQ+xqWpSFrIC9SdO4HdUyu1oJWua4rfEEyYllJlh5PiHWkp0+KcAnGx0551uiv8RzLi+225L8KhoMh7UkgtpbCvGUMdy1Dfnq8tT0zpLLylqbs7TRGjqQlaEpa0jGQEtp3OOwgd4JwRWhxI6J65QYR1ioTUMgkkEIQhOo9+dH7anXgrTk0v3K/oLvWuzU5TrWFoPJQG5yORAFSKYXE1ptmNb0eOhtMwo16SkEpwcc+a0nu+Wl4i4wdu1tdgtxjHYce69RLpWoqJJIzgeLk7Ds7zzpxaeO5FtUFCEy8U9WU9Yo80Fspz3jLScjtBI250rS6Id1yQLaLxq8D1SWlxcOhheUqQQSRhJ3z46iP1jTpj7oYEKQGmZrceQ8EOgsnxnCMgYIzkg5FSK+NnfulXdWoSAjqUsNsqKBoSCDzQhI55/NHPt504t3HqmAx4Xb0SVNYGVLB1DxgrIUlQJwrYkHGOR5VWvRC05IE3K/L6x7rpuHElhStJAIGcp5cxk+Xc99NpFkuceN4Q9CfSwDpLmgkJOM4J7CBzB5VeDx7GTbnZSEv+zDpKNAAQ22nKyFeKcahr5hIyewYyqJtfGTaFwGp0VQjxi3ktnUHEpa0KSpJxnUAO0Y350k2ugWT6lOWlSFFK0lKh2EYNOLZ+UYvwqPtCsJ8lc2a/KdAC3llZA5DJ5DyDlWVt/KMX4VH2hV9Ceo5T/gu58cb+wusbH+MPfF3Psms0D/uu4f8AXEfYXWFj/GXvgHPsml0Ke6Nc0/1G3D/Qq/errG3QZs58s22NJkvKBJbjtqWojt2TvilmfiVu+BV+9XWVnt1xusrwe0xJUuQElWiO2pasdpwOyhbCe5I3WDxJY4cV+4M3SEy8VFkvBxvxhsrAOMH+FTVx4K4jiPPsiYXiw+jQUyNCFa0uEuBSiAnBaWk5/OBFVKbIlltESW46UxypKWnCfvZJ327Dmpf7teIFNSGXJodjyH1yXWnGUKQpaklKjgjbY8htnfmM1LuNNDlvgy+OQHHFsFKmlJQ2yt1GpWVEE41eKnIPjHY99MIlkvUmfKhstPifFUlCmwsAg748bVgAYznltTxjje/BzV17KnVYSpRjNlSkgkhGdPtQVHA9QrWOI34Tk4PQ0IuDzqFKUUJQlOkkkFGn22SMHO2OXIg9YayjFi23u5OSI7TUuaYJWpwNrLqW8ElRBBI3IJyOflqOD8htwqS+8leCkkLIODzFSEi7XJ6RPualr1TFrTIdSgBKlOZJHLAJ8blUVkq3FUkS31NgkvpOQ+6DgjIWe0YP7NqyclyHSlTsh5ZSAAVLJwBy+bNYvMOsFIebW2VJC0hQxlJGQR5CK10xamyRIfklPhDzrukaU61lWB3DNS1u/KTXxB79wuoWpqB+UWviD37hdTIqJBdtTF2aU/PgMt4K3GGUJz3kYFRAG9Tz5AvloJ7Ex/rFVFXkkOKu7CqtcFsaVPSHFDYqThIPmBBrD2NhH86T9JPqp7bUNv3SK08h91lx1KVoYGXFAncJHuu6uhTOB48lbiooMNrIUhDSHH3lpwvZLbmhQV4oyk+UhWNq9adOhB2lE63GC6HMPY6CPzpX0k+ql9joPupP0k+quqngC0puEKDIuEtDqFFErq4w1OArWEqTqcwFZSBpxjtyTtUavo/jsQGJsq8uojuMh9QTCSpQSoBSQB1uCrBwoEpwrYah41SlhuPzFlp8HPDboPupX0k+qkFuhH86T9JPqrpbXR2Gg4t6cpwN6gT4KQyoZWBhwOAlXiZKcbZG5pYvRo3MW74NfAW2stqK4yUqDgVp9r1m7feoZVvsg0rYbj8wy0+DmfsfB7VSfpJ9VKbbB91J+kn1Vd7Fw9Fn8PxXnIrup9UkOTw4QiNoDZRqHtdJKjnkT2GpV/oy6pqU4bwCGGyojwcatQBJyA4fEONlDJPakU8uHTs1+YZYcHMfY+F3yvpJ9VKIED3Ur6SfVXTzwHBhC4tvyZcqSWyxEQuH1WXy+01rA64ZR99GlROPbZT4uFZyujRhqAlKLk14QXUlLiwkOKbWkYy2HCkAHJKgo7YOeyp//Nx+YWp8HLvY+Bj20r6SfVWPsdC91J+kn1Ve2OEILPEF0ttwuCg0xCLzMhaQ0EuFSQnWNSgBk4JCiMHOdqkJ/AEJYS7abmpUfwdKkuKa1tqWlkOLW4vUOqSr8zZWTkHGM1WXD32/MMsODmnsbC7FSfpJ9VKLdCwcuvo8pwcfJ211aV0cxExGy1NeZcYDoeU9G0qdUlekHR1myNjhQyTkeL3c+4oisw7/AD4sZPVsNrwhOScDA7TvRCFCekY/mNRg+hWSwqPc+oWQVNu6SRyODWV+2vdx+MufbNOLgAL+78P/ABptfz/blxx75d+2a82pHJUaOWaSbS5N76ddstYPIqWP+OmEpRVJdJO+s/XUire32kf31fbqOfBXKcSkEqKzgAeWsluJq+xrzU1A4ffmWGVckE/e1JS00EkqeJWlJx5ioec+ao3wCXjPgz30DUpFncQRra9AjuzkwnU6Fs+MU4zqwB2bjsrGtNtLu5Ldb8dSnh633Yv4MewOFmnYQVMlSIs0SURVR1xiNKlAkZJPLCe7tp+5wQ027FZ8PWp15pTuENpUQADsBrznbtAqtsv3eM0G2UPoSHUv/g8+OkEA7juJp05eL+6hIcQCpKC2HBDbDmkggjWE6u09tcdRYjN6lRW/D9iHhsRfZ/Bm48MLXc7nb48lL0mIhC0ICcFzKkpUOZwpOvcb8j3VLngFgGKE3TrDIfWylSG048VRST7bJ5HsqAYuN9Yu/sqwH25+COuS0ATlOkkjGCSDz59vOlYvF/jxY8ZtACI5JaUqG2pxGSScLKdXMntoqektLLUX0tenOvxB4fEdIv4MlX+DWWXerduZQpbrbDQLG4WsbBYCvF7O/nTOTwwzAhpk3KeWUOBCUBtnWStSAtQO42GRv25rVHvHETLelBWdhhaoyFLTgYBCinIIHaDmtbNyv7SdGHFo0oSEuR0rA0DCSAUnCgDjUN/LRH0le1UXy/b9x+jYj3X8H+xpvdsjW+HBeYluPqlN9ZpUzo0jJHPJ7RUQKfyhcZLcdp9l5SWEdW2OrxpTknHLfcmtBgywkqMZ4JG5JQa7qUko2lK7KWHrW1i/gEMalOg8uqWfmSSPqpxN/INv+Ed+sU2hHDjuf0Tn2TTiZ+Q4Hwjv1itOpK2FsZwm4/FVfaTWFx/Bwfi//Wuls50t3D4qftprKS2l72NbLiWwpkArVyTlxe5o6g9hi2tba0raWpC0nKVJOCD5Keey1wyrM6USpQWcuq5jGDz7MD5h3VOROH4rPHItTMuPfIqdelyPrS2+Q2VADBCuYA2NTp4FiTmUvrlG0SVlCHYRYW6iK4QCesXqKm0EEEatR5gnYmhyXUFF9CiR7pPjk9RMkN5ASdLhGwGAPmApPZGbrSsS5AWkYCg4cjfPf310RPRtBQC85c7kY6HNKyu1loIAAJCypwaCezGoHv5ito6PIEt+XKZkqiw1rcaYQ82UoQAQEqC+tVqOx8UkbkchyTnEMsjmLsuS8t1Tsh1anFBaypZOojOCfNk4ra3cZiH3HhLfDq06VL6w5UO4mrRduDI9vesjXslJWu4OobX/AGesBsKCTlBBIcI1YKRggjG+dnzvR6208ltUy5LzlWWbelwYCQQnZ78Ic7I82SDkB5ohlkU1V5uBSR4dKwQEn76rcDl21rauc9pKEtzJCUoUVJAcOATnP1n5zV3HR7CC3W1317rW0a1Jbt5cIySBslZOBpOo48Xb21c/IwSKaakJpxEUVKUpSyVKUckk5JNObYNVzhgcy8gf8Qpsad2cf2xA+MN/aFMkV3fh9n4yv7KaWKD7BT/hG/rNC/8AB9n4yv7KaWMf7CnfCN/xqUaGU6S9FustUd1xpRUpBU2opJB5jbsrXa7pMtS31294tKfaUyvA5pPOi5NrdukrQlSjrJwBmtlts8q4NvOslhtlrAW6+8lpIJ5DKiMk77eQnkKfTUnW+g4+6SeGGm0oipW2z4OH0sgOFvGNJV8tOPuvuhZUhSmOtUpSw/1Q6xClIShRSrsKggZNYMcJ3aR1QZaYW44U6WkyWyvSpQSlWnVnSSRvy3B5Vtb4JvilyUuR2mPBi6l4vvobCC2ptKslR73mx5dW1L1R+sN3eJrg9HdZfLDwWAlKnGgpTfipT4h7MhKc+aoubNfmqaMheotNpZTtjCUjAFTLXB15dQFoaihKtIQVS2k9YVasBOVeMToVsK2N8EXx15hluO0qS80XkMCQ2XNISVbpzkHA5c+yhOPQLS6lbFFTrXCl0XFElaYzEcoQpLkiU20lWvVpAKlDfxTt2duKa3axzrSyw5ODCQ8lK0JQ+ha8KSFAlKSSNiOdO6JysjKn7YcPHy2x/wDduVAVYLcMOjPba3/sOUS2HHcrZpKU0UDHNTMfPhy/ix+zUPU3GSRPXv8A5KT/AMNay2Mo7kCEkmnaLfKXCXLQw4YyCQpzHigjnv8AKKe2W9N22Bdorlthy1T2Ayl19JK45znW2c7H1CpCz8Tot9ngW9cVp5tqW5IdK20qJCggAJJ5e1Oaht9EUknuVYml0KASSlQChkEjmM42+Y1ePuqt/sflMPE4N4b+9I0suA7rB7c7bdmO2pg8eWYoKV24rShlxphpbeUNJLzi9OyhkKStKT3dWOedpvLgdo8nMm2luOJbbSVLUcBI5k1gpKkqKSCFA4IroMXjW3ocS45DcadbJCHG2kE9X4pDfmOFb+Wo2wcRWuO2pFxgKW4ZWsPIAKktE6iMbZOoJPMbZGRnNGZ8BlXJVDGfSwl8suBlXJek4O+OfnoWy6h7qlNrDuAdON8EZH7N66TJ43sS3R1cB9tvxgnCEq6pSjq6wAnchSlHB9yN99tg44sQWZKY8ozutbUHlNpyAlsIKgNWMnB2x8tLNLgeWPJy/B7c0V0dXF9hDbTabeQjwZxlxXU/fFFWnkrXgZwTnG2o5Cq5yKuLb3REklsxMVJw/wAcsv66f3pqNqSifjll/XT+9NNhEZ3D8fk/Cq+s1IND73ZPhVfbFR8/8ek/CK+s1IM/g7L8Kr7Yoew1uRLmzivOaUNuFsOaFaCcasbZ7s1LWW7M2sXVL1thzjMjLjJMhJJYKiPviMHZQxtUnw7xQxa7MqIuKXHeuDiVkAhIynI37wCPlpNtAkmVMjHOk81dOZ4n4fVCW6ppbbjfVJDIYSQ42FOFTYySACCAVbc+RpjN4ssjsdLcS3mC4GAgONtBakjbLXjK3ScHxhjGTsd8y5PgrKuSgKCkHCwUkdhGKVtCnVpQ2kqWo4CQMknuq5N8WRfuhm3J5hUgyEMgBxCfF041DHlwRmpmHx7Zoq40hm0JRMbkMPOOBG6yhSSpQOoAHAUPan2x5Usz4DKuTmmhRIABydgKyWy6hxbam1haCQpON0455rocbimwswo7QZkmW2VHw1TKVLSoqJUoJKseNjkMY1duMnOTxrZND3g8WU07IL+t3QkqSlwk4G+O7sGPLTcnwCiuTmwoqycb3a3XiVBctTDjSWY/VOKcTgrIUog8zySQPkqt1S1RD0YU4to/tGL8Kj6xWgU4t35Qi/Co+sU2C3HCP8GHPjjf2F1hZTiQ98A59k1sR/gu58cb+wutdl/DvfAOfZNJbFPcwm/iNtx+hV+9cqS4SucG2yJfsm064xIYUyerSlRBPbhRAqOlJK4ltShJUotKAA5n76utlotEq6TnIrPVtONglfXK0AYOMb9udqnS2o3e+hcbPxJYGIyUuwy2qOxpDngrLi31dYg5woYB0gjzeUmsBxxajHmNGzR20rbYbYAiNL0hDelYJ2O6ypQVkk7Z5YqpLsN4TIQwLXOW44VBsNsKV1mn2xTgeMB2kZrZI4durTjiBAkuhtvrVraaUtKU4SSSQOQ1Jz3ZFTkix5pE/wATcTWa5wnUQIDjDxkh5KvB2W9tsjKRnG2yRsPLUpI404ekvS3JNrfeW8wtsKVGYG6kqGDgdhKSFg6tj5Kp8fhi9PTDFFrmtvJaLyg7HWnQ3gnWdtk7HflWpHD92dgwpke3yn2JiihlTLSlhS9RTo2HtvFO3PFGWOwZpbl1HGtgSqUhdoXIjvPNvNtrYZQGAkr+9gJ2UMKCdR8bGfJWiRxraVzNrS0uKdSl4hstqK9tKsDOMb7A4PaKpgst2UUAWuflbpjo/q6/GdBIKBturIO3PY08ufC13trhbkQnVLSguOJbQpRaSMZK9vF9sOdGWIZpC8Y3di9XdMmKl1LSWGmR1iEIUdCAnOlHijOOQqDrfMhyYL3UzYz8d3AVoebKFYIyDg9hrRWiVkQ3dhU3CTm4tY94PH/kLqEqdt29xa/8ve//AG7lKQ47kAOdS9ycDNyt7qtw20ysgduN6ie2pK/fh4vxZv6qd7NMadtSQQhkjKZkbSeWpeD8op5FuTsKYJTFxiGQPznCl0csclAg7eSqj2VL8JW9m5cQw4slC3GnFKyhBwVYSTgfNXc8dprFG6xF9LEi/LXJlOSH7gwp5atal9Zgk881h1qdICp7BSM4Bd79zViR0ftTWGphfftjK+r6yM83rcZJIzq3BAKTlOQc8jjnWib0ausJ65E18sFbuEmGS5oQXBskK3X97VlJIxtvzxP2il90rvX7pHO3aQu3CD7IxBFCtelGlJJ/vKCdSvlJpiHdJOJzAyCDh3mDzqTl8FBFpcmw5E1wMxRIcQ7EDe+opO5XsBjynyVMNdHAuseOuzPOoHgsZS3H2sIW67oKgSFkgAOoOySOznuRdoLfKhd6/dKoeqUkJMyNjnjrNqy6wJyfD2Nxp/C9nd5qdXTg8xLHJubcmQG2nerQ3IiFlahhGSoajoP3wYG+RvkbCn46PFOJZTEuLkh9QC1tJi40pwCogleDjPbjPkpvtFe6PvX7pFzJq5clyRJuLDjzhytRc5757u+tK3OtWVLnMqJzkl0nOedWJ3o3VEeeben9Y60y++WywUfe0dcArOo76mva+XnWb/RlKYnpZTIdcQmSY7muIptSdJVqXjJ8TxdlduezFJdoL3ULvX7pWipBJUuawSeZLmSax61ABAmR8HY/fKssjo4IjSpr7sxiOlLqmm0sBalaRlH5+SCM5yAR5awk9HPULfU/cFsNNF1az4KpSQ2gPHxVZAWr7yrKdsd5wcH2ivdH3r90rynErJzOjkkYOXezupClpQJVMjE459Zmoy9W42u6yYSnA51KykLAxqHYcdm3ZTKq9O/4onv7dB6+8mRd1OozoW9kZ7s1jffy5cfjLn2jWmL+MtfrD663Xz8t3H4y59o1wyk5SbZi3m1HCz/UbTj3avt0+4QwbxJXjxghRB7vGFMVbwbV+ur7dP8AhHAusv4M/aFcWL/oyPS7I/8Atp+f6FuGTUlYrcLreIcEudUJDqWyvGdOTzqNBzTiGp8SmUxNfhKlhLWj2xUTgAeXNfPLc/RJt2dmWdng5vwCNIkTA4FtB5fg2HAR9+yEntP3kfKTWTnBTBQlwTUNIUlxaUOlIcUEo1DAHPNN59lu8Bx2NFekShFdbQ2I7azqSpC1hYHMAeN85re1wrMnSFLVdZGG0rU66WfFSrCcpSpSwFbKHaK6FG+mU4ZVZLXvdPIjpPD7Eb2bLklxItjhTgt7upJ0oKf9vY9wOaLfwyiY9CS4842iRDMkr0bAhSk6f+H9tSyeFblNDCn7qXWJDLSivSSQVeNoUNWMgFKueDkb86avcP3A2hL8W6PqZS71LSFN6UnKgMBQWoasq9qM7A70ZHe9iu/0t3mv8eXJnI4OiRXLmh2c6oQ20rC0JSEuFRVskk740/PTJXDLEeXdW5UtxtMBIeyW/wAK3gDxf72tSE4/vZ7Kkm+HZcOQ/Fcvsht/r2Y4SlglDnWk6VZKwcZ1Z2+utEyyyHlKbXennnFOqiMocaGHFBCFkFSVqCRunHPcb4puPESY1b71L/g/Dw+r+BUxpPIVmklIyk4rSFA+1pQcA5rmsd1yh3FKU365JSAlIU+AB2e2rVL/ACHA+Ed+sVuuRBv9zP8Aef8A+qtUv8hwPhHfrFfT0fZj5I/McVpWn5v8zGzjLdw8kY/bRSXAaWoPlY/610tqJDc/HvY/bRW2SGnDbEvKKG+pAWoDJA6xeTitVucz2I7OduygpGNxVoTFtEXjVDNndN1tSVfe1SyiP1ni/nayEjB7DzxirHItnD5lpZfkW9ctcaefvJbQz1nVLLYJCiEkKwBgkZxgmhyBROcF51UVEcrJYQorSjsCiACf2CteRyq8cU2vh5t2L7FXKMrQgxilga0uuoIGtZUU6QsH2wyNjUxIgWttqfGkx7K2/wCCjVOYkRltoUEqPiN6iSTsnKd871OdLYeVs5dpGeVGkd1dEvdrsZ4ssbUOTCZtjiy0rS40vDaVDS6tQ28YE7L8Yad+YrdH4a4RdjvI9k1B3CUhS5jXikFsqWBgZGFKGP7vkNGZb2DK+Tm2miunDgSwuSXkR7m8tpvJWszIw6oAJOogE6wcnly7cU0bsvC71rUfCHNYUkIAlNB1COvUhRIwNZKdJAxnB22p94gyM55T2xjN6t4/1hv7QrbxHb2rVepMBh7r/BldUtzsKwPGx5Acj5K02Y4vEA90hv7Qqr3ROzMnB/3dYP8ArSx/wIpI35Dmj/SN/wAaVz/B1j4yv7KKSMP7Dm/CI/jUoolYfEFx4a4hny7M/wBQ+6h2OpWgKyhYwoYIpjars1FhyIc6H4ZEdWl3QHS2UrSCAc4O2FHby00u29zk/CGlt1sn3Iui3QZcvqU63PB2VOaE96tIOB5TTsmhXaZYbdxj4E/Hlt21v2Qa6tCnutOlTSFhQTpxsfFA1Z+SnCukCebOuEloNvll1gSm3ClzSt1hYyRzwI6UeY+TetCzXQsRXxbJxZlK0R3BHXpeV3IOMKPkFbUcN3xx+Uyiy3NT0VIVIbERwqZBGQVjGUggE745UrRHeROt8aI9j2I8q1pkOxurWy74QU4WjXhShjxvb8sjlWc3jx2UGHlRX0zm46mOt8MUWwSMa0t4wk9uxqvt8OXxxqK43ZbotqUcR1piOFL22fEOPG2HZUfJYeivrYlNOMvtnSttxJSpJ7iDuDRliwvJFsuXGiLw0lm8Wlt5lCUFCWXi1h0J0qXyOyuZT5BgimPE/EiL7FhIMV5l2O0hokyi42QlAT4qCBpzgHmaruKXFNRSE5NiVYIO7qP/ACt/7DlV81YIB++p/wDK3/sOUS2CJXKQ0tIaAHNTjR/r6vip+zUHU42P7RUP9VP2a1kREgeZ3q9cJW+yy7NFTMYbMtx95S3HHD7RCElKQARjJUf/AHqi9tTNo4cut3iqkW+Gt9lLgbKkkbKOMZzy5is5K6HF6k/xdw3bbPDjS2panS8+oKaSlQSlOT4oURjIG3M1Jr4GtUu9vJYkSIsQ3DwBtkkOOEqUhTagdspU2XCD3oAzuKrI4LuYbkuSW0R22WVO6itJ1gAHxcHfnzFPIXDd5TarNItsguKeSqS20hQT1SisoTuTutXVqwOe3nqHfktW4JR/gWALLKltzJAmJSkphFsrcZURshwpTjJ7DlO3YajuEeGYlyiuvy3FNusS2mVpcylsJK0g5PadztqSdts74j2uEb/q1MxNBQlK89chJSFJ1Dt28Xelh8E3uUFLVFDaB1mXHFgAFCFKIznnhJp36XFbrYsUXgO3vR21y5EuE54ImQsKSXQoq/ORpTuEp0lQ7CsDUME1znbsOaCkDkKQCqjFrdkyaeyMqKBS1ZAlSkPeZZP10/vTUXUnDP8AW7L5FD96aTKiM7h+UJPwqvrNSDA+92X4U/bFR078ekfCK+upKP7SxfDH94Kb2GtyHc/CK85q88CWu2zYKly4HhrpLo0DWSClslCQlC0E5OT7Ye1qju/hF47zUzaeHbjd7epyChTiAvCklQSkYxvknGd8Y8tRLYI7lrt1itLrcdcqC01MU/oeiqecR1bOThzSVkgk4GCo459oqOv9stEniC2Wu0oYj5S34QsFzbKEKUpSlLUDjxj4oTjfyUzncE3GI1HLSUPuLYDziEkAoOCSnc7kAZOK1/cPxBrdCYQ1NqKF/fm9iClJHtu9aR51AVC8y2/A32yFCnNXWRbbSzNeD/3mK664AyxudXirSSRsCSSPJUk3whaWGevmTJCGwkEBBRh/K2k62zn2v3xXPPtOe+0LD4IvEiMmS5HDUcpC0rUoeN4wTgb7nJG1a3OE7uFKCYmW05UVKWlOlIGcqBO2wzvRbXcL6aotTXAdunK1MPrYZai+M+pepLrwUsKIAGycoxjIA1DfOAcW+DrJKuRi+yfUOABw6U5QoFSgEJGVKz4vl58qpN5tD9qTH8IwFuFxtxGN2nG1lKkHvI8U5HuhUXgd1NRb1TE2tmiycX2a3WZUZuBLflOOFwqUtHVhIS4pAGk758XO+OdVyiitErEN3CnVr/KUT4ZH2hTWnVs2uUT4VH2hQC3HCd+GXPjbf2F1hZTiQ98A59k1mj/Blz4239hdYWb8O98A59mktinubmJ8q1uWadBdUzKjp61pxOMoUl5ZB38tPLTxdc4XEMy8uOGROmauucK1NlRUck5bKSPMNqiZp/qdu+BV+9XT7hafCt8xx6fHS8ko0pCk6gDkZ282alpNDu0ydVxy9JgGAqyWrqnietSy2ttTqiUnJKVAk5Qnz7+TGZ6RbslnS5ChqLbbTKHOrUlTfVhQbwQeY1ub8zqOTsKcscQ8NJlR5i4hakR3C4lLbOzmydPbtjTn5adxuI+HZSimW5gpjOJQpyP4oUkSShRAPjElxrGe0VDS4KV+SDb47mlDgehQ3dTzr6SesGhbgIJ2WMgAnAOajrXxTJtzDEZUOHJjttFrq30FQKSpSs4zjIKzg47BtVnVxFwki2v9Rb9c3rNTetnCQdOCrGeROTjszUJLu9ruFyS5MyG3beiOVpYH3l0adwBz9qRn+9Tsn0FfxHK+PZ8qe/Ict8NQejrYcZQFhPVqcW4rHjZHt1DOeQ+Wth6RpqkOpECEkLGE46zKPFCRhWrVsB31LTb3wo064uO0kMyWnUoaaZwWAvrR4ys75CkDHZimbd84QDkgvQVPJUhQAS1oBSTlKOfNOw1dtLT3R68lQ4juTl3momLisx9SAn70nHWY2Kifzld5599RWa6HdOI7BJsz0QN61oiKbYUmPoKVlbigBvgAakZPbprnlaRd+hEl4i1N28gXFr4g9/8At11CVMxNrg18Qd/cLokEdyEHOpK/fh43xZv6qjO2pK+fho3xZv6qOoEeKyQtTawptRSobgg4IrEUVRJI2eDIukx5pL/VjqlvOrUTjCRnfznAHlIqfunB99j3J6MwFzFMOFJdZUSCobKIzvgKBTnvGKrVtnuwHnFthKg40tlaVcilSSD/AAPnAqUXxbd1JkZfTrfLnWL0DUUrWpakZ9zrUVY7zUNO+haatqNWrZdFW9yQ206qICpJUlWQdPPzinjfC9/WOrEJ9IXnKc42CVHJ7hhC9/7prVaOKLjaoBhxi0Y6lla0LRqC9uR8lSo6QLj4Qh1yNFcPUutOak/hdaHEeN5B1hIFJ5ugKxHO8K8QqKwqFIUVK8YE5zjYK8qe5XKtv3J3xtQWwwXtIQoLYWFAasYwR27isZHGd4fYW2p5sa0lvUEAENcw2P7gO4FJG4yvceEIrMkIaAT7UEe15E9h223otJbBdCv8MXgXdEKMPCJZjokqDawQlKsYyeXNQHy1nP4d4plypUmVDlOPuqK3VAe3JJJ2G2xzkDlg8sUzPE1wE5yUhTbbi2kMkIQAkIQtC0gDyFCfmp61x1fGogjolYbSSUjcacqKjyODkqOc5ocZDTQ4f4PvjCYyWyp55xvrNCCfFynJGeRO/IGq/e4b1unGM491qdKXkLBOFJWgKBwe8EVMx+Pb5GcCo7jLQSNKEobwEDAG3zVA3W4O3KWX3glJ0IbSlPJKUpCUj5ABRG+zE7dBqolRySSaSiirJNsQf1pr9cfXW+/DF9uQ/wBZd+2a0Rfxpn9cfXW+/H+3bl8Zd+2anqV0Nx/E7X+ur7dbLJMahXR1TxIQvKMgZxvnl8lIv8QtP66vt1Yei6Mw/wATSnHmkOFllS0BYyArUkZx5ia48dVjSoTnJXSR2YGU44iDp73HYu0FKfw6ifgXP5a2ReIGIslqRGkuNPNKC23AyvKVDkR4vMV0pSknbQj6IpMJ9wj5q+N+1IL7j/uX/U+1eJxLVnl+D/7HOJfFHhUZuPLnvPst40hxlZIxqxvpyca1cz209Tx9MbCQm45SE6ClcILCht7YFs6jsN1ZOwq8FDed20fRpwi3JehOSNLYShaUYKeec+qtYdqRk9IP+7+DOVetbVQ/tf8A2OdMcZyW3FLRc3Eag2FJEY6CEAhAKdGnYEjlyJpW+M3mVZYuRaxnCW4hQkbg7JCABuAdhXXH+EOpXHSXGdL8gRkKCM+OXFI37hhJP7KZO8OIRIZQX2sOO9SFFI2VgHsJ766Hi5Ja03/cv2M1jJvbJ/a/3OVfdhILjSlXR9RbWhxJUytRCkElJyU74JPOnDvG7q2nGRMbbQ4SVdTb0tEEp0qIKWwUkgYOMZHPNdBuNuTClLjq6ta29lEDYHtFNktoBz1aPoiueXakYuzg/wC7+DRVqz1tD+1/9jmfsvASPw6vQufy1ibvCKSS+oDH6FfqrqCtB5toP+yKFBBQR1TZGORQCKhdp0/cf9y/6l+lYnmPwf8A2OAuPJlXKa+kEBwOrAPPcE0ks/2LBH+kc+sU9vsdqJxTeWGEBDTTkhCEjkANWBTOWP7EgH/SO/WK+3oyUoRlHZpHwlZyc5OW92Y2r8HP+LH7aKS47tQcfoP+tdZWn8FcPix+2isZww1C8rH/AFrrVbmT2MrNbZV2uLUKEkKeczjKgkAAZJJPLYGp77iLs3IdakM7JbcUFMrQ5rUlDqgB4wBz1K84OQBkA7A1yDLfgykSIjhbeRnCh5Rg8/Iaem/3XbTNcSAt1wBACQFOI0LIAG2Ukj5Tih5ugll6k650d3fwdtyMqM8vxw6Evo0oWlWNAVqwpWx2HdTF/gy7sIU5IERLYT7fwpsgqyRoBzurI5c61PcY354KDs8rCs5BaRjJOc404znt51pb4mu6GXGvDVltecpUhKhk5OdxsdzvUpSKbiYcR2Cfw9Kaj3FDaHHEa06HErGAopIykncFJGKiae3W5y7rJEie71rwTp1aQnO5O+AM7k0yq1fqQ7dB01cJjMN2I1LkIiPEKcYS6oIWRyKk5wSPLWhp11l5DrDi2nUHUlaFFKknvBHKsKKYAckkkkk8yae2ROq829PfIbH/ABCmVP7D+XLd8Zb+2KA6mLhzw+wP9ZX9lFEc/wBhzfhEfxoWP+7zB/1lf2U0sYf2HN+Eb/jUIsk7Zd49m4hnSZdohXVtbbrIZlglKVKGAsY/OHZ+zBwQvCN1hQGJke7KcchvaVKjpjhYWQDghetKkKGdiO8522qIu/5Tk/rmmmMc6eVMWZpl2+6K0qunh/X3FsyWPB3WEtJwwOr0akq1jV5sDYnlUpbOM7Nao0KGmM9OREdjFuS8kpWktqkqLiUheCUl9OlKspIScgZ25pkdlGO00siHnZfl8S2tcu3SG3i06iKmNIKoCXOsHV6VBWV4KT5ACKqF/fhSLvJdtjS2YalZbQskkD5ST+00w27KMgmhRSE5NhS0lLVkgasEH8Kk/wD/AC3/ALDlV41Yrf8AhUf+VP8A2HKmWxUStGkpTSUwHQqfSP7RPxQ/ZqAFT6c+yKvih+zWkiIlfqetPFt3tNtMGA802xrK92EKUCcZ8YjOPFG1QFPWrXOdt7k5uM4qG2dKnceKD3ftFQ0mtQV76Ekni27C3mGp1hbJa6gFcdClIRjBCVEZGfJWu38U3WA203Hea0NIShsLZQvRpWtaVDI2UFOLwrmNR3qGLaxnKTtz2rFIKjhIJPcKMqHdk0eJ7qet/rCT1oAV97TvhsNjs9yMU+Vx1fVtobW9HUlJycxWzr8VSMK8XxhpWoYO29Vcb8qcJhyDH68MrLOvq9WNtWM4+alliGaRozkkmisg2olICSSo4GBzNb3YEppTqXGFpLSglYI9qTyFVcmw2opcHHLtxWxph51wNtNrWsq0hKRk57qdxWNVSkL8esv66f3pqLOxwakoe02y/rp/emkyojS4/lCT8Kr6zUhG9rY/hj9sVH3D8oSfhVfWafsY0WT4U/bFN7DW5FO/hF47zUnb7/cLfCVEivJSwpYcKShJ8YEEbkd4FRbmzis95p/EstymQHpsWG87EZ2cdSNk9tJ26i1voPxxdeMuKL7SlLGApTCCUZSUkpOPFJBwSOYrBHFd3StaxITqWtTivvSd1KdQ6ez3baD8mKhS2rbxTucDbmaA2o4ISd+XlpZUPMyzK48vy220KejFCAAB4K3vjGCfF3PijfyU1lcXXeTFdjuvNFDyOrdUGEBTieQClAZOATjuycVAgEkgA7c/JS6VaQrBwds0sqDMySvd6lXgtKlhvWguLUpCca1rWVqWRyycgbdiRUXTkw5CXksqaUHVBJSntOoBSfnBBrWqO6lZQptQUCRjHdzqlZbCd+pqoxW6TGdiuJRIbUhSkJcAPalQyD8oNaqYhKc238oxfhUfWKbU5tv5Ri/Co+sUhrccI/wZc+Nt/YXWFn/DPfAL+zWxP+DLnxtv7C612b8O98A59k0lsV1MJgJh274FX71dYW+BKuM1uJBZL0ledKAQM435nanjNwk2xyyToKw3KjJ61pekK0qS8sg4Ox3pzD4omsXu4Xh9LUi5TNRU6tIAClHKjpG1Tr0G7X1MG+Fry5ATLRFbUypKlYElrrAlIUSot6tSRhCtyANqh0tqUMpSSM4zirbL45lyXm+ritMRktutqZbwNZWlaclWMnGskA7Vpg8XSIFrjR4rTyH47DscLRIKWyhZcOS2B7cF1XjZ5bY7aE5A1ErsSFJlyUsRmi46oEgZA2AJO525A1pSkq5A8s8q6G70pS3pXXvQVbDKUIfShIVpIIUEoGpvfZB5d9aLj0kT5n4NpxpJbU2Uh4AHU2tH5qE5ALhUM5O3OknLgGo8lNl22XEkiNIa6uRrLRaKhrQoK0kKTnKTnvxWiVHdiSXY8hGh1pam1pyDhQOCMjY7iuh/9qLiX563LUpSpZcVlcrVjrCtShujcZWcYwQABnnmtcWcUHiFqOgxVslla1ZU9r2Uoq0gBKQAMnnk+WmpSb1QNRtoV2ikxigVZAVMwRquLfxF79wuobNTVv8Ayi38Re/cLqZFQ3IMc6l7u049MhNNJKnFsNJSkcySMAVEDnVjQc8R2T/7b6xU1JZIuXCKhHNJI3jhdlsYkXHDg9sGmNafkJUM/NQOGYh5XJ7/ANKP56lnB4xrDNfN+n4l/f8Akv2Pd9CoL7vzf7kWeGogO9ye/wDSj+eg8NxOy4vn/wC1H89Sg3O9XCz8Jmdws5dQpwLD2EICcgtJUlK1Z78rGP1FVUcZipaKfyX7CeEw63j83+5ztPDMU/8AiL//AKUfz0v3MRf85Pf+lH89dDj8PxHZ16iB91UiI840wygJCndJVvuQCduQ3oa4EuTz5bbkRl9WCXykn7zgJO4xv7dPLNWsRjGrqXyX7CeFwy+782c8PDEQf+JPf+lH89Yfc1GztcHj/wDbD+eulHo+ujbAdkOR20hawvK8hKEqWkryOYyhXLfl30zuXDiI9ianwpbbxSjU6jJyQVYCkjHLz70ekYxK+b5L9g9Fw3HzZQTw1GHO4Pf+mH89J9zkT/OL/wD6Ufz11tzo+QG5TjE9LqjGaXEawApx1S0JWg9wSVjf+8mo2DwOp+bHL8xgQXVBCXWycuKysaUgjY5bVz22qu/xl7Zvkv2F6NhrXt+Zzf7m4gGTcXv/AEo/nrH7nImM+yL/AP6Ufz10KdwTKtdslS7m4AEx+tbShW4VqRsrv2V2VUtuzlUzxeKhvP5L9hrC4eW0fm/3Ir7nIgGfZF7/ANKP56PudiqBCLksK7C5Hwn5SFE48wNSpNa1DY+apWNxHv8AyX7A8HR935v9yplh2Jc/B3xh1p3QoZzuDWV8/LVw+MOfaNPeIE44plfGD9dMr4f7auHxhz7Rr3qE3UhGb6pHj1YKEnFdGOVn+z7T5Fq+3Vn6KTjiC4/Fz+8TVWXvBtX66vt1O9HVyi23iGT4a6llD7SmkrVskHUDufkri7ThKeEqKKu7fqdGBko4iDfJ14GlGSdgSe4VHpuluVv7IwwPhRW1jiC3QpDTzdwhKcaWFpCnARkHIyK+AVGd7OL+B9c6sOV8Saudqk21T4kdWepcQ0rQrVkqSVDHfyPy08hsSW0vRGpcNJKOseQoKX1eMc8JO/jD2uahjx11zKWlXWKgjH31tzQsgatiRjbx1U4TxvFbbKRMthSoHWnrVDWTjc4UMHxRyxXZGnTjO6Ul+DMHUbWrRPsQeIFPNOolN/fG0PocJJSQVlwHGM5CsnGM7+WtS2rmmMtQkQ3QV5CG2ik5BA1AKQMbkDv8lV9jpASwShE2AWvEGgqyPFTpGN8jIxnffA7qVPGzAQlKZ9vS0lWtLRWVJSrbcaiTnbvrZ5bW9b5kKWt/V+RKyLJMckvdfLhpf65LakkrJUpZ2IISRg79vZTdVnWplS2pcV06lIQhPWJU4UpSpQTqSOQUOeM9maizxq2txsm4QVKQtteSQCSgkpzjz1uPGcPqihLtsQoqUtLnWKKkKUkJUQVKPMJHPOOzFZulSf3X8y1Ul7y+Q2GTuKz5JOe6mJu9tA/KMLzdaKQXi2KCtdyhpGOZdFcPc1H91/A272HKOQcVf4ZX3H6eR/1UwmfkO3/CO/WKdXqUzO4lu8uOSWXlvuIJGMpOoimcvJskD4R36xX6RhouNKEXvZfkfF1mnOTXLC0nDVx+LH7aKWS2XzbmkqSFLZCQVHAGXF8z2UloH3q4fFj9tFJcSkNQce9/+tddHUy6E7D4UDXG6LDdp8YNgqDsqG6Hm0gNlWoK7QMb/LUzO6N3WYUZaLpBaeAIlGU91baHCr722lWDuU7nOAMHJGKoDLzrTgWy4ttYBGpCiDgjB3HkJFOoN1uUBBRCuEyMgpKClp5SBpJBI2PIkA/JQ0+gJrqWodHsuQ86i3XCHIShDawpSXW9epCVq0kowdIUM4OcY23xW9HR2uW9D8Bucbwdxplbjy0O4OtSUktgtjIGobEg1V2+JL22wGU3i4hkJSkIElYSAkYSMZ5AAY81ZvcU399LodvdzWHSCvVLcOojlnffGB81Tab6jvHgdzOD5seAzMbkxX2XZSYqAnrELJUV6FYWlPiq6tWCCfnziUd6Op7EpSFT7XKZaVpeXGkkhByQEklGQTpONqq82+Xacwlibc5shhK+tDbr6lpC9/GwTz8ZW/lPfRJvl2lPKdk3Oc66rSFKXIWonScpySew7in6wrxLeOjp1cZwJulvalsvqQ/17y0tMJARgKUWxlWV8xkYqOd4FktRVyHbtaksstNuvqCnldT1iW1IBw34xPWp9pqA3yRUUjii/o6nTermnqQQ3iU4NAOM4325D5hTZi93WM8Xo1znNOkAa0SFpOAkJAyD7kAeYAUWnyO8eB3xJw5J4f8ABhKlwH1PJCtEZ7WpvIBwsEAg4NMLOSLvBxz8Ib+0KSbdJ89DKJ82TJSynS0HnVLCB3DJ25CsrL+Wbf8AGG/tCqV7aku19AX/AIPMD/WV/ZRSxj/Yc39dv+NIsf8Ad9j4y59lFEY/2JN/Xb/jUopkvbV2JviGeeJkT1wy26GxCKQvrceITq2055/Jz5U+4NmsN8PXlrreqmrU2W9M1qMrSAvO7gOoZI8UYJ2qr3b8pyR/fNNcU2roV7M6RDuNgQwy6Vxevmx1OSUlP4FaUhIRy7SCrbvqWautrXfZfh8uG8+XJRgrjyWmlNslpQSkvEFCSVadIOdOFZAyM8gzS0nBDzs6nGn8OBCW7stnwlpqQsudYl5TmpX4NbiBpUrGCFDbI7M1jbprBu8xb1wt7kRUZabeiNLajOtp1t4AWtJS3sFeKrfZW2+Ty3nRmlkQZ2OLhqM+SVq1qLisq1heTn3Q2PnGxpvS4oqyBKsNv/DJ/wDK3/sOVXiKsED8KnH+a3/sOUpbFRK4aKXtopgOKsBP9oq+Kf8ATVfFTx2uB+Kf9NaSM4jWy3160wLtFaixHk3FgMLW80FKaGc5QfzT5al+F+JIVqt3Uzobk4odLrbLhSWkk48bGM5278HbNVM1cOGrLZrlYkLkok+HIfXqLctDfWJCMpbAUghJUQQFb+Y1nKyWpcW3sP5vHUGXK1uQHkNhRBQ0GkhxKhjKhp9sM7EeSsovHNvjSYyWLURCZYLWFpbUvVoaSF+1xn72r5FntrDhi08PC/z404KltR5EfqXDISlIQXAHNY0kLABwcYrZI4Z4ac4fnXSJPkIUlkuNxVPIcUycKxrw2NQUoYHtNOfzjgHO0S7yI3hziG2xpLzlxhFTjklTqVNhIQgLO+U47OwCpWVxzbh18dEOUWipWiSlTYdGT7YeLjIwANuRNYQOG7PdrNZXFrEaQWQHXBLbbS8ourBQRoUoL04Oo6tgNu2nTPC3DtuvAQ9M6+IrwhK5bj7a2o+GnNIUgJ1LWCEqBBHZ4tDysFmMDx/anIfVps7jDq31ulxsoy1q63OjKe3Wnn7naoyBxlFYv9wnPQVLblvdZp8QqSO0bjHyipKRwpwyzCQ8u4yVEqdJDclojCS5hvOjGopQherJ2WBp5KrQ9w9YoNnucphbkkqjKUytyQ0pLCilCggpCQVL8Y+MMcjtT9XoHrEdw5xTBtLD6ZFuMkql+EtpOghAOBvkZJHMA7Z7KlU9I7bc5DjMDS0gpICUoQdQcQdWyeelBHyny1zrnRV92jPvGjZIUlch1SCsoUokFeNWM9uNs0/hj+u2T9dP701GVKQ/x2y/rp/emqaFF6jK4/lCV8Kr6zT5j2tl+FP2xTG4fj8n4VX1mpBhPi2TPa8ftim9hrcWyX1yzeyiGosV/wAOjLiKL7YWWwo+2TnkoY504s/FD1rtbUSOw2VCT1ynVAFWkgApHdmoBwffF+c1aOGrVYZdsL14flJkFa9KWZLbQCUgHcKQo5OcA/XUStbUcW76E5H6RIoZjpftqdaJCnHFIaaJUk6sblOx8bHdtWi4ceMPW5LEC2IirS2tCTpQdJKVJCtWMk4Vk57fkp25wXwy3Cadaur8t4hSg01JbSXyP8WklGEKHafGz3J2p3euGOHZUycuNNjxmGWHC2lqS2NC9b+nICDrGEIHtk7rTg7gVmsty/WsRLPHsRqJIaFnZQ46wElxKEKJdIwtR1DkdjgcjTGy8Wx7dZ2Y4hKVJaQtCSdJQklK8OAEZ1AqHbjAp/b7DY7hw5bHJCnGJSgULeZfbwpZXhKFNlJVqORvnkOVOIPCvDLihEckSVSYzrrb7qJiEiQpIRhKE9Wop5qIOFZCSPKB5UHrGVp4rtDVocflthMlptLYjJQk9erqWWytR088tqVnIxk881rt3SHBauIel2kustrSppCSjxQEgFO6dwTUZeLDZbeLPJiyHpcV6Stt/rX0IUtCV4BSkJISMdupe/MJ5GZunD3DEu4vzEPvR4qnlkBmQwEEArHVISEDCgEpOrcEK5dpLId5FI4kujV2uKZLLKmUhltvQog+1SBtjs2qKrJ3QXFFsKSjPihRyQPKcDPzUgrZKyMG7sQ04t35Qi/Co+sU3NOLd+UIvwqfrFDBbjpAH3LuHt8Mb+wusLJ+MPfAOfZNbEf4LOH/AFxv92utdl/GHvgHPsmkti3ujVN/Erf8Cr96unnDT9sjyXXLuyH2tICUEZ3yMnz4zTOZjwO3jt6lX71dY222zrnIMe2w5Et4JKihhsrUAOZwKXQb3L3cLrwcyXfAIDLqjqKC42SNgnTtt26s07ak8CxW06NbgU6Rgt79UXASlXfgDA8nnrmTjS2llK0KSpJIIIwQRzpZDL0Z5bMhpxp1HtkLTgjzipyLqwzPgtsKVw67dFvSWGm21sNktlsltK/8YAM88cj31mbpw9HvlmkRIiBGjT0qeCm89YwNB8YE7n2/7KqDEZ6QsoYaW4sAqKUpJOB21gUkY2O/kp5bizHRol04TluNIu0dkuR0IQ24y1pQo6XNWR2pz1eNqY8Pv8JNpmG6NYT4WVMhKNSurwdIOezOM1RtKiMhJx5qClQ5g0ZEh5mXebceFXJjbaYSUxkNuPKWhJ1LdS4VJRn3CkAJ8mrPZWPFMvhb2LUiwxU+ELKAlS07pbwrn/e5ZO+apiGnFocWhtakNgFagNkgnAJ+UgUiW1rJCEKUQCTgZwBzoyrkMz4ManLd+UW/iD37hdQeCOYNTlvH9otY94PfuF05bCjuQQ51NvvCNebW+vOhtDCzjuGDUH21J3s5djZ97N/VSlFSWV9RxlleZFwKNXjJW2tJ3CkrBBrHqVH3I/2hVB1EciaNSj+cfnryPsh+/wDL+T1PtRe58/4L71ZR2oP+2PXT1ifcWktpZlLbS22ppADgwEqJJGPKVH56gE8HSnozJt0xuVLLbbrsfBbLaVoKwrUrxdICTkkjHm3oXwJxEEtaWY61uBZLaZbepvSso8bxu1Q8XGdWds0l2Zb/AFPl/I/tD/h8/wCCxNXefFXIU1MUhcgkuqCxlZPM+fc08lcSXOXKS+JWhSBpSkKTpAIAO3byHPuqlx+DLw8y6o+CIdbDZLC5jQd8c4A0asg9uDg4pojhu6OOz0ISxmCQH1GU0EJJzgBRVhXI8ieVUuzXb+p9fEX2ir+x9fAuabrdG+rCZigG1lxGFp8Ukkn6zty3rB64TZKVpdllQWMKBWMEZz9dVVjhC/ug5jIawSCHpDaFbFQPilWTjQrkOQzT2ZwDeWC2GVxpThdW0sMyWyElJIznVunY+NgAY3pfZzf+p8v5H9of8Pn/AATnhk5Lq3vDV9YtOhSg6Mkbbc/7qfmFOU8SXcPLWLg4HFpCVK1p5DOPNzPzmqw7wPeWWk60tLkLQVJYZfbcUMPIayrCtkkrBChkHzZIi4fD9xnzpEOH4O/IZTqUESmiFD+4rVhZ35JJNNdmv/c+X8i+0F7nz/gub1yuLrel6apaNBbwVjdO2x7+QqP0AnZSPpCom1cGXmdMbacQiMypYQp5x5AAOcYAKhqPkG5rRd+F7nbWHpK2yYze+orQFlOQnXo1FWjUdOrGM7ZztS+zc29T5fyP7QttD5/wT3UKI2KPpisS2QDkoHlKwB9dUXWr3R+ejUT2n56f2U/f+X8k/aS935/wSd1kNy+In3mVam1yCUnvGedN76MXu4/GXPtGtEX8Za/XH11vvpze7gf9Zc+0a9SnBU0oLojzpzc25Pqxwv8AELSP7yvt1aOiSzwbtxXJFyYTIbjsqdS2v2pVqAGfnqsK/ELT+ur7dXToRIHF08EgExVADv8AHTXm9rzlDBVZRdnY3wiUq0U+TrRsdo5C0wgPghQOHrJ+daoXoxUoQcbCkCdXOvzD0ir77+LPqO6hwhmOFbY6E9VZYigpJUMNjcDYmlTwTD60oNkjBQUUkFsDBHPPdU/EuaIkZtKWHFvNoU2lWsBOknJyMc9z209d4kEtlxmZFVhwq1rQ5hRBII7OYx8td1OVNxvKs7/iZOLT0gisfcdDICRYomVK0JBQkEnONhnvrWrgiKComxxAlA1E6U4A7+fKrUzd4rDcQNR3j4M7rSFKQcjXqwToz8xA8lNXLuHSvrWMJWwlkpQQlIwckgAbZ7u8mqU6KX9WV/N8eXIZW/uorv3JQAtKPYSNrUkLSOqG4JwD85FYPcNW5pP36zxWxrU34zQ9sMZHyZHz1bzxC0txCzCCVo8UaFn2oWlQBznfxezA35VG3e6ruMeOhbOlxtxa1uaslzVpAyO8BIHlqakqai3Cs2+m44xbavBFZ9gLOk59jIZPwYpHbFZnG1JXaYRBGMdXUqU58lYlJSk7ZrjVer77+LNXShwjzVfoLVu4rvUKPkMR3ZDbYJyQkagKZy/yJA+Ed+sVJ8XOJc464iUkggyZW486qjJY/sOB8I79Yr9YwjcqUHLey/I+Rqq0mlyzXbCeqn47Y5+2is3m0uKt6FrCEqaCStXJI1q3pLUB1U/Pvc/bRSTj96h4/Qf9aq6VuZvYnW7DAa4x9i0T27nETnS9HygPkIKglOdxk4FSsPghV3eSSh2zlx9DPUutqWljJbT46lEEKPWZSDzxjt2oQUoHIJBrPrXCDlxZycnKjuaGm9mJNLdHQYfBlqdtaOrlqekSgXWXnElAQgIUdwDz1JNPZPRnHMBt1qc7GW2ghwPRl6lK1EBRAzpSeQJ2Ncv1KGwUceesuud3++r32PjHepyS5KzLgvA4AQ42lxm4rcaWUoStMY4bPWOtlTm/iIy0fGPf5N0HBcdjiiVZTKL6xELiXVNLa6tecbpUATjn8tUbrHMEBagDscHnR1i9eorUVcsk707S5FePB0B3o4Hh6mEXhlKEOoZcU6wpCkqVp0jSrBOQVEY56TUPxlw4xYIcVLLq33DJeacdLakbBthaUlKgCCOsV5+dVhTrilZUtRPPOaRS1r9upSsnO5zvQk77g2rbGNPbL+WYHxhv7QplTyzfliBn3w39oVTJQqz/AGAx8ZX9lNJHz7DTO7Wj+NC/yAx8YX9lNZRjixzfhG/40kWyVgW233PiC4tXO6tWxptp11Drjalha0jxUADtPf5K28NQbS/Zp0i6KCHUvtMtEqIxqCieR8g3O1QN3H9pyvhDTUE4x2UWuhXszqlr4SsTz7nsrGVBAe6lptb6svN52cT5Vch2E0kjhHh9DCkvpkREKtzbrUpwKSgPrXHTkknCkguKzjkD5K5apalYypRx5aCtZGFLUR3E1OR8jzrg6xK4QsCZEhpDLjMdhx9tT7rhGopUoJKFZ0qAAGe0Y8tV6PZILnFa4lwgC3Qm2HFILzywFgHCVk88HntzqkFaiMFSiPPSKWpW6lEnGNzQovkMy4OtP8KcPRHo5XFeEUomOLdeLgQC2ZOhJWCRn72jYb9vbTOJw7w7NkNmKw6bW42XfDVOkAOaiOpx5h58HNcy1rKdJWojuzQFKCcBRA54zRkfIZlwXvii3WOBDufgUQOLR4P1LweVp++JWVFIJ3AKRz76gbccPD/yx/8AduVAEntJqfgHDqcf5se+w5RayGncr9JS0lWQOBU+5+UT8U/6agKndzcD8U/6a0kTEgaWsRS0iQopaSmAUUUUAFLSUtACUtJS0CCpSGf65ZP10/vTUXUpFH9asv6w/emkyojKf+PSfhFfWakGPaWMf6Y/bFR078dkfCK+upBjOmyH/TH7Ypy2KW5FOfhVjympS0cOXK8RX37fHU82yQlZHZmotz8Kvzmpm0cUXW0W92FAeQ2y4oqVlAJ3GDg1LvbQStfUcQeCrvIuCYwZATraStxJ1BKVqCQrbsBIrQ3wjeXXXAzG1IQkL152KSnUCO/YjzZGacQeNb3Cj9SxIQE5BBLaSoYIIwfOAfkrJzjO5JNt8GLaBBbcSgKQFDU4srWrHIb4AHYEioamXeA1l2a6WZhq4altI1JDbqFFKgooSrbtGyhUGrxlFSiSonJJO5NS87iO4zreqHIcbU0tSVKIbAUopSEjfzJFQ/OqV/vESa6C0gpaKokKKKSgANOLd+UI3wqfrFNqc238oxfhUfWKRS3HSD/3XWP9bb+wusbIP6y98A59k0I/wbX8bR9hdFl/GHvgHPsmktiuqFYlqgP2aa2yy8qOOtDb6NaF4dWcKHaO8VNcO8VNQ+Ibhc5kVDfhYUerjMo0NknOEoVsB9VV2Wf6nAH+iV+8XUjwkzZ37ipF/dW1F0FWtBOcjsGO/lUtKw23exaJXG1mkwksi2vR5B1lUhCELcSVFJ2KuYOnybKPPt3vcfWhxqWtdkaMl1tKErW0lY8ULGeY3VryTvuhOOwBGRwXFbKGvB5RbcT98eUsEpCl6iO/I0beXyVG8PNcNq4ncfkqYTBQiM62y84sISVBBdGcZUUEqAB547e3Oy4L15Nz3HUN5iVi3qZfc6wJW022AUqKsJVtsAFDl3U0tPFcCGzES/GeBbZS2pLbbZAKVJOoE7nXpIVnsJ58qmjF4HQyppLray622rr1LUCk5BUQM8+Yxtt2dtNRB4SYmpW14JIaUl5K0PyFgIc6tYQlOPzdWk6iTjv2o04DUxY4+iB2OFWtvwVpKR1AbQR4rLSB2e7QpX+1WLHG1ueaabutuLobW24FttN58TGU8hsojeh2LweGVSDIQ8oNBeA4pKlujbq9IGAnSArVzycUytkHhiVPuCJcoR4mWyy4VKJQDpKgBzOMkZOeXLtp6W2FrfckPu4tbill20NkalhohpvLSVBsDG25SUKUM9p8prKFxraYduRGagSVvFTvWyVJQHFpUHE9hxuFJyP7vM01l27hEzURW5PUtvLWFSg4pQYCUJKdgTkKVqHb+yt4jcIyFx1pdaQ0sI6wLdUFtHq0EIwMAgqKgVZ/N7O004DXkx4h4wtF0tk2OzakMLdaSlrQwlGhQIzlWokgch/Cq3bz/aDWBj+oPfuF1H3ZEVu6SUwjmMFnRvnbz1JQseyLJHvB79wuqsktBJtvUgRzqTvn4aN8Wb+qo0c6kb4cvRfizf1Vb3J6EdS0gpaZJNo4qvDaI6WpYQGUhCdLSAVJCSgBRxlQ0kjfPM1nH4vvbDa22pSQhesKT1KMEKVrIxjlqGQOzfvqBpUK0KChzBzUuK4HmZYpl1vzDnVSdJdW2gqHg6CVAAKTq8XcgYO+9aGuJb0iXNmLeWpc9stSHC2kFxsgpUkHGwIJG38BVjj8fMxJ7TrcNTrIbVqCwkqC1BG4yCNintHI1i9xpbpVkejSoDxW/hDraFpSAAE4LZ0+LugZG/M8qjXgv8SKvHEt6l3VyYkuMqkYcQgALITp6sb43OnYntOT20zVxPfvCBI8KUlSidw0kA887Yx2nPnqyt9IjYuyJPsW2ljrHlraBSc6woDGU4ynVtkEU0k8ZRptxtDsiEUCJJLriwEboJ2SEpSB89PzQfiRzN74kjMpktrWhCnFpCksIG4U26pOMcgUoVjl85rG13y/QlTpdtV1HWNpU8W2UJTpGACBjG2Ry89WSD0hwY0qOpVocfRFWpTJddSVKz1eSvxcHIaxy5KPbg1DucXNP26Wy7GUlwx0sMYIKUjqUtKz8idXnpK/AacjH7tL797xLR4mNOWGzgjt9rz3O/OmcziO6zIbkaTK6xtY0KyhOop1BWnVjOnUAccs1E0GryonMxO2iiiqEbYv4y1+sPrrdfPy3cPjDn2jWmN+MtfrD663Xz8tXD4w59o1PUa2HK8m32r9dX26Wxof9l1OxpTsVbWVl1kkLAzjb56F/k+0/rq+3W7h0jw6Zn9GftiuXEvLSkya03CDlHctwut0wMcQ3f8AZ66RVyuh58RXYfN66z4bVGF5ZEstJZUhwEu+1BKFac/LirZYlcPtWhpi6uRDPCUpQ4MLSh0rfwtePbIGWyQOzHPlXgRoRlrZL8F+xyRxOIl/qMp4uN2HLiC7H5vXSquNzPPiG7Z+T11b5T9rXAjMJdhhxVvKFLU4jHX9VjsTqB1Z3JIqu3aTCkxLZHiJjsyXFYmPJOUpIOkHyDG5pvDrfT4L9inicSv9Rkd7KXUHA4guvzj10ip92O54huvzj11d7qeF5jD6LTKitOKZQyjr2+qwW3k+NnfdTaufaUK7SAdar7Y5M4NlMYQfZCQfFaCVdRuUbkbeSq9Hin0+C/YfpGI/3CmouV0SN+Ibr849dBu1zz+X7qflHrq5JkcO/cy4IelEkMpwl5xvrM6TnJKMHfuwfLT1+5cKIuzMmCmIhty7Bt9lbeUpYSFArTn81Q0nyHV2Yp+jx8Pgv2D0jEf7rKGbjc1pz7P3UfN661eHXXSoDiG6DI7CB/GrbHuNtk2hlUZdtZuymwXDIbARjUrUOWM40/JVHcJC14IO59ry+Ss3RjHovgv2IlisRH/UZU9CmJ8tp06loS6kq7yAd62Sj/YcAf6R3+FLNyb1cc89T3/VSSx/YcD4R36xX0lNtpN+B2wd4pswtf4Of8XP20VlIQhSrcla9CFNAKVjOka1ZNY2ofe5/wAXP20Uk/ZuF8B/1qrTqPoWK32y1NcdIgw5Dd2to19W46ktJeIbUQCMjHjYHOpp/hmyyIT1wlSEwZDIT4RAjYWlpWM4yVEgK2A54Oe6uc0HehxfRiUlwdKm8C2ZKnFpubiVLkuobYRoVsFqCUas41FIBB5bim7PCtrchxx1i461pUHC8tBVrCj4qcKwCcAb7biueUuT30sr5HmXBdbvw1aIVvfWi4OGYlpbqWlaMIKQzltWD7b76sbe4p1B4OssqE64Lu4HW2mFKTpTjU4jUe32oJArn9LTyvkMy4OlzeAbOwtaUXhRKVNaidGAFYyAdW6snGPl76axeDrQJUZt+4qQ+6pZ6tzQUtaG2llKyFbklxSRju89c9opZXyPMuDo7PBVllSizEuD7ryFoQptAR45UkKyjxuQzjeqimIiFxY1EQorQ1MSgKPM4WBUdBmyYD4fhvLZeAI1J54NbLStSr3CWskqMhsknt8YU0muorpgsf2Ax8YX9lFZRfyJMH+kR/GsV/kJj4wv7KaI+1mlj++j+NCGyTiWG4cQ3+4RrW2hx5lt2SsLWEDQgZVue3yUcO8OLvUB6Qy5hTcllkpOBsvVk5J7Mcqjro4tu6yy2tSSVKBKTjY8xWmPNksMFll1SGi4l0pHuk50n5MmizFdX1LnN4JhwnJLSpsiRIQ2VtssoTrOCrKiCR4vi9mTWl/hiypgtTkTrj4MmEJr4UyjUEqe6lKU4VudW++Bjy1CHii8lS1GasqUCnUQCRnOcHs5n56bRL3cYi21NSVeIyY4SrdJbKiopI7Rk5qbSHeJcRwBDRZ3bg7OldRguocDSdKW9CFgrBOcnXjYEZFVniexs2QRkomCQ4+OtSEjYNH2hPlPdWh/iG6vqWp2a6sr16snYhQCSMd2EgfJTCVKflKbMhxThbbS0nPYkbAU0pdWDa6GmiiirIENT1vOXh/5a/8Au3KganLfu75rc99hdTLYqJBUUUhpiHAqeWQm5tp2HWRggHylO37aghUkmRGlR2m5hcbcaToS6gZBT3EVrIiLI9bDqFlK2lhQ2I0mjqnPcK+Y1KpcYAAF2lgDYABW37aXrmf87y/oq9dRqOyIjql+4V8xo6tfuFfNUuXWP87y/oq9dY645PjXaVj9VXrouwyoidC/cq+ajq1+5V81SqvBTyusk/7CvXSAxh/4pJ+gr10XYZURgbX7hXzUpac/Rr+iak+sZHK6yvoq9dZde3ja8S/mV66LsMqInqnPcK+ajqnB+Yr5jUt1zJG93l5/VV66XrGCN7xLP+yr10XYZURAbX7hXzVIMEpuNpaI8dtaQodxLhP8RW0rjkflWVj9VXrrBl2DAdTIYW5IkoOpvUnSlKuxR78HfFGrGkkMZm81/wCEV9dPesDMe0OK9qhxSj5tYqLp3HfaVHMeWF9WFakLRzSfVVS2EnqaX2XUPLCkK552GRWIbX7hXzVItrjtt6W7lISO5KVAfXQHWf8AOsofIr11N2OyI7q1+4V81HVr9wr5qkuua7LrL+ZXrpS81ja7Ss+ZXrouwyojOqX7hXzGjqXPcL+Y1Jdej/Osv/i9dYl8DldZZ+l66LsMqI/qnPcK+Y0dWv3CvmqQ8IH+dJX/ABeuseuT/nKT/wAXrouxZUMChfuFfNSdWv3CvmqRLrZ/8Skn5FeukLjWPyjI+ZXrouwsiO0K9yfmpxbwUzGXFAhDawtRPYAcmtpLRP4+/wDMfXQoRlpwuY8odxST/GlcdjJO3Dq/jSPsLpLIR4U6O9hz7BrVKkoWy3HYSpLCCVeNzUo9prCG+YslDyUhRTzSeRBGCPlBIp20BvUydSp2FFUhJIbSW1Y7DqUr6lD9tN+qWPzVfNUhmEFqXHkyI+fzdOSPJkdlZBbXbc5PzK9dTcb1I3q1+4V81BbX7hXzVIqca7LlJ+ZXroDyB/4nJ+ZXrp3YWRG9Wv3Cvmperc9wr5qkS+k/+JSf+L11gX+64yfnV66WoWQx6pfuFfNSaF+4V81PTIPv+T86vXSh4e/5H/F66NQshj1a/cK+ak0KH5p+apAvD/OEj/i9dYKWj36+fkPrp6hZDMNLVySrPmqagEpuSUqG6ITyFDuPULpkHUYwZz/zH11imS1GadTHK1vOJKCtQwEpPPA7yNvMTSeoLQZdtPrwsLdjEcvB2x+ymNO0OsuspblBYUjZDiO7uIpsSGgop11UT9Ov6FJ1cT9Mv6FFwsNqKc6IvY8v6FIURf0q/o0XFYb0VvKY3Y4v6NJpj+7X81AWNNFbiI+dlufNRhj3bnzUwsaKWt2I/u3PmoCY/atz5qQWNFFOCI3u3Po0aYx/xjnzCgY3orfpj+7c+YUaY/u3PmFAGEfPXt456h9dbLqvXc5is+2eWf8AiNZNOtR1dY0FLdHtSrkD30157nnQPoSLrum22089Clk/SzWqNIdgzFrCAtKsgjsUM52PzVjHfaUwY8kK6vVqSpHNJ7fONhWxCIqRgTnkjuCD66znBSWVoGlJWY89nOwRF+k/+NAvn+qr9J/8aa4jf5wf+gfXRpi/5we+gfXXN6FS938zH0alx8x0L33xVn/ef/Gg3sdkRQ/3n/xpoUxv84PfQPrpMRx/l730D66PQ6Xu/mHo1PgcG8KJ/Flek/8AjSi8Y/yZfpP/AI03/q/v976B9dIRG7Jz30D66fodL3fzH6PT4HKr2o/5Mflc/wDaskXwDGqKo/7z/wBqa6YuPx57P6h9dYFMb3679A+uj0Ol7v5i9Gp8D5V9T+bEUP8Aef8AxrUL0oHPg58xc/8AamumN78d+ifXSFMb3459A0LB0l938xrD010MA8tb8h90eM4FknluoH+JpzKObJBHaFufwrWERDjrJTqgOzRWqa+l3q22UlLDQISCdznmTXVFWNrWVjbbDhud8XP200krLrERSASEt6DjsOpRx8xFaIb5jvhzSFpIKVJPJSSMEfNT5HgSfGZmSGc806d/nBpgMOrX7lXzUdUv3CvmNSBdZ/NuUn5leugPpx+U5X/F66Liyoj+rX7hXzGjq3PcK+an5kAcrnK/4vXSeFbbXOV86vXRdjshj1a/cK+Y0nVr9wr5qfGUT/4jKPyq9dJ4Sff8n51eujULIZ9Wv3Cvmo6tfuFfNToyVe/pPzn10eEZ5zpHzn10aishoUKHNJ+anFsPV3CM6pJ0NOJcUe4A5P1VkXEK5zHj8/rpCWVDC5Lqk9xBNAGTg/sNgf6wv7KaGB/ZEv8AXR/GtMuQlxtplkKSy3kjVzUo4yT8wHyUkR9LQcbdSVMuABQHMEciKBmy4BTkx11KSUuHUkjtBpvoX7lXzU7QthtOG5b6B3AEfxpS8j39I/b66LhYZ6Fe5PzUmhXuVfNTvrkZ/HJH7fXQXk9kyR+310XFYaaFe5V81GhXuT81Ow8nO8yR+310ink9kqQflProuFhrpUOaT81GD3H5q3qcSR+MPk+UmkC0fp3qAsaQk9x+apeA4EyHEnmiC8g+fq1euo/W3+neo65pllxLAWVuDSVq7E9oHnoY1oNaTtpaKBDilG9J21NtOLtlqjOxFlqTJ1FTqdlJSDjSDzHlxWxkRXgsjH4B36BoESQeTDv0DTkz5h5y5B/3ivXQJ8wcpcgf7xXrp2YsyG/gcn3u99A0GHJA/F3voGnBuE333I9Kr10nshM99yPSq9dFmF0N/BJH6B36Bo8EkfoHfoGnHh8z33I9Ir10hnTDzlyPSK9dFmGZGjwOTj8Xe+gaPA5J/wAnd+ga3+HTB/lcj0qvXSGfM99yPSK9dKzHdGkxJA5sO/QNL4HJx+LvfQNZqnTD/lcj0ivXS+yE335I9Kr10ahdGnwOT73d+gaQxZA5sOj/AGDW8XCb77kelV66Qz5h5y5B/wB6r10tR3RrESQeUd36BoMKT73e+gaz8PmjlMkj/eq9dHsjN9+SfSq9dGoaGrwSSP8AJ3voGl8DknlHe+gazM+af8rkelV66UXCaP8ALJPpVeulqPQ0mJIHNh0f7BpREkH/ABDv0DWfh0w85cg/7xXrpfDpnvuR6RXro1DQ1+CSO1h36BpTEk4z1Dv0DWfhszP41I9IaPDpnvuR6RXroFoavBJH6B36BpfBJPvd36BrZ4dL99SPSH10eHTPfcj0qvXRqO6NXgkn9A79A0oiSP0Dv0DWzw+Z77kekV66x8Pme+5HpD66A0MTEkfoHfoGsfBZH6B36BrZ4dL7ZUj0hpPDZfvp/wBIfXSDQw8EkfoHfoGlEWR+gd+gaz8Nl++n/SH10eGy/fT/AKQ+ugNDHwSQeUd76BpDEk/oHfoGshOmD/K5HpFeul8Pme+5HpFeujUNDWIr/wCgd+gaPBZB5MO/QNbPDZfvp/0h9dHh0wf5U/6Q0BoazFkDmw6P9g0ngz/6Fz6JrYZ0w85Ug/7xXrpPDZXvl/0hpaj0MREkHkw79A0GLI7WHfoGs/DpnvqR6Q0eHS/fUj0h9dAaGvwZ/wDQufRNBiyP0Dv0DWfhkr3y/wCkNL4bL99P+kNAaGsRJH6B36BpDFfB/AO/QNbfDpnvuR6Q+ukM6WecqR6Q+ugNDHwWRj8A79A0ngz/AOhc+iayM6X76kekPrpPDZXvl/0ho1DQTwWR+gd+gaPB38/gXM/qms/DZfvp/wBIaTwyV75f9IaAMPBZH6B36Bo8FfzjqHc/qGtnhsv30/6Q+uk8Mle+X/SGgehj4HJ97u/QNJ4K+ObDv0DWzw6X76kekNJ4bK99P+kNAGIiSDyYd+gaPBJPvd76BrPw+Z77kekV66Tw6Z77kekV66QGvwZ/P4F36JpTFkAbsO/QNZeGyvfL/pDSmdLPOU+f94aANfgz55Mu/RNKIsj9A79A1kJkrskv+kNZ+HS/fUj0ivXRqF0a/BX/ANA79A0eDP8A6Bz6JrPw2Wf8qf8ASGjw2X76f9IfXTFoYeCv/oHfoGkMWR+gd+ga2eHS/fT/AKQ+ushOme+pHpFeuizC6NPgr/6B36Bo8FkfoHfoGnHhkz31I9IfXWQmS+2VI9IapQbFmQ1MST73d+gaQRJJOzDv0DTzw2Z77kekNBnTANpUgf7xXrp92wzoaeCyBzYd+gaPBJB5MO/QNblTJZ/yqR6Q+ukE6YnlKkD/AHh9dQ00O6NJiSAd2HfoGjwWR+gd+ga3GfMP+VyPSH10nh0z33I9Ir10rDuavBZH6B36BoMWR+gd+ga2+HTPfcj0h9dJ4bL99SPSK9dGoXNXgsjP4B36Bo8EkfoHfoGtvhsv31I9IaTw6X76f9IaB3MPBZGPwDv0DSiJIP8AiHT/ALBrYJ0wf5XI9Ir10eHzOyXI9Ir10aiua/BZA/xDv0DSeCyDyYd+ga2mdMPOXI9Ir10nh0sf5VI9IfXRqGhh4LI/QO/QNHgsg8mHfoGszOme+5HpD66Tw6Z77kekV66NQNZiyM/gHc/qGjwSR73d+ga2eHS/fcj0h9dZeHTPfcj0h9dGo7o1CJJ97u/QNHgsgf4h36BrZ4fM99yPSq9dIZss85Uj0h9dGotDDwSQeTDv0DR4JIH+Id+gaz8Ol++n/SH10eGy/fUj0h9dGoGHgkn9A79A0eCyP0Dv0DWzw+Z76kekV66QzpZ/yp/0h9dGoGIivn/EO/QNIYkj9A79A1mJswcpcj0h9dHh8335I9Kr10D0Nfgkj9A79A0eCyP0Dv0DWzw+b78kelV66Tw6Z77kekV66QGHgkj3u79A0eCyP0Dv0DWzw+Z77kelPrpPDpnvuR6Q+ugDDwSR73d+gaXwOTj8Xe+gaz8Ome+5HpD66PD5nvuR6Q+ujULmvwST73e+gaPBJPvd36BrZ4fM99yPSq9dHh8zP43I9Ir10agYeByfe7v0DWJiyBnLDox/cNbfD5nvuR6VXroE+aDkTJAPwqvXRqA1oqYlOquVpVKkHVMYcCVOn2ziDy1HtIPb3VDUIBz21M3D8kWr9Rz7VQvbUzcNrRaf1HPtVv1MujI6koG5qxWLg6/31SRabRNlBXJSGjp+flVpN7GTaW5XSKSuxReh2PEjdTxXxRa7NeJAxFhqWHN/9IR7UGqxxH0VcXWIqU/aXpMYbiREHXNqHflPL5cU8oX5KIaK2vMrZcU26hSFp2KVDBFZIiSXI63247y2Ue2cSglKfOeylZg5JatmisTTw26amN4QqJIDGArrC2QnB5HOMViq3TUpaUqHICHThs9WrCz5Nt6HGXAlUhyhoaSnCIkhz8HHdX44b8VBPje58/krJdumofQyuHIS8sZS2WlBSvMMVOV8Fd5FaNjWinD0GWxq66K+2EjKtbZGB3ms4ttnS2+siw5DyM41NtqUM/IKMsr2sDqQSzXVhmaSnHgkkrbSI7xU6NTY0HKx3jvFKIMoxjJEZ7wcbF3QdPz8qnK+Cs8eRtRmtrbLjqXFNtrWlsallKSQkd57hWK2loQha0KShedKiMBWOeO+izHdbGIpaQUtIYGkpatEDgHiOdDalR4A6lwakFb7aCR34KgaqMJS0irkTqwpq82l5lWoq4Do34n7YDf/AKpr+am8/gPiCDDdkvwk9U0NSyh9tZA78BRNU6NTfK/gZrFUG7Ka+KKvWNPbZbpd0mIiwGFPPqBISnA2HaSdgPKamhwLxCT+ID07X81KFKc9Yxb/AAOmMW9UisUVak8A8RqAIgJIIz+MNfzVDXqzXCyvoauUZTKlp1JOoKCh5CCRRKjUgryi0NwktWiOoqctXC13ukVMmJE1Mq9qpbiEavNqIzT4cA8QkZENv/1LX81crxFJOzkvidEcDiZJSjTbT8GVSirV9wfEGD/U0ZA5eEN/zVWHm1surbdQUOIJSpJGCCOyqhVhP2GmRVw1ajbvYNX5RjRRRWhgIaStrLS3nm2mklTjiglKRzJOwFdOtfQ/Oyhd7ucSGgjKmmAX3R5CNkg/7RrOpVhT1k7B4nLTRmvQsXhLhy2wVRWbSzKbXs49M++Or8yhjR/s4+WqjfOjKC8tTlhuQjE7+DTclI8ziQf2j5a5Y4+jKWW9iVOLdrnKM0VJcQWSZYbgYdwSgO6QtJbWFpUk8iCKjK7E1JXRYUUVsjtLffbabGVrUEgUwEZZcfcCGUKcWeSUjJqQNguYRqMReP1k5+uus8EcNJhMwH0W9q4NyXFthlT5ZW8UpypZIGzae05HdmrW47GJwDwiUZ06PY53qAe7wjTn/azjy0bDR5reZcYcLbyFIWOYUMGsK7Bx3w6l9qZI9izAYiuIZdZ8J65bC1pylYOM9UrHikk5xz5VyN9pTLy21+2ScGgDXRRRSAKKKKAFQhTiwlCSpROAANzT0We4K2TDeP8As1LcHNFT6i0GPCFOobbW6BhOc9p5dm9XV9m6Rnrq119tJtyQpwpUnCwfceLv8uK7aOGjOGabevBz1K2V2Rzb2DufvF/H6tYmz3Ec4b30aujV4ujm6Wm1JPI4QP4VjKutwQnW602lI8iD9QrX0Sla938Bd7K9rI5+pJQspWClQOCD2UVNcSupkdQ/1aEuqJClJSBnz4qErgqQyScTeLuri0UlKKgoBzragVrHOt6BtWkFdkSZklOTU1bOG7ncogkxIwLBUUIWtxLYWocwnURqPmqX4PtyI0R+8Tkw9KUluAiYoaHX9SRkpPNKQSd/FyAD3U8vkqS+Z0a8KEydEZbXFfay2lLalBRASAPdknY8sbDevSo4fMY5tSswLBcJ8h5liMUrYOHS6oNpbPLCiogA00utslWuSY81otO4CgMghQPIgjYjyirvciXH3mnkqcaduLIcSFEah1Kdz5udLAIfYj+yZho4dXIWwlp7dxpBKiVJcIzlJBxg92Rg1t6KpI0UehzcpO+1a1CpK7QXrfKUw+nBACkqBBStJ5KBGxBqOWMV5tankdildOzMKKKK5igopKWkMKMUDnW5lpTriG20KWtRCUpSMknuAoGlc1hOaz0bV17o/wCiT2VW8riSU7CLJTqhtAdbpUMhRUcgA7jkdwRsQanOMOBuCLU9b2IikBxalh4LmqKjhO2Rq238gryJ9uYVVu4jeT8Fptff9j0cP2dUrWasr8s4GU4rEiukcQ8Ewm4zki2SFo0jIQ4daVdwBG+T8tUS5QJFvkqjzGlNOp7D/A9tehQxVOuvUY8d2XiME/8ANjpytUMKSsjzpK3PMAUtJiigBaSlpB7YUgHse3uPqSlsKUs/mpSSaSRAcYUpDgKFjmlSSDV34DcZQ1IJ09fqHn049eaTj51hTcXAHhOo79ujHb8uP215vp79J7jLpyfR/Ycfs30/vNePxtvyc8opT7Y+eivTPnBKKWkpAFJS0tAElauHrxdmVO2u1TpjSTpK2I63Eg92QKfjgbikjP3O3fHxNz1V6y/ozBtvonhKUUpHXukk7fndtdSVLj8hIa+mKy7xmuRHzxuHC1/t0VcmdZblHjo9s47FWlKfOSMCoYV9HLqxGnRkR5CG5EZ86FoUNSVpPMV5D6cuiN/gyWu62Ztb1geV2bmMo/mq/u9xpxnfcThbY5AKSisq0IMaKWg8qAJGKf7CuH67f1mosVKxBmwXE9y2vrNRNSiug5qauY/sa0fqOfaqGqZuf5Gs/wCo59qt+pl0ZHM7rFegOmLiS/W28wLVbrrKiW9NsjKDLC+rGSk53G/Z315+aOFV3DpSSJ0vhO/J8eLcLXHRnmAtvZaf2114aKdRZjlrNqLyjO28PWPqbOjiCTPXcbyAtpbIBSyFK0pK87qOedRjl44h4NvMm22+8y2PBH1MlLbp6vKVYJCTt+yvTVx8IblcKNW2BFMJY0yVqjay2kNgpwrHi7/trhfTBbfZHpnNvhpSHJRjoASMeMpKck/Wa1pV+9bjNaWb+YqlHu0nHe5Uv6QrvX9JcteAFLjsqUQMZJRzqMsSTK4eaYlOhiM2h0pkMy9CkZB2Wj87P8ay6crmzP6Sbr4KQppgpjhQ7dCQD+3IqqCxXL2JFzUwlMJQJS4p1AKgDgkJJ1HfyVzwrKm9ulhYjCvERsnazv8AX1+Barq+lEK1vKSXIzcaKHSmX4uBp1At9polOyW78ifJuba7YuUlaAH8gpzthPZgVQ0pC1hIwVE4A8tbpECTHmPxVsL8IYUpLiEjUUlJwc47qt4vXY549mpK1+Vtz+Oj+rF5tjAtUmK3Kkx8vXdt5GlwKGgA5Ue4b04t8+K+7aPBnlFjr5JcL7+Voc0EBIPYkjBHlrmw8fapB+w3Bi1NXN2OlENxOtC1OoBUNRTkJzqxkEcuyhYzLay0+mTLsrvLuUtX4eDX6llRCkLausclKHHo7fVpemB3OFb+Mfqrdb4zqOGm4qVjwlqQ7qDU0NachODke2FUeMy5LkNR2E63XVhtCfdKJwB89P4HDlynrlCJGSrwZQQ8VuobCFHOBlRAydKvmNSsSo62+r34NX2fKStm6p7Porcl2tlwgqFjiSXGkux4SXmncjZfjBSCfKMfNUetTkvhkqmSEx22Y5S2tiV4rnjbIU331RVYSpSVYyDg70ntjtVPFtq1vrT9iF2WoyzKXW+3i3p53L1ws/bbfZ2m50lCF3J1SXUBOrLQSpABP5vjKKvkFQF+SGbba4+tKls9chWlQPJfOoUAA743rOS0uPIcYdADjailQCgoAjyjY1lKveGS31odFPBZKrq5m7u/5pfJ/IwFZViBWQrA6wPI139u6S4/DSVwWw7JSynq0ntO38M1wA8q6beL3KiWaNHhIcL7jY8dKSdAx9dex2W4xjVlLokeR2nTdSVOK5f6F2g3x5NjalXrq4zwB6wcgNyBt5Rilu09LtlmFpYUFR1kEdo0muUXq53K6xY7LzLqUIGV4QfHV3/NUvw7PdNkmRJKXUqaZXoUpJGU6TtXp0sTCcnSSdraN82POqYKUI967XvsuLkX0UrV90T4UApKoi0kHtBUmuj3dy0We3Nvvwx1TafBkhA9qhR3HmrmfRo8lu/uk9sZQ/4k1eOKI6rxa0xY77SdakualKHtRzI765+z4N4RyirvWx9lTbyaEvb2bPJjNPQEsuNJaLKNJ9qg80+SqL0rpRHZs7EZtLbLaXQlKeQHi1ZeHrTDs8cpZcBcWnWtxSx4w7/NVY6VnkL9iyhQUMOYI39zWuPhbBtySUtNvNFT9jUuXAKHJdgtjLbZKurAJA2GVEZPcN66DG4bT4K8hx1JkOdUlB3w2oulB8/KuZcC3WRBssBcdRT4g1JzsoBWcHyZFX+LxUwqK69ISEyGiysNg/hSHi4QNttq/LpKHeSzcs+6jKt3FPu9rR/Qj58Z6ClCloKkLSVhSdxjWpG/duk1584oUpfElyJ7X1/XXc5d9lSmktFWhlKdGhP5w6xSxnvwVmuF8TKKr/cPhlfXXZ2ZbvHbg8r/ABDm9Hhm5N8fhe7SuHH77GiLdtrDnVOuoOdBxzI5geWoaur9CtwicKRbhxJeb02m3JBj+w7agtyaojkpB5JGfbf/AMHm9+nR7jeZkuHDbgx3nVLbjNnKWgT7UV7MW22fJSSSQvD2PZ62598tfbFempzqvCnQMnKyBivLUVwsSmXk+2bWlY+Q5r0rbL6qLJg3WIG3tQS+jWMpVkbg/trzO0k7xfQ56r0Ri8VvlLbKVKcWoJSkDcnup9xVw/8Ac7HgiVKQue+nW7HA3aHZvVwcvnCkSO9xZGCRc1J0ot5UPEePNQHd5eXy7VyC63WVc7i9Mmulx95WVE/UPJXnyhGK3u2RKKiuWznfSs51l/jEDYRUD9pqnR2HJD7bLQy4tQSkd5NWHj6cmXxC6GyChlKWgfKOf7c1XWEKdfbbStKCpQAUo4Cd+ZPZXu4ZZaMb8G9NeqiT4m4eunDNyVAvURcaQAFAK5KB7Qe0Vr4dKRcgpXNKFEefl/E11DpJ4itcfgaBwm7Na4jvEfCl3POUxh+jbUN1Dsydq5Nb3hGltuH2oOD5q2g29WaSSWx6GtD0a5QWm46sxw1AtpKdtlAuPpHlKgQacM3B4x25iZUsK0tvmL1n9VLC3uq6nquXte2qxwzfGZNjaSJbMZyIgoC1lDbbGoY6xDYOt50jODjAzUqh1MNtp6QxIYYSphSY740OuJayWWEI9spS1EKUcYFD3GtjPiSYxabcpl9DjzCkXWzeKNRLbK0LYJ/UUrn2CuEX0pM3UntSM13ebGeiwVO3+4KtVthNPxJzwZDjsuVKPWPNspPuU6Bq5eKcbbjn174Tsd4tc26cEXaVNVARrlQ5rSUPBHu06diPJTUkkJxbOcZqT4csVw4jurdttDHXzHApSW8gZAGTz8gqN84qe4EgOXHiqCyzd2LOoKKzNec0BoJGSQe/A2HaaUnZXEtXYhpcZ+FJcjy2lsvtKKVtrGCkjsIrTXRemji+18UXmMm0sB0xGwy7clp0uTCNtSgNv41znnQndDkrMk7S28th/qXEJTqSMKBOTv3fLTzwaUFLC3G0lPtstqyPPTSyS3Ia+tjhRdQ4lxOEFQ2zzFTErii4yX7i48FapwAewwd8d221d1NwUFdnPLNm0RHFtYJxKj5/VNIlt0bmVH+iaRD2Bs0o+Usn1VaeBbdbrs/cpV8S4bba4ipr7TSShboBACQezJIyaUpRSu2Uk27FPu2sMsFTja0knGgEYqNFdLmosHGHCV4mWa0i0TrKlDxS26pbbzSlacHPJQPbXM9+2uWc1OV0aqOVE1cuGbvbrJBu8qGtNumgll8bpODjBxyPnqHFdj4Pv1t4R6M5Ps1cGbz7KpUmPZAoLSyQca3DzQfIMVx1ZClqUlISCcgDsrOLbKkkgFOY6S4tDaRlSiEjzmmwp1DWPCWQtWlGtIKh2DPOumi1cyki8z5tqhzY1olMKfYgsKiF9ZwA4pRUVADkAVEZ35cq0W0sWW2NXCTFTcJKpCo7SOvPVoSEgnlzyVcvXRdXJkq7XJCEwWw7MDWl3GrfTvjtGwOefPy1m0tpNhhSWUKmMR7ipTiG2NHNtOnIBOx0nfyV7EE7EQih7Ivy2FTm5PDbaFJAXIBfWCkFISD8wApleEwLbeZb8pCZUctIEdhbmVJzpONuQCcjPlpjc725PjSEm3vIlOshlZQFKBIVqBOd+006u2s3hTkZbBkxup1tvsgBPtU5KiewkZzjGfJWsZcHZCneN/rqRd2KZlhiuJ8V63f1N1OchQKlqCgfOSMeaq0qrVdVOJtFxS+lpJExoAsnKV4bUMZ7dsHffPPeqoo5rzcbbMTXhlkvL+DGiiivOMiYtfDV2utpnXK3w1vxIWOvUjcoz2454qHrpXQrLj2a4zL7cb8m3W+GkB2IkhTkzPJAQeY8v1VTuMbnCvPEk+4WyAi3xX3NSI6DkJGPrPM+eoT1sW0rXIYGut9EFvgQG3LzdtLT+kmMXk4SEAbrB5ZrkyRqUAOZ2rsXHMo23o9ahtJAQvqmRtyGM/wrz+03KcY0Iu2d2fkYznlaXJWOOeP5l+uLngLjkSElJZSG1FKnUZz45HMZHLsqkcznvrUCCa6x0YdF0fiayi+3W6mNbkOrStllrWspQMqJOcJ28hrtoUKeHgoU1ZI2Tb0KRZH7rFjuTYaHHIcRSVOas9WCTgZ7M7+ft7Ks94VE4isSX8jwrBLaRupKu1PmqI4/4rj3Z9u22CILfw9CJTGjp5rPa4s9qj+ytXAklZkyWvzSgK+Y4/jXLjKay9/HSUT6HsTFylN4KprCemvR+H14lUcBSogjBBwRWNSXEbSWb3LQj2uvPz71G12wlnipcnhYik6NWVN9G18CU4csFy4kuBhWaOZEoIU5oBAJCRk4qNfZdjvOMvtqbdQSlSFDBSR2EVZejeIqVxZE0XtmyBrLqpjjmjQlO5x3nuHbUr0x8U2rijiRL9nhhCGUdW5MKdK5ah+eoDYUXd7Gdla5QqBzFFA5imSdH6M+B5XFbzz6JRhxY5CVOpGVFRHICjpM4Jl8KSWXnJJmRJJKUvKGFBQHtVfJyrf0V8ftcJCRFuDLjkF9QXqbxqQrGOR5jlSdKnSA1xd4NFt7DjUGOsuBTmNTisYzgcgAT89fNZ+0vtS1v8n8Nrc73uepmw/ontetx/HkcyPtjRmg8zSV9KeWborDkqS0wwnU66oISnvJ2FP+JbBc+Grmu33qI5FlJGdKhsR3g9ophEbL0pptLiGitYSFrVgJyeZPYK690pcS2pngy38KLltcR3mLgruuQUsf6NtQ9sPLUttOxSStc42KWkFFUI9mf0eVJT0OxNaAtPWu5SRnPjCr5HdhBX3+IgJx2IUTVB/o9vJZ6HYq1OqaAcdytIyU+NVxTPadP5Xfx8H/AO1YJXNiSlToC4oZa61rScpKGyMGo6dHTNsdzD7r0hjwdwKbeHiq8Q8wedKuUwjf2WeP+7Pqrb4Sh6xXMolLkAMOAlScY8Q0NWQJ6nz/AHcBxeNtzWNZPfhV+c1jWy2MXuFFBpKYEnD/ACDcf12vrNRNSsQ/2Dcf12vrNRdSihxUzcz/AGPaP1HPtVD1LXP8k2n9Rz7Vb9TLoyNScGuudG3Etru/Da+DOKXgwwXOtt01X+TunsP90/xPfXIqAoitITyu5lKNzs95tHHNpnNW4S7u6lZ0x1xZLim3B2aSDjl2dlb5a2+jeLIut6mC4caymyiMypzrTFBGCtasnKsbebbfJxz6z9IvFFotLlthXV5MVYwAo6igf3SeVVaVJelPrekurdeWcqWtWST5TW86+ZbEQpZWYvPreeW66orcWoqUonJJPM1eLdxDa02bh5uS9FSu3vJW82uEVuqSH9ZCHMYA09maoeKtln4cjT7dFnhxzwZLT5l4xlC0DxUj9YqbH+1XHPXdnTC62JmJxbCkRm1ypSo12SkoE7wYKKWg8VdUAByKDgdgA07JNN2+LYI4muUqI0mEmUZA8Pa63rVhwkp1I1FIA/upBplcOj+6w1ueFPRWW2ULU8tayA2UKQlQ5bnLicY2O9PRwTHatusu9ZOcXhDAcwQA0lfdg51Vl6nQ09cwu/EtpdtzaAw1cUhxtTMJ9pbaIyQhQWNSFJUdSik7HfTk7nFOIPENp6jhx19UJHselIdYMNS3dn3F4S4QcpwobE99Q8TgyTLuybczMiKlaSXEoKldUrIGlWB3kb+et8rgp5hiMlL7b816O64qOhWFMrQ8pog9+6TTtHa4vX4Ji2caQEmC+/KXFuLS2lSJQihZdbQvJb5d2PJ2dgqtweI2ocC+oTHYkuTZjLzSJLWtGlPXZOM7Hx0/Oaza4Klr1ueHwPBW/FW/1h0pUFaSnlzzW3h7hpD8+9RZ7Lrz1uZ1dUy4lGpXWoR7ZWBjCifkpLLvcd5bEtA4ptDEWMXFdYG22QxFMUFMRxLelxeSMK1qye3OrJ3ApxF41tbNutwcbZU60glxC2FLWl7QsFwZ8TxlKTnbJxuNqhpvBaSt9cOfHENkrJkvObKAcSgAY7cqArK29HlzVIjLnhDcZchDawFeMWysJKknGO3ak1Aacx8eLbdPtctue8tD8iGhD7jTRS888lCgnKh4qk5KdQUByyDqprxbxDb7hBlt2iSYjDkh1a4fgw+/lThUlzV2YSQMcxjbma0I4HfmeDmK8wz1xZaaS85u666FFCU4HboPPlUbeOErlZ7PHuMwNhp4IVpB8ZIWnUnPnHd300o33E3KxAUUlLWpiFS8fiS6R2UtNyAUJGBqQknHnxUOaDWtOtUpO9OTXkZzpQqK00n5k591V398I9En1VqkcR3OQwtl2QNCxhWlCQSPPioiitHjcQ1Z1H8WZrC0E7qC+CN8CW/b5SZENwtupGMgAgjuIPOpxHGl6RjD7WwwMso9VVyiop4irSWWEml5nUpNbMsjnGt7X7aQ1yx+BTy+aoa63OXdHUOTXdZQMJASEgDyAUzzQaKmJrVI5ZybXmDnJ7slbdxDcrfGDEZ8BpPIKQFY82adfdbd8/hm/RJ9VQFLXC8NRk7uKv5HVDtDFQioxqNJeLJ9XF94II69seZpPqqAdWp1xTjiipaiVKUeZNJS4q4UadP2EkZ1sXWr272blblmNGKypDWhziZxV74F4tbhRvYq6LKYpOWXufVE9h/u/V9VENYisq1KNaOWQOKkrM7hIbWpoL1BaFbpWg5CvMarfEN/ZtTC2mFpcnKGEgbhvyny1QY10nRYy48eU82yrmgK2+TupmSVEkkknmTXBS7OtK83dGapa6irJWoqUcqJySe2seVFLXpmolIaWg0DH9ovMu0ympEJ5bTzStTbiFYUg94NT8Hj65QW3DDcbZlOFRVMEZoyiVc/vxTrHyKFU8ik0ilqM63b35HSD0dt2KPNU5f7ZLXIbYkvbyWVJAwlSjzTjl2Dz1O9FPR9erGm9XG4MoalrgPMRoPWp6x8qTgnGdgPL21wtpxbS0rbWpC0nIUk4I+WpS2cRXS3Xdi5x5r/AIYycpcWsqOO457PJStcalYjpbDsaQ4zIQpt1tRSpChggjsxWqrJx7xUri+8puLsKPEe6pKHOq/xihzUfLVb7KYgooooAkLQpCQsOFYaLidejnjfOKmHXrUHZwbMwt4HgxWRny6tt/2VVgVJ9qSPNSKU4rm4r566IYjJFRsZSpZne5KPPqwdLpHk016Z/ozdSOj2Uvq21SHZjiVEpAKwEIwknu3Pz15Rwsf4xXz10jo96U5vB1jctjUBmU2p4vJWpZSQSADy8wrGpUdTc1ilE9M8A3mXxHZJz12gQIw8Kci9Ux4yFoScEKznP8a8UXBOidIAACQ4rAHZvXYIvTtMiMLaiWKGykkrwhwgajuTgDvrjbyy66txXNRKjUW1KbMKKKKZICsgaxoqouwmXS23GRcLE4kBtydGWhJdSygyBHwQrSrGTjz5we6tTQciSLjPtr7zLKEJLYcWUlZOxOABkDCsZA3wMdlVRl5xl1LjLi23EnKVIOCPlqYN8RIbZ9koiZj7I0oeU4QojOQFd+K9WjiY2tJ2FGKTuWZE95L76UyHEh2YhtZ6wjxS0M79/aPLUQxCcaCxCRJduS3lNgqSHGXUZ31ZGCNhnJ59naIpq75XJ8NYRIZkLC1IzpwobAgjlttSz75IfYRGi5iQUJKQw0s4OdyVd5NVPFQ3O+NWna7f19f+G7iq4iVcnI8YtiBHWpDDbKQlA71ADnkjmd+VQZpCc0V5lWq5ttnJUm6k3N9QooorIgMUUUUAGcHIqRuV8uVyaS1OmOuspxhsnCRjYbDao6ipcYtptaoLJlhtfDDtwtLctEuO0+/1vgsZerW+GwCsjAwOeBkjJBp9wbabzcbRMTb70uDFfcEcxw66EyXCkqCSlAI5DmrAplaeJ3bfbERvBWnX2OtEWQokKZDoAXtyPLI7iTW7h3i1dgdfct8Tq1OJTpCX1BKVAY1EdvfUvMaLKbpfAdxjWwT3H45YDKnXAnVlCgElKOW5OsAYyNlb4BqsRZj8JwrivLaVyJScZqx8Pcc3GyaEstocbypawpRBWoqSoHPYBpxjuUofnGqq4orWpasAqOTgYFCTd1IalkalB2ZskyHJT63n1a3FnJVjnWukFLVpJKyIlJyblJ3bEoxS0UCExSjsooFJiOp9EjUVLcySUpMxKwlKjzQnHZ3ZOaOlyPEU1ClpCEzVrKFEc1oxzPfg438tc7t9xkwXg5DeWy5jBKTzpbhcZM17rZjy3nMYBUeVeKuz6npnpGbT608jg9Hn3/eX0I9XtjSUE5NFe0egJRRRQACilpKGM9kf0detPRJD6hSEudc7pKxkDxq6ATdsY8IifQNeS+jzpmuXBnDybQ1bo0thC1LQpaykjPMbVZ//AOo+5n/wGJ6ZXqrLKzXMj0OpN4ByJET6BpJfhIslx8OcbUsx3MFsYGNBrzwf6R9z/wAxRPTK9VNbn/SGu0u3SYzdnhtKebU2HOsUrTkYzj5aMrFdcnEXvwq/OaxFBJUSTzNJWiM2BpKypKYElD/IVx/Xa+s1F1JRPyLcP1m/rNR1JFDipe5/ki0/qOfaqHqYuX5ItP6jn2q26mXRkXRQKKZAlBooNACVIRLxOiWqZbo7xRElqSp1AA8Yp3G/Z/7DuphilxRa4722Jy5cVXS4h7whxrL7ZbeUhpKS7lSVEqIG5JQnfntWtfE91WtKzIGpOcEIG2UBHd7lIqGoxSyoedlmY43vDDynmjEDq0gOK8Fby4QQQpW26gQNzTVziq7ObqfR1mXT1gaSF/fFlxQzjONRJx2ZNQdFLLHged8k3N4oucttba3GkNL3UhplKEk51FWAOZO5NM3rxNdXcVrdGqeAJB0jxvHSv5PGSOVR9FGVBmZYbJxVLtVtkQw2y+hTYbaDraVpR98SskpIOfa/JWR4zvK0t9Y+04426HkOLZSVpIVqwDjOMjlyquUUsi4DOycVxTdS9GcS+hKoz7UhoJbSAlbWdBxjs1HatFzv065wY8WYttxLISlK+rSFkJGEgqxkgDYZqKooyoMzCiloqiRKKWkoAQ0qEqWtKEJKlqOAkDJJ7hRW+A+Is6NII1Bp1LmO/BB/hSY0boVnuc53qoNumSXcqToZYUs5TjUMAdmRnuyKbvRJTDiW34z7bilFAStspJUDgjB7Qdsd9XZPE1ogwpsdttVwTK690oeQpCQXCzhBwQdg0TkHupF8Vw50q03We4UzoTq1LjttHCklQxpUc8h3nO25rPM+DTLHkqL9nuceYmI/bpjUtSdYZWwpKynGc6SM4wCfkpfYe5G1m5C3zDbgcGV1CuqBzjGvGOe3PnVusvFNqsDTIY8LuD8YK6pwnqfbrBUMkKxsnfbfJrGTfrI0lEiC5K1sw5kNuKpvZYfU9gqVnGEh0HHekecGaXAZY8lFooorQzCilpKBBSGlpKQxx4BMUEkRXiFNF5JCDu2NirzbHeiRbZ0ZTyZESQ0pkJU4FtkFAV7UnPLPZVosHE0KFZW4s6M66+25pStGMFgkKWg57ykDzE07uPFNovLUnw1mZEekMoaWpsJezoWSnmU/mkD5KzcpcGiUeSrR+HrxIYceYtcxxpCUrUpLROEqQFg/KkhXmOawhWW5zRHMSBJeEgqSyUNkhwjmE95GRVu+6q0OtQlPJnodgqjraDaE/fC3GbaIJ1eLkoJzg7GtTvF9ucEFoQHm2YcliS0UrB8ZKsueLyGckDfsFF5cDyx5K3I4cvEaO++/bZTbLBIcWpBASQATk+Yj56iatj18gP8ACj1vUlSJPhDzyCYrbmQspIAWTqR7XfFVSqi31JkktgrfBhSbjLbiwWHH5DmdLbYyTgZJ8wAJJ7AKbmpXhmcm2XdqSt51lAStClNtIdyFIKSChfiqSc4IPYTQ79BK19TU9Y7oxIQw9AkoeWtTaUFBypQAJA79iD5iKavRJDMZmQ6w4hh/PVOKSQleDg4Pbg1eFccQYkiK3bbY23DafddWFx2yrx20JJRnJRlSVHAO2R3U1ncVWyTZGLeLSFohlsxy8okKwnSvWEkYzsdj2VClJ9DRqK6leY4fu78aK+xbZTjMpwNMKS2T1ijkADz6VY79JxyNIuwXZHhWq3yf6qAXzoOGwRkZ+SrJbOIrXbIEL2NclxJvhCZEoojIcSVJKtITrWfFSFbJI3Ocnlh0/wAYWdy3SYRtqCyfGA8DZT16yjTqOPwW+/ifxoblwFo8nPaWkJFLVkBRRRTAeWu1zrq6tu3RXZC0J1K0D2ozjJPZuQPOacucO3dtllxdvkBLyghsafGWokgAJ58wRypzwneGLW/IEwuGM8gIW0lhDyXAFA6VJWRjlsQcg1YF8X2r+zXGYrrQitqYLIjNaghQWDh7Os4C9gdtqzbd9C0o21KlPsV0gDMyC+0CpKAVJ2KlAlIB5HOlXLuNb18MXtDaFrtcoJUvqx4n52oowe7xgU+cYqTh3WxR4q7cV3NUMSWZiXeqRrUtAWCgp1YAIXzydxy32m1dIUZ5xlb0Dqlg63HWm0qWomQ46UEk7owsdxyO6lmlwGWJQ7jb5VtkdROYUy9jOlXOmtSnE06NcLq5Ihk9WvcgxW4+D+qgkfLUXVp3RLVmFFFKnGd+VMQ7NrnhtlZhyNDzKpLZ6s4W0nVqWO9I0KyfIa3N2K7OQmpjdulKiukBDqWiUqJOBv5TtVrncaW5+O6y3bnmQyy/FiKC9R6pyN1IC8nYjQ0dv7/fTa0cVQLcza3+qlrmxY4jLb0pDZT1msqBzknHZgeeocpcF5Y8kR9yV/61xoWqV1jada06N0jvPdWI4UvpMYC1ytUlIWyNG6wU6gR5wc+apGff4Dl2uUqOhwomRHGMCK2xpUpQPJBIOw586c3fia2yptkmMtuh2E1Gacb8FbRnqmUIJ6wK1LyUbahyNPNIVokEnhq9KlCMm2Si8dR0hGfa7HfltkfPTdyy3NspDkCUgq63AU0RnqwS59EAk91WJrieA5YXLRKalNsOuOOLdZSlSk5c1JABIz5d6kF9IDL7b0d+G6uKYslpoFQK23FtrQhzPmXhXfz7BRmlwPLHkqEWwXWVDblxrfIdjuK0IWlGQtWcYHfvWEWy3SU8GY9vkuOHUMBs7aThWe7B2OasFp4mhQ7RaWXG3fCYLpXlMZslXj6tnSdSfMBUi5xtAuNtRDuUR5Bd8aS80lKitYXqSdJIzkbKGRSzS4C0eSnv2S6R2nnX7fLbbZ3cUppQCPH0b7beN4vn2rKTYbrFhqlSbfIZjpUUlbiCkAjbG9XJzjqBGYcZtlvW1GUFNGMrHVraU8pakHc7FKseQ7jkDTLjLiq2X6AtuOy+y6l1xTYcjNKJSVZGXc6htzAGKM0uqC0ejKPS0maOdWZhRRikzQBKJsF2XFiyUW+SpmUoIZUlBPWE5xgDffBx34OOVbRwvfFSHGU2uUXG0hagEdh5YPI5weXcanbZxRbYtthIltSJcppHUBwtNoWw2UqSoIcB1L2VsFDxcbHamtvu1ljMtw9VyMaPJRMadS2gLcWBjSRqwkctwSR3VnmkaWiRbfDF7djxnm7ZKU1IWltohGdSlHCR5MnYZ51H3CDJt8gsTGi06ADpJB2+SuhwukSI3LhOyIHVhiRGeW4y2grcS25rU2ok7p5Ect0jPkovEEqLMuKnYRPVFIH4s3H3/UQSmmm76g0raEdS0nOirIFoooxQAVvjQ5MtD64zDjqGEdY6pCSQhPee4U3NWjh7iWJarDcLe/b3HVSm1pLrb2nUSMJChjcDfke2pk2thpJ7kTBslznQ3pcOG67GYGXHEjZHnrcrhq9hpbhtskIS6WSSjHjhWkp84O1ZN3plVuusfwFqOZaGkpTH1aElBJJOpROT56tly42tM0ocLLyHG57spKTEaWVJU91gHWFWpO2xA2+eobZSjEo12tNwtD6WbnEeiuqGQHE4yM42796ZVYuMeIWr+7GcZjiKlrrMsoQlKMqWTqGO0jGfNVdFXG9tSZWvoFBpaSqEJTq3QJVyloiwGFvvqyUoQNzjc02qY4Vu6LJdhNW0HdLTiAlSAsEqSQMg7Eb0ntoNWuY/c5eNEhQt0hSY+Q4UpyBgZPLngbnHIVn9y17Pg2LZJPhIy0dOyvEK+fZ4gKt8bAmpWHxRFUmE/NZcRLgOOOMtxWkIZcKjnCgCNIB7gcip6N0gW9Uphx6GphKBpcLTDay+DDWwC4FHxtClkgZwQtWeQrPNLgu0eSiu2C7NrQlUB/LjnUoKU6gpeNWkEbE4OcUrvD13ZYbedt0lLTiStKij80DJPk2337KuFr47hWtxlhMZyTAD7r7iAy2xupKQlSUJJSkgpPLmD5abnjG3Blt5cd+TcAy40HnGG0KQFIKQkqScuDJ5qGQKM0uB5YlSuNmuNtjsvT4T8dp72inE4ycZwe44IODvg5phU1xTMt1znPXCGqYJUt5b77byU6WyrfCVAkq3J3IG2KhRyq1d7kO3QKSlopiJGIP7EuH67f1moypKKf7Fnj++39ZqOFCGbgN6l7n+SbT+o59qojtqWuX5KtX6jn2q1e5mtmRlLSUtMgKSlopgFFJS0gEpaKDQAmaKSigYtFJRSAKKKKACilFFAAaSlpKACiiigAooooAQikxWVFIZjijFZUUAJRS0UCCkNLQaAEooooGBpMUtFAGNFLRSAMUYpaKAHVoiszLlGjypCYzLiwlTqhskd9WCx2u0I4xlwpj/AIba2I8lZeaOMhLSlBQ8oIz5SKqtINuRxUuLZSkl0Os2/hmxotQ8GaTcpLDDiXHmmVSEuuBxrxkoGDgBZHyZqFtkK33GBAZegRIxMx1Ml8pKFJZbSFnOfak7j5RVBQ4437Rak+Y4pMnfc7896nI+S864OlnhuIyqW9b7W3cosiZHLakFSksx3G1qV435ulQKdR9zWTvC9ogR43UKiTpDctKnUrWSpcdbhQnKezCdKs/3q5ol1xKSlK1BJ2wDSalA51HPno7t8h3i4Ohy7Da5ltvLiWosaapTqoLKFlJ0MnfA7dQDnyoFc55VllWQdRz56MVUYtbkykmY4Jq8sWhtPA9smxrYZkp5R1kRFuBRD+kJLgOE5GBjG+fLVHrNL7qEaEuLCc5wFHFEo3CMrHUVWPh23SJy0IjuQWYvWiQ8S6kOmQhC2/F5lAOkHtzq5EVuZsfDM1iB4IyhaHnmSG9J67Qt7TlRz7XG2Oe4rkoUrGnJx3ZpUqUkghRBHlqMj5Kzrg6e1w3GkX6ZETZnUr+9IZU5AcaaSkqWFFac5SDhP33kNJqvcQWtprheBKiwfB8dUhanEELdWpJJKVZw4knfb2uwqqqkvkk9c5kjSTqO47q1lxZSlKlqKU8gTsKFBp7jc0+h1CNwrZkKtaiYziozLqZ4KyodZ1KnEqUOwZGMDuqt8WRbMbLHnWZABXLWy4oAhJKWWSdIPJOtS8VUgtQzhRGee/OkycYztzxTUXe7YnJWtYOdTXC1raucqQHUuO9S11iWG86nTqSnGwJwAok4GcCoWskLU2oKQopUORBxVNXRKdmXmb0fmI0X37k0y2Vv/ew2pwoS2XOahgFX3s7bcwazTwKyiG2XpQVIDrhcCFp/BAKCVBPMZUmqIXHCnSVqIyTjPaaTWvOdas8udTaXJWaPBIi0IVw+5chPjBxDwa8GKj1hBHPGMftq1tcDNS0xUNKfhqVHjvdc8kqRI6yMHl9WBuSk5GB9dUGsy874n3xfibJ8Y7eahxfIlJcF2/7O5CgyUTg4HAo/eYy1nAVjI7/L3VIW7o4al3CI2iUosN+DCSvRssuKTrCTnbCVjs3rn0efKjoWll9xCVpKVAHmDWoPugEBxYB7lGlllyPNHgtF84PctFnXPdmtOpS4EBKEKKVZCdwrljxsjvG9NUWCO3eLTHdmIlszG0urEMKWtGQfFxjnt2VAdaso0Faij3OdqEqKVBSSQRyI7KqztZsV1fYvb3R1IXMCWpAjocUCkONqUlKS4lGNe2V+NnRjOxpHOjtxDIcNzQrKjhCIyysgDJAHu/7nOqY7PlOstNOPuKbazoBPLJJP7Sa1de7nPWrznV7Y8++pyyXUeaPBYOJeHWLZAiyo0lbnWJSlxtxvQpCikHv8vyVC2lpDtzitv4LSnUhQJxkZ3pspalc1E+c1jVJaaibV7o6pPsFhZakyrQ01MdU8+Y0RS8klJwUEczjcjvBFCbFYVWyQp9iOzNcQ6pUbcrS4mOlfVoVnCSFEnfOcEVyxJIUCFEHmMGp4WNz7nlXMy/vwbMkMaDu0HA0Vas+21EbY5b57Khxtuy1K+yLnc+F+G1uXNu3OIM1bLLbMcufgHAttLiye0KCgR51d1Nb/AMNW52PMd4cQ1NSGEJa8GUpw60r0rVggHcYPLtrWz0bvyFM6LkVdcg6ClgnWsdXkp8bdr74k9Z5D4vfU7Nw/eLk5otcZ1zxw2VJ5BR7zSVlsxu/VFndszUeyzHxaESW1RGkNKSgqWl9TSStRI5BOSd+0gd9Si7FYoEqN1DdunIaYdjSxrKwH229WvsxqVrG2RhFVPhbheVfbzJtTklUWW2tLIRpKyXFK0DIBGEA+2VvgY2NSqOjt4sxXE3ZlBlMlbQWjT1rmEHSjxvHThweMN9leLtunbkF5DuPZoK4kCRCtjMx+QlnwlkK2ZQrOpfPbuz2YonWHh9VsluQVIMiJbXHlBS/wuV4S4nyjkR3EHvqj3eFJtNwdiPFxKk7BSklGtPeB3c6YAkdp7qrK3qmTmtpYBRRRWhmP7AYYvMMXNOqEpwJeHaEHYkeUZzXQmuG4EKBcoXgSZtzt7SA840wqSFLUSdgk7AJ07+U1y6s0POIJKHFpJ5kEjNTKLfUuMkjrCeH7KtqIGYLb0pKFZYaQrIUIy3AHBnfKgnGO4imDPDFpfjtPS4qYs5wsKdh69PVrV4VhvfdOsNtHB5aq5qHVhWoLUFd+aQuLJJKlEk5JzU5HyVnXBdoaWm3boi5cPRorzcJT6GnUqSQoHAOCcjPd5KpBOVE4AyeQ7KVTi1ElS1EnYknnWNUlYhu4UUtFUISilpKAOocN2SySrDaRJYZckvLbLiUgh0hT6UFROcaQkkEeUVk9abPDeu0i4wW40eO5Hbb6+G41qQpT2rSknJOEDCuW1cuC1AjCiMdxrJx5xz261q85zWeR8mmdcHRoNitb5aSm3n2IcY69NxWTnrCvZsq5Z5J08+3tp9cYNhi31ltiBCksOMyyohKkoBaQspGM+2ykZ765UHVhGgLVpznGdqTWr3R+ejI+QzrgykLS6+44lCW0qUVBCeScnkPJWuilqyGFJS0UxEhFH9izz/eb+s1HCpKJ+RLh+u39ZqOFCGzZUrKy/ZoS290sFaF4/NJORmout8WS9FXrjuFBOxx2+cVq0ZpmqlqQ9mJPuI/ok0nsxI9xH9EmgLIYUlSHszJ9xH9CmlN6k+4j+hTQKxHUU/8AZiT7iP6JNL7MyfcR/RJoHYjxRUh7MSfcR/RJpPZeR7iP6IUBYYUYp97LSPcMeiFL7LyPcR/RCgBhSVIm8SPcR/RJrA3eR7hj0QpBYY0U+9l5HuGPRJo9ln/cMeiFAWGNFPhdX/cMeiFHss/7hj0QoCwxop77KyPcseiFIbo+fzWfRigLDOkp4Lm+PzWfRil9lJHuWPRCgLDKlp77LSPcseiFJ7KP+5Y9GKAsM6Kd+yb/ALln0Yo9kn/cs+jFADOinhub/uWfRik9kXvctejFADWinXsk/wC5Z9GKBcXwfatejFAWGtFPPZR/3LPoxSeyj/uWfRikFhpSU7Nzf9yz6MUoub/uWfRigLDSkIp37IvZ9q16MUnsi93NejFADWkxTv2Re7mvRilFxeHJLXoxQGo0op37Iv8AuWvRikNwePNLXoxTDUa0lPBcXh+a16MUeyL2fas+jFFhajKinhuDx/Na9GKPZF4fmtejFFkGvA0pKdm4vH81r0Yo9kHvctejFGgetwNaKdeyDw7GvoCgznTzDf0BRoHrcDQ0lO/Dne5v6ApTOdP5rX0BRZBeXAzApac+Hu9zf0BR4e93N/QFKyD1uBtSU78Pe9y19AUnhrvuW/oCiyHeXA1op0Zrvc39AUnhzvc39AUWQXlwNqWnImu9zf0BR4c73N/QFFkF3wNaKd+Hu9zX0BR4e97lr6Aosgu+BpRTsT3h2NfQFHh73c19AUWQajTFJTzw97ua+gKPD3u5r6AosguxnS089kXvctejFHsi97lr0Yosg1GdJT32Re9y16MUvsk+PzWfRiiyC7GVJT72Sf8Acs+jFBuT5/NZ9GKVkGoxqRYvNwYgeBNyCIudWgpSe3OMkZxnfHLO/OsRc3x+az6MUpuj55pZ9GKMqY7yRtb4hujSmy3KCS211SNLSBoTscjbZWw8YeNtzqMbcW2sLQopWk5CgcEGnnsk97ln0YpfZN/3LPoxRlSDNJ7mFvuUu3vrehu9W8pJT1mkKUO3IJBwfKMEd9bFXq4HwbEopEZBba0JSnSCACdhzIA8bnsN9qT2Tf8Acs+jFILk+PzWfRijKgUpGq4T5NxkdfNeU67pCdRAGw81NakRdJA/MY9EKT2Ufz7Vn0YosguxhRUiLtIH5jHohQbtIP5rHohRZCu+COop+LrIB2Sz6IUvsrI9yx6IUWQ7vgjqKkfZaQPzWPRCl9mJPuY/ok0WQXfBG0VI+y0j3LHohSi7yBySx6JNFkF2R1FSXsxJ9yx6JNHsxJ9zH9CmiyC74IylqR9l5HuWPRJpReZI5Jj+iTRZBd8EZRUkbxJP5rHok0ezEn3Mf0SaLILsjaKkxeZI/Nj+hTR7NSvcx/QppWQ7sjKKk/ZqV7iP6FNL7NSvcR/QposguyLoqV9mpWPax/QprE3mV7mOD3hpNOwrsEtqj2NxTgKfCHEhAPMhO5PmqMrdKlPS3eskOKcXyyeytVKxRspaKK0MxKO2iigA7aKKKACiiigYUUUUCClFFFACUhoooGhKWiikAUlFFABRRRQMKKKKACiiigYUUUUEhRRRQMU0lFFABSGiikAUCiigYtBoooEAooooAKKKKACloopiA1iaKKRQUpoooAQ0ooooABRRRQBjSiiigAooooAKSiigELRRRQAUUUUAFFFFABSUUUALRRRSAKKKKACiiigAooopgFBoopAJ20tFFABQaKKYAaSiigAooopAFFFFABQaKKAYUUUUAFFFFACGgUUUDFpO2iigANKKKKAAUhoooEJWQoooGf/Z",
+    "requestId": "req_ld9QuqcEIiMUkVVpOd14l"
+  },
+  {
+    "id": "SCN-2026-B4D998",
+    "detectionId": "SCN-2026-B4D998",
+    "userId": "anonymous_user",
+    "filename": "test.jpg",
+    "target": "test.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 10309,
+    "sha256": "b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:47:54.103Z",
+    "timestamp": "2026-08-12T17:47:54.103Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld9NnkUMm5UqVGtgU8XCD",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld9NnkUMm5UqVGtgU8XCD",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 10309
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test.jpg",
+      "mimetype": "image/jpeg",
+      "size": 10309,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld9NnkUMm5UqVGtgU8XCD"
+  },
+  {
+    "id": "SCN-2026-CE8B39",
+    "detectionId": "SCN-2026-CE8B39",
+    "userId": "anonymous_user",
+    "filename": "test_sample_audio.wav",
+    "target": "test_sample_audio.wav",
+    "mediaType": "AUDIO",
+    "type": "AUDIO",
+    "fileSize": 224044,
+    "sha256": "ce8b3977cdc5218e524e30c5e329e3dd4cbc7c74a33e185c7213efb089ef3f0a",
+    "genaiScore": 0.534,
+    "aiScore": 0.534,
+    "deepfakeScore": null,
+    "scores": {
+      "aiGenerated": 0.534,
+      "deepfake": null
+    },
+    "percentages": {
+      "aiGenerated": 53,
+      "deepfake": null
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AI-GENERATED",
+    "classification": "LIKELY AI-GENERATED",
+    "confidence": 53,
+    "provider": "SecureLens PyTorch Local Audio Detector",
+    "model": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:46:18.578Z",
+    "timestamp": "2026-08-12T17:46:18.578Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Synthetic Voice Classifier (STFT ResNet-18 CPU) executed real spectral forward pass inference.",
+      "Audio Preprocessing Layer inspected 2 speech windows (Sample Rate: 16000 Hz, Channels: 2, Duration: 3.5s).",
+      "SHA-256 cryptographic digest verified (ce8b3977cdc5218e524e30c5e329e3dd4cbc7c74a33e185c7213efb089ef3f0a).",
+      "PyTorch spectral anti-spoof classifier returned an overall synthetic speech score of 0.534 (53% probability).",
+      "Facial manipulation / deepfake scoring is strictly NOT applicable to audio recordings (scores.deepfake = N/A).",
+      "Forensic Disclaimer: Synthetic voice likelihood is derived from real spectral STFT feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Audio Detector",
+      "requestId": "req_pt_aud_ce8b3977cdc5",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+      "requestId": "req_pt_aud_ce8b3977cdc5",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 224044
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.534,
+        "rawDeepfake": null
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_sample_audio.wav",
+      "mimetype": "audio/wav",
+      "size": 224044,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_aud_ce8b3977cdc5"
+  },
+  {
     "id": "SCN-2026-03D1B0",
     "detectionId": "SCN-2026-03D1B0",
     "userId": "anonymous_user",
@@ -9,45 +407,49 @@
     "type": "VIDEO",
     "fileSize": 92317,
     "sha256": "03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee",
-    "genaiScore": 0.05,
-    "aiScore": 0.05,
-    "deepfakeScore": null,
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.698,
     "scores": {
-      "aiGenerated": 0.05,
-      "deepfake": null
+      "aiGenerated": 0.001,
+      "deepfake": 0.698
     },
     "percentages": {
-      "aiGenerated": 5,
-      "deepfake": null
+      "aiGenerated": 0,
+      "deepfake": 70
     },
     "confidenceLevel": "HIGH",
-    "verdict": "LIKELY AUTHENTIC",
-    "classification": "LIKELY AUTHENTIC",
-    "confidence": 95,
-    "provider": "SecureLens Local ML Video Detector",
-    "model": "OpenCV Spatial Forensic Analyzer",
+    "verdict": "LIKELY DEEPFAKE",
+    "classification": "LIKELY DEEPFAKE",
+    "confidence": 99,
+    "provider": "SecureLens PyTorch Local Video Detector",
+    "model": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
     "version": "v1.0",
-    "createdAt": "2026-08-12T14:05:47.669Z",
-    "timestamp": "2026-08-12T14:05:47.669Z",
+    "createdAt": "2026-08-12T17:45:59.109Z",
+    "timestamp": "2026-08-12T17:45:59.109Z",
     "processingStatus": "Completed",
     "status": "Completed",
     "errorStatus": null,
     "evidence": [
-      "Local OpenCV Forensic Video Analyzer inspected 2 keyframes.",
-      "Video spatial resolution: 360x360 @ 30.0 FPS (Duration: 2.0s).",
+      "Pretrained PyTorch Deepfake Neural Network (ResNet-18 CPU) executed real model forward pass tensor inference.",
+      "Video Preprocessing Layer inspected 2 keyframes (Resolution: 360x360 @ 30.0 FPS, Duration: 2.0s).",
       "SHA-256 cryptographic digest verified (03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee).",
-      "No facial bounding boxes were detected in keyframes; performed full-frame spatial frequency analysis."
+      "No face ROIs detected in keyframes; performed PyTorch spatial tensor inference on full-frame keyframes.",
+      "Temporal aggregation classifier returned an overall Deepfake manipulation score of 0.698 (70% probability).",
+      "Forensic Disclaimer: Deepfake likelihood is derived from real neural feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs.",
+      "Frame-level AI Classifier sampled and analyzed 8 representative keyframes using Sightengine GenAI neural detector (0% AI-generation probability).",
+      "SHA-256 cryptographic digest verified (03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee)."
     ],
     "success": true,
     "rawResult": {
-      "provider": "SecureLens Local ML Video Detector",
-      "requestId": "req_local_vid_03d1b094a1b0",
+      "provider": "SecureLens PyTorch Local Video Detector",
+      "requestId": "req_pt_vid_03d1b094a1b0",
       "status": "success"
     },
     "diagnostics": {
       "apiProvider": "Sightengine",
-      "modelRequested": "OpenCV Spatial Forensic Analyzer",
-      "requestId": "req_local_vid_03d1b094a1b0",
+      "modelRequested": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
+      "requestId": "req_pt_vid_03d1b094a1b0",
       "preprocessing": {
         "resized": false,
         "compressed": false,
@@ -55,8 +457,8 @@
         "bytesTransmitted": 92317
       },
       "rawFieldsExtracted": {
-        "rawGenai": 0.05,
-        "rawDeepfake": null
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.698
       },
       "thresholdsApplied": {
         "aiHighThreshold": 0.8,
@@ -75,7 +477,2203 @@
       "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
     },
     "previewUrl": null,
-    "requestId": "req_local_vid_03d1b094a1b0"
+    "requestId": "req_pt_vid_03d1b094a1b0"
+  },
+  {
+    "id": "SCN-2026-B4D998",
+    "detectionId": "SCN-2026-B4D998",
+    "userId": "anonymous_user",
+    "filename": "test_valid_sample.jpg",
+    "target": "test_valid_sample.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 10309,
+    "sha256": "b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:45:23.321Z",
+    "timestamp": "2026-08-12T17:45:23.321Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld9LLhEw72gc9dOeVTGq9",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld9LLhEw72gc9dOeVTGq9",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 10309
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_valid_sample.jpg",
+      "mimetype": "image/jpeg",
+      "size": 10309,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld9LLhEw72gc9dOeVTGq9"
+  },
+  {
+    "id": "SCN-2026-7F0DA4",
+    "detectionId": "SCN-2026-7F0DA4",
+    "userId": "anonymous_user",
+    "filename": "test_short_audio.wav",
+    "target": "test_short_audio.wav",
+    "mediaType": "AUDIO",
+    "type": "AUDIO",
+    "fileSize": 16044,
+    "sha256": "7f0da439233eeb45d815b812e3ef0c909e0ec8cc276fbff0040794b8c5e1300c",
+    "genaiScore": 0.494,
+    "aiScore": 0.494,
+    "deepfakeScore": null,
+    "scores": {
+      "aiGenerated": 0.494,
+      "deepfake": null
+    },
+    "percentages": {
+      "aiGenerated": 49,
+      "deepfake": null
+    },
+    "confidenceLevel": "MODERATE",
+    "verdict": "UNCERTAIN",
+    "classification": "UNCERTAIN",
+    "confidence": 51,
+    "provider": "SecureLens PyTorch Local Audio Detector",
+    "model": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:37:33.551Z",
+    "timestamp": "2026-08-12T17:37:33.551Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Synthetic Voice Classifier (STFT ResNet-18 CPU) executed real spectral forward pass inference.",
+      "Audio Preprocessing Layer inspected 1 speech windows (Sample Rate: 16000 Hz, Channels: 1, Duration: 0.5s).",
+      "SHA-256 cryptographic digest verified (7f0da439233eeb45d815b812e3ef0c909e0ec8cc276fbff0040794b8c5e1300c).",
+      "PyTorch spectral anti-spoof classifier returned an overall synthetic speech score of 0.494 (49% probability).",
+      "Facial manipulation / deepfake scoring is strictly NOT applicable to audio recordings (scores.deepfake = N/A).",
+      "Forensic Disclaimer: Synthetic voice likelihood is derived from real spectral STFT feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Audio Detector",
+      "requestId": "req_pt_aud_7f0da439233e",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+      "requestId": "req_pt_aud_7f0da439233e",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 16044
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.494,
+        "rawDeepfake": null
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_short_audio.wav",
+      "mimetype": "audio/wav",
+      "size": 16044,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_aud_7f0da439233e"
+  },
+  {
+    "id": "SCN-2026-D30381",
+    "detectionId": "SCN-2026-D30381",
+    "userId": "anonymous_user",
+    "filename": "test_silent_audio.wav",
+    "target": "test_silent_audio.wav",
+    "mediaType": "AUDIO",
+    "type": "AUDIO",
+    "fileSize": 96044,
+    "sha256": "d303811b8c84619667cd0501342f84ec6cbe69f7aa3856dcf52fabda374c92b8",
+    "genaiScore": 0.497,
+    "aiScore": 0.497,
+    "deepfakeScore": null,
+    "scores": {
+      "aiGenerated": 0.497,
+      "deepfake": null
+    },
+    "percentages": {
+      "aiGenerated": 50,
+      "deepfake": null
+    },
+    "confidenceLevel": "MODERATE",
+    "verdict": "UNCERTAIN",
+    "classification": "UNCERTAIN",
+    "confidence": 50,
+    "provider": "SecureLens PyTorch Local Audio Detector",
+    "model": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:37:06.901Z",
+    "timestamp": "2026-08-12T17:37:06.901Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Synthetic Voice Classifier (STFT ResNet-18 CPU) executed real spectral forward pass inference.",
+      "Audio Preprocessing Layer inspected 1 speech windows (Sample Rate: 16000 Hz, Channels: 1, Duration: 3.0s).",
+      "SHA-256 cryptographic digest verified (d303811b8c84619667cd0501342f84ec6cbe69f7aa3856dcf52fabda374c92b8).",
+      "RMS energy silence detector flagged audio waveform as low-energy / silent speech segment.",
+      "PyTorch spectral anti-spoof classifier returned an overall synthetic speech score of 0.497 (50% probability).",
+      "Facial manipulation / deepfake scoring is strictly NOT applicable to audio recordings (scores.deepfake = N/A).",
+      "Forensic Disclaimer: Synthetic voice likelihood is derived from real spectral STFT feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Audio Detector",
+      "requestId": "req_pt_aud_d303811b8c84",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+      "requestId": "req_pt_aud_d303811b8c84",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 96044
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.497,
+        "rawDeepfake": null
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_silent_audio.wav",
+      "mimetype": "audio/wav",
+      "size": 96044,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_aud_d303811b8c84"
+  },
+  {
+    "id": "SCN-2026-CE8B39",
+    "detectionId": "SCN-2026-CE8B39",
+    "userId": "anonymous_user",
+    "filename": "test_sample_audio.wav",
+    "target": "test_sample_audio.wav",
+    "mediaType": "AUDIO",
+    "type": "AUDIO",
+    "fileSize": 224044,
+    "sha256": "ce8b3977cdc5218e524e30c5e329e3dd4cbc7c74a33e185c7213efb089ef3f0a",
+    "genaiScore": 0.514,
+    "aiScore": 0.514,
+    "deepfakeScore": null,
+    "scores": {
+      "aiGenerated": 0.514,
+      "deepfake": null
+    },
+    "percentages": {
+      "aiGenerated": 51,
+      "deepfake": null
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AI-GENERATED",
+    "classification": "LIKELY AI-GENERATED",
+    "confidence": 51,
+    "provider": "SecureLens PyTorch Local Audio Detector",
+    "model": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:36:40.939Z",
+    "timestamp": "2026-08-12T17:36:40.939Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Synthetic Voice Classifier (STFT ResNet-18 CPU) executed real spectral forward pass inference.",
+      "Audio Preprocessing Layer inspected 2 speech windows (Sample Rate: 16000 Hz, Channels: 2, Duration: 3.5s).",
+      "SHA-256 cryptographic digest verified (ce8b3977cdc5218e524e30c5e329e3dd4cbc7c74a33e185c7213efb089ef3f0a).",
+      "PyTorch spectral anti-spoof classifier returned an overall synthetic speech score of 0.514 (51% probability).",
+      "Facial manipulation / deepfake scoring is strictly NOT applicable to audio recordings (scores.deepfake = N/A).",
+      "Forensic Disclaimer: Synthetic voice likelihood is derived from real spectral STFT feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Audio Detector",
+      "requestId": "req_pt_aud_ce8b3977cdc5",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+      "requestId": "req_pt_aud_ce8b3977cdc5",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 224044
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.514,
+        "rawDeepfake": null
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_sample_audio.wav",
+      "mimetype": "audio/wav",
+      "size": 224044,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_aud_ce8b3977cdc5"
+  },
+  {
+    "id": "SCN-2026-03D1B0",
+    "detectionId": "SCN-2026-03D1B0",
+    "userId": "anonymous_user",
+    "filename": "test_sample_video.mp4",
+    "target": "test_sample_video.mp4",
+    "mediaType": "VIDEO",
+    "type": "VIDEO",
+    "fileSize": 92317,
+    "sha256": "03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.729,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.729
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 73
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY DEEPFAKE",
+    "classification": "LIKELY DEEPFAKE",
+    "confidence": 99,
+    "provider": "SecureLens PyTorch Local Video Detector",
+    "model": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:36:13.380Z",
+    "timestamp": "2026-08-12T17:36:13.380Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Deepfake Neural Network (ResNet-18 CPU) executed real model forward pass tensor inference.",
+      "Video Preprocessing Layer inspected 2 keyframes (Resolution: 360x360 @ 30.0 FPS, Duration: 2.0s).",
+      "SHA-256 cryptographic digest verified (03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee).",
+      "No face ROIs detected in keyframes; performed PyTorch spatial tensor inference on full-frame keyframes.",
+      "Temporal aggregation classifier returned an overall Deepfake manipulation score of 0.729 (73% probability).",
+      "Forensic Disclaimer: Deepfake likelihood is derived from real neural feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs.",
+      "Frame-level AI Classifier sampled and analyzed 8 representative keyframes using Sightengine GenAI neural detector (0% AI-generation probability).",
+      "SHA-256 cryptographic digest verified (03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Video Detector",
+      "requestId": "req_pt_vid_03d1b094a1b0",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
+      "requestId": "req_pt_vid_03d1b094a1b0",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 92317
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.729
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_sample_video.mp4",
+      "mimetype": "video/mp4",
+      "size": 92317,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_vid_03d1b094a1b0"
+  },
+  {
+    "id": "SCN-2026-B4D998",
+    "detectionId": "SCN-2026-B4D998",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 10309,
+    "sha256": "b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:35:46.220Z",
+    "timestamp": "2026-08-12T17:35:46.220Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld9Bn0h5NxVcrbkn0tM1X",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld9Bn0h5NxVcrbkn0tM1X",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 10309
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 10309,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld9Bn0h5NxVcrbkn0tM1X"
+  },
+  {
+    "id": "SCN-2026-B4D998",
+    "detectionId": "SCN-2026-B4D998",
+    "userId": "anonymous_user",
+    "filename": "test_valid_sample.jpg",
+    "target": "test_valid_sample.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 10309,
+    "sha256": "b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:35:44.302Z",
+    "timestamp": "2026-08-12T17:35:44.302Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld9B8r8wDMXXIuPJY41cy",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld9B8r8wDMXXIuPJY41cy",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 10309
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_valid_sample.jpg",
+      "mimetype": "image/jpeg",
+      "size": 10309,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld9B8r8wDMXXIuPJY41cy"
+  },
+  {
+    "id": "SCN-2026-CE8B39",
+    "detectionId": "SCN-2026-CE8B39",
+    "userId": "anonymous_user",
+    "filename": "test_sample_audio.wav",
+    "target": "test_sample_audio.wav",
+    "mediaType": "AUDIO",
+    "type": "AUDIO",
+    "fileSize": 224044,
+    "sha256": "ce8b3977cdc5218e524e30c5e329e3dd4cbc7c74a33e185c7213efb089ef3f0a",
+    "genaiScore": 0.653,
+    "aiScore": 0.653,
+    "deepfakeScore": null,
+    "scores": {
+      "aiGenerated": 0.653,
+      "deepfake": null
+    },
+    "percentages": {
+      "aiGenerated": 65,
+      "deepfake": null
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AI-GENERATED",
+    "classification": "LIKELY AI-GENERATED",
+    "confidence": 65,
+    "provider": "SecureLens PyTorch Local Audio Detector",
+    "model": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:35:37.222Z",
+    "timestamp": "2026-08-12T17:35:37.222Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Synthetic Voice Classifier (STFT ResNet-18 CPU) executed real spectral forward pass inference.",
+      "Audio Preprocessing Layer inspected 2 speech windows (Sample Rate: 16000 Hz, Channels: 2, Duration: 3.5s).",
+      "SHA-256 cryptographic digest verified (ce8b3977cdc5218e524e30c5e329e3dd4cbc7c74a33e185c7213efb089ef3f0a).",
+      "PyTorch spectral anti-spoof classifier returned an overall synthetic speech score of 0.653 (65% probability).",
+      "Facial manipulation / deepfake scoring is strictly NOT applicable to audio recordings (scores.deepfake = N/A).",
+      "Forensic Disclaimer: Synthetic voice likelihood is derived from real spectral STFT feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Audio Detector",
+      "requestId": "req_pt_aud_ce8b3977cdc5",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+      "requestId": "req_pt_aud_ce8b3977cdc5",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 224044
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.653,
+        "rawDeepfake": null
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_sample_audio.wav",
+      "mimetype": "audio/wav",
+      "size": 224044,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_aud_ce8b3977cdc5"
+  },
+  {
+    "id": "SCN-2026-03D1B0",
+    "detectionId": "SCN-2026-03D1B0",
+    "userId": "anonymous_user",
+    "filename": "test_sample_video.mp4",
+    "target": "test_sample_video.mp4",
+    "mediaType": "VIDEO",
+    "type": "VIDEO",
+    "fileSize": 92317,
+    "sha256": "03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.593,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.593
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 59
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY DEEPFAKE",
+    "classification": "LIKELY DEEPFAKE",
+    "confidence": 99,
+    "provider": "SecureLens PyTorch Local Video Detector",
+    "model": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:35:13.785Z",
+    "timestamp": "2026-08-12T17:35:13.785Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Deepfake Neural Network (ResNet-18 CPU) executed real model forward pass tensor inference.",
+      "Video Preprocessing Layer inspected 2 keyframes (Resolution: 360x360 @ 30.0 FPS, Duration: 2.0s).",
+      "SHA-256 cryptographic digest verified (03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee).",
+      "No face ROIs detected in keyframes; performed PyTorch spatial tensor inference on full-frame keyframes.",
+      "Temporal aggregation classifier returned an overall Deepfake manipulation score of 0.593 (59% probability).",
+      "Forensic Disclaimer: Deepfake likelihood is derived from real neural feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs.",
+      "Frame-level AI Classifier sampled and analyzed 8 representative keyframes using Sightengine GenAI neural detector (0% AI-generation probability).",
+      "SHA-256 cryptographic digest verified (03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Video Detector",
+      "requestId": "req_pt_vid_03d1b094a1b0",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
+      "requestId": "req_pt_vid_03d1b094a1b0",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 92317
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.593
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_sample_video.mp4",
+      "mimetype": "video/mp4",
+      "size": 92317,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_vid_03d1b094a1b0"
+  },
+  {
+    "id": "SCN-2026-B4D998",
+    "detectionId": "SCN-2026-B4D998",
+    "userId": "anonymous_user",
+    "filename": "test_valid_sample.jpg",
+    "target": "test_valid_sample.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 10309,
+    "sha256": "b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:34:42.817Z",
+    "timestamp": "2026-08-12T17:34:42.817Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld9ASKgyDZFCbVdChp5bp",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld9ASKgyDZFCbVdChp5bp",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 10309
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_valid_sample.jpg",
+      "mimetype": "image/jpeg",
+      "size": 10309,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld9ASKgyDZFCbVdChp5bp"
+  },
+  {
+    "id": "SCN-2026-CE8B39",
+    "detectionId": "SCN-2026-CE8B39",
+    "userId": "anonymous_user",
+    "filename": "test_sample_audio.wav",
+    "target": "test_sample_audio.wav",
+    "mediaType": "AUDIO",
+    "type": "AUDIO",
+    "fileSize": 224044,
+    "sha256": "ce8b3977cdc5218e524e30c5e329e3dd4cbc7c74a33e185c7213efb089ef3f0a",
+    "genaiScore": 0.555,
+    "aiScore": 0.555,
+    "deepfakeScore": null,
+    "scores": {
+      "aiGenerated": 0.555,
+      "deepfake": null
+    },
+    "percentages": {
+      "aiGenerated": 56,
+      "deepfake": null
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AI-GENERATED",
+    "classification": "LIKELY AI-GENERATED",
+    "confidence": 56,
+    "provider": "SecureLens PyTorch Local Audio Detector",
+    "model": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:34:23.314Z",
+    "timestamp": "2026-08-12T17:34:23.314Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Synthetic Voice Classifier (STFT ResNet-18 CPU) executed real spectral forward pass inference.",
+      "Audio Preprocessing Layer inspected 2 speech windows (Sample Rate: 16000 Hz, Channels: 2, Duration: 3.5s).",
+      "SHA-256 cryptographic digest verified (ce8b3977cdc5218e524e30c5e329e3dd4cbc7c74a33e185c7213efb089ef3f0a).",
+      "PyTorch spectral anti-spoof classifier returned an overall synthetic speech score of 0.555 (56% probability).",
+      "Facial manipulation / deepfake scoring is strictly NOT applicable to audio recordings (scores.deepfake = N/A).",
+      "Forensic Disclaimer: Synthetic voice likelihood is derived from real spectral STFT feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Audio Detector",
+      "requestId": "req_pt_aud_ce8b3977cdc5",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+      "requestId": "req_pt_aud_ce8b3977cdc5",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 224044
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.555,
+        "rawDeepfake": null
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_sample_audio.wav",
+      "mimetype": "audio/wav",
+      "size": 224044,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_aud_ce8b3977cdc5"
+  },
+  {
+    "id": "SCN-2026-03D1B0",
+    "detectionId": "SCN-2026-03D1B0",
+    "userId": "anonymous_user",
+    "filename": "test_sample_video.mp4",
+    "target": "test_sample_video.mp4",
+    "mediaType": "VIDEO",
+    "type": "VIDEO",
+    "fileSize": 92317,
+    "sha256": "03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.254,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.254
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 25
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "SecureLens PyTorch Local Video Detector",
+    "model": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:34:04.632Z",
+    "timestamp": "2026-08-12T17:34:04.632Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Deepfake Neural Network (ResNet-18 CPU) executed real model forward pass tensor inference.",
+      "Video Preprocessing Layer inspected 2 keyframes (Resolution: 360x360 @ 30.0 FPS, Duration: 2.0s).",
+      "SHA-256 cryptographic digest verified (03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee).",
+      "No face ROIs detected in keyframes; performed PyTorch spatial tensor inference on full-frame keyframes.",
+      "Temporal aggregation classifier returned an overall Deepfake manipulation score of 0.254 (25% probability).",
+      "Forensic Disclaimer: Deepfake likelihood is derived from real neural feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs.",
+      "Frame-level AI Classifier sampled and analyzed 8 representative keyframes using Sightengine GenAI neural detector (0% AI-generation probability).",
+      "SHA-256 cryptographic digest verified (03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Video Detector",
+      "requestId": "req_pt_vid_03d1b094a1b0",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
+      "requestId": "req_pt_vid_03d1b094a1b0",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 92317
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.254
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_sample_video.mp4",
+      "mimetype": "video/mp4",
+      "size": 92317,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_vid_03d1b094a1b0"
+  },
+  {
+    "id": "SCN-2026-B4D998",
+    "detectionId": "SCN-2026-B4D998",
+    "userId": "anonymous_user",
+    "filename": "test_valid_sample.jpg",
+    "target": "test_valid_sample.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 10309,
+    "sha256": "b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:33:36.780Z",
+    "timestamp": "2026-08-12T17:33:36.780Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld9zzSBtGKynklcbKsQ5L",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld9zzSBtGKynklcbKsQ5L",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 10309
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_valid_sample.jpg",
+      "mimetype": "image/jpeg",
+      "size": 10309,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld9zzSBtGKynklcbKsQ5L"
+  },
+  {
+    "id": "SCN-2026-209746",
+    "detectionId": "SCN-2026-209746",
+    "userId": "anonymous_user",
+    "filename": "vidssave.com_cute_baby_at_chai_stall___________funny_ai_baby_video__shorts_720p.mp4",
+    "target": "vidssave.com_cute_baby_at_chai_stall___________funny_ai_baby_video__shorts_720p.mp4",
+    "mediaType": "VIDEO",
+    "type": "VIDEO",
+    "fileSize": 2119967,
+    "sha256": "2097469c3a656a1e4804088c52a882b670aab5aeb4f7cf57e1d602b8e9729e7c",
+    "genaiScore": null,
+    "aiScore": null,
+    "deepfakeScore": 0.404,
+    "scores": {
+      "aiGenerated": null,
+      "deepfake": 0.404
+    },
+    "percentages": {
+      "aiGenerated": null,
+      "deepfake": 40
+    },
+    "confidenceLevel": "MODERATE",
+    "verdict": "UNCERTAIN",
+    "classification": "UNCERTAIN",
+    "confidence": null,
+    "provider": "SecureLens PyTorch Local Video Detector",
+    "model": "ResNet-18 Deepfake Neural Classifier (CPU)",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:30:56.429Z",
+    "timestamp": "2026-08-12T17:30:56.429Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Deepfake Neural Network (ResNet-18 CPU) executed real model forward pass tensor inference.",
+      "Video Preprocessing Layer inspected 10 keyframes (Resolution: 720x1280 @ 24.0 FPS, Duration: 10.0s).",
+      "SHA-256 cryptographic digest verified (2097469c3a656a1e4804088c52a882b670aab5aeb4f7cf57e1d602b8e9729e7c).",
+      "No face ROIs detected in keyframes; performed PyTorch spatial tensor inference on full-frame keyframes.",
+      "Temporal aggregation classifier returned an overall Deepfake manipulation score of 0.404 (40% probability).",
+      "Forensic Disclaimer: Deepfake likelihood is derived from real neural feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Video Detector",
+      "requestId": "req_pt_vid_2097469c3a65",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "ResNet-18 Deepfake Neural Classifier (CPU)",
+      "requestId": "req_pt_vid_2097469c3a65",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 2119967
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": null,
+        "rawDeepfake": 0.404
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "DETECTOR_UNAVAILABLE"
+    },
+    "file": {
+      "filename": "vidssave.com_cute_baby_at_chai_stall___________funny_ai_baby_video__shorts_720p.mp4",
+      "mimetype": "video/mp4",
+      "size": 2119967,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_vid_2097469c3a65"
+  },
+  {
+    "id": "SCN-2026-098475",
+    "detectionId": "SCN-2026-098475",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 8117,
+    "sha256": "0984759e2b1d11c2cdb0f11f902134662a883cf2736bbfbf52f90d3948fe87dd",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:26:26.920Z",
+    "timestamp": "2026-08-12T17:26:26.920Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (0984759e2b1d11c2cdb0f11f902134662a883cf2736bbfbf52f90d3948fe87dd)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld9sFDAAWG87TyIMkflNN",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld9sFDAAWG87TyIMkflNN",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 8117
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 8117,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld9sFDAAWG87TyIMkflNN"
+  },
+  {
+    "id": "SCN-2026-098475",
+    "detectionId": "SCN-2026-098475",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 8117,
+    "sha256": "0984759e2b1d11c2cdb0f11f902134662a883cf2736bbfbf52f90d3948fe87dd",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:26:26.397Z",
+    "timestamp": "2026-08-12T17:26:26.397Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (0984759e2b1d11c2cdb0f11f902134662a883cf2736bbfbf52f90d3948fe87dd)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld9szwXRXfFzUurCOinGH",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld9szwXRXfFzUurCOinGH",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 8117
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 8117,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld9szwXRXfFzUurCOinGH"
+  },
+  {
+    "id": "SCN-2026-330FFA",
+    "detectionId": "SCN-2026-330FFA",
+    "userId": "anonymous_user",
+    "filename": "1055294534_1780741310265170.mp4",
+    "target": "1055294534_1780741310265170.mp4",
+    "mediaType": "VIDEO",
+    "type": "VIDEO",
+    "fileSize": 4709899,
+    "sha256": "330ffa74e8d0a5f43c9931cd6132518403c5cf9af7d547522b283c8c6b04f57b",
+    "genaiScore": null,
+    "aiScore": null,
+    "deepfakeScore": 0.761,
+    "scores": {
+      "aiGenerated": null,
+      "deepfake": 0.761
+    },
+    "percentages": {
+      "aiGenerated": null,
+      "deepfake": 76
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY DEEPFAKE",
+    "classification": "LIKELY DEEPFAKE",
+    "confidence": null,
+    "provider": "SecureLens PyTorch Local Video Detector",
+    "model": "ResNet-18 Deepfake Neural Classifier (CPU)",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T17:19:20.549Z",
+    "timestamp": "2026-08-12T17:19:20.549Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Deepfake Neural Network (ResNet-18 CPU) executed real model forward pass tensor inference.",
+      "Video Preprocessing Layer inspected 8 keyframes (Resolution: 720x1280 @ 24.0 FPS, Duration: 8.0s).",
+      "SHA-256 cryptographic digest verified (330ffa74e8d0a5f43c9931cd6132518403c5cf9af7d547522b283c8c6b04f57b).",
+      "No face ROIs detected in keyframes; performed PyTorch spatial tensor inference on full-frame keyframes.",
+      "Temporal aggregation classifier returned an overall Deepfake manipulation score of 0.761 (76% probability).",
+      "Forensic Disclaimer: Deepfake likelihood is derived from real neural feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Video Detector",
+      "requestId": "req_pt_vid_330ffa74e8d0",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "ResNet-18 Deepfake Neural Classifier (CPU)",
+      "requestId": "req_pt_vid_330ffa74e8d0",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 4709899
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": null,
+        "rawDeepfake": 0.761
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "DETECTOR_UNAVAILABLE"
+    },
+    "file": {
+      "filename": "1055294534_1780741310265170.mp4",
+      "mimetype": "video/mp4",
+      "size": 4709899,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_vid_330ffa74e8d0"
+  },
+  {
+    "id": "SCN-2026-330FFA",
+    "detectionId": "SCN-2026-330FFA",
+    "userId": "anonymous_user",
+    "filename": "1055294534_1780741310265170.mp4",
+    "target": "1055294534_1780741310265170.mp4",
+    "mediaType": "VIDEO",
+    "type": "VIDEO",
+    "fileSize": 4709899,
+    "sha256": "330ffa74e8d0a5f43c9931cd6132518403c5cf9af7d547522b283c8c6b04f57b",
+    "genaiScore": null,
+    "aiScore": null,
+    "deepfakeScore": 0.281,
+    "scores": {
+      "aiGenerated": null,
+      "deepfake": 0.281
+    },
+    "percentages": {
+      "aiGenerated": null,
+      "deepfake": 28
+    },
+    "confidenceLevel": "MODERATE",
+    "verdict": "UNCERTAIN",
+    "classification": "UNCERTAIN",
+    "confidence": null,
+    "provider": "SecureLens PyTorch Local Video Detector",
+    "model": "ResNet-18 Deepfake Neural Classifier (CPU)",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T16:54:56.638Z",
+    "timestamp": "2026-08-12T16:54:56.638Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "Pretrained PyTorch Deepfake Neural Network (ResNet-18 CPU) executed real model forward pass tensor inference.",
+      "Video Preprocessing Layer inspected 8 keyframes (Resolution: 720x1280 @ 24.0 FPS, Duration: 8.0s).",
+      "SHA-256 cryptographic digest verified (330ffa74e8d0a5f43c9931cd6132518403c5cf9af7d547522b283c8c6b04f57b).",
+      "No face ROIs detected in keyframes; performed PyTorch spatial tensor inference on full-frame keyframes.",
+      "Temporal aggregation classifier returned an overall Deepfake manipulation score of 0.281 (28% probability).",
+      "Forensic Disclaimer: Deepfake likelihood is derived from real neural feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "SecureLens PyTorch Local Video Detector",
+      "requestId": "req_pt_vid_330ffa74e8d0",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "ResNet-18 Deepfake Neural Classifier (CPU)",
+      "requestId": "req_pt_vid_330ffa74e8d0",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 4709899
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": null,
+        "rawDeepfake": 0.281
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "DETECTOR_UNAVAILABLE"
+    },
+    "file": {
+      "filename": "1055294534_1780741310265170.mp4",
+      "mimetype": "video/mp4",
+      "size": 4709899,
+      "dimensions": "N/A",
+      "exifPresent": false,
+      "exifInfo": "Not present",
+      "exifNote": "EXIF metadata not present. Missing metadata alone does not establish AI generation."
+    },
+    "previewUrl": null,
+    "requestId": "req_pt_vid_330ffa74e8d0"
+  },
+  {
+    "id": "SCN-2026-3EE058",
+    "detectionId": "SCN-2026-3EE058",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 9391,
+    "sha256": "3ee058e8501a9f0ba260b0e68d7a1c854afa18092e6f19c6c2a3e1ce9d47b11b",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T16:54:13.239Z",
+    "timestamp": "2026-08-12T16:54:13.239Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (3ee058e8501a9f0ba260b0e68d7a1c854afa18092e6f19c6c2a3e1ce9d47b11b)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld8WExTMu8J32JZKhdKDD",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld8WExTMu8J32JZKhdKDD",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 9391
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 9391,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld8WExTMu8J32JZKhdKDD"
+  },
+  {
+    "id": "SCN-2026-3EE058",
+    "detectionId": "SCN-2026-3EE058",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 9391,
+    "sha256": "3ee058e8501a9f0ba260b0e68d7a1c854afa18092e6f19c6c2a3e1ce9d47b11b",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T16:54:12.339Z",
+    "timestamp": "2026-08-12T16:54:12.339Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (3ee058e8501a9f0ba260b0e68d7a1c854afa18092e6f19c6c2a3e1ce9d47b11b)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld8WNpqVwWsXgpzqZOCMO",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld8WNpqVwWsXgpzqZOCMO",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 9391
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 9391,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld8WNpqVwWsXgpzqZOCMO"
+  },
+  {
+    "id": "SCN-2026-43586D",
+    "detectionId": "SCN-2026-43586D",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 4033,
+    "sha256": "43586dff24bb486e2cc522ea9090085380fb7647ab7e561e3a1eff668ed7f77d",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T16:50:51.894Z",
+    "timestamp": "2026-08-12T16:50:51.894Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (43586dff24bb486e2cc522ea9090085380fb7647ab7e561e3a1eff668ed7f77d)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld8S5StCsXS5RCHokBnCV",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld8S5StCsXS5RCHokBnCV",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 4033
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 4033,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld8S5StCsXS5RCHokBnCV"
+  },
+  {
+    "id": "SCN-2026-43586D",
+    "detectionId": "SCN-2026-43586D",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 4033,
+    "sha256": "43586dff24bb486e2cc522ea9090085380fb7647ab7e561e3a1eff668ed7f77d",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T16:50:50.857Z",
+    "timestamp": "2026-08-12T16:50:50.857Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (43586dff24bb486e2cc522ea9090085380fb7647ab7e561e3a1eff668ed7f77d)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld8SWSMd8m9gHEsmbsQne",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld8SWSMd8m9gHEsmbsQne",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 4033
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 4033,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld8SWSMd8m9gHEsmbsQne"
+  },
+  {
+    "id": "SCN-2026-AFDC17",
+    "detectionId": "SCN-2026-AFDC17",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 6630,
+    "sha256": "afdc17947efd334ac9c8ef221fc0037398b30b2f78c0a6c8153b02b164e537c4",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T14:18:31.321Z",
+    "timestamp": "2026-08-12T14:18:31.321Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (afdc17947efd334ac9c8ef221fc0037398b30b2f78c0a6c8153b02b164e537c4)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld6qxTZgjYr4JNL42RTbF",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld6qxTZgjYr4JNL42RTbF",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 6630
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 6630,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld6qxTZgjYr4JNL42RTbF"
+  },
+  {
+    "id": "SCN-2026-AFDC17",
+    "detectionId": "SCN-2026-AFDC17",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 6630,
+    "sha256": "afdc17947efd334ac9c8ef221fc0037398b30b2f78c0a6c8153b02b164e537c4",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T14:18:30.762Z",
+    "timestamp": "2026-08-12T14:18:30.762Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (afdc17947efd334ac9c8ef221fc0037398b30b2f78c0a6c8153b02b164e537c4)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld6qjMQu3TbKdQYZCfh8n",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld6qjMQu3TbKdQYZCfh8n",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 6630
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 6630,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld6qjMQu3TbKdQYZCfh8n"
+  },
+  {
+    "id": "SCN-2026-9980B3",
+    "detectionId": "SCN-2026-9980B3",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 5691,
+    "sha256": "9980b3b617a5101d2422282daa3c5dffe36156f62bf7941b3befb328f87f2fdc",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T14:08:48.831Z",
+    "timestamp": "2026-08-12T14:08:48.831Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (9980b3b617a5101d2422282daa3c5dffe36156f62bf7941b3befb328f87f2fdc)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld6gTWo0xVtwJgunDhaq4",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld6gTWo0xVtwJgunDhaq4",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 5691
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 5691,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld6gTWo0xVtwJgunDhaq4"
+  },
+  {
+    "id": "SCN-2026-9980B3",
+    "detectionId": "SCN-2026-9980B3",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 5691,
+    "sha256": "9980b3b617a5101d2422282daa3c5dffe36156f62bf7941b3befb328f87f2fdc",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T14:08:47.410Z",
+    "timestamp": "2026-08-12T14:08:47.410Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (9980b3b617a5101d2422282daa3c5dffe36156f62bf7941b3befb328f87f2fdc)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld6gPaL1o4IrME91cfn0K",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld6gPaL1o4IrME91cfn0K",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 5691
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 5691,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld6gPaL1o4IrME91cfn0K"
+  },
+  {
+    "id": "SCN-2026-ED8687",
+    "detectionId": "SCN-2026-ED8687",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 6238,
+    "sha256": "ed8687d208a0758e8cdcca1990b4bc39d1678aaff61bc7a36d76ab989d012216",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T14:06:12.477Z",
+    "timestamp": "2026-08-12T14:06:12.477Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (ed8687d208a0758e8cdcca1990b4bc39d1678aaff61bc7a36d76ab989d012216)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld6e1hjz3t4A1IPM1SASa",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld6e1hjz3t4A1IPM1SASa",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 6238
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 6238,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld6e1hjz3t4A1IPM1SASa"
+  },
+  {
+    "id": "SCN-2026-ED8687",
+    "detectionId": "SCN-2026-ED8687",
+    "userId": "anonymous_user",
+    "filename": "test_portrait.jpg",
+    "target": "test_portrait.jpg",
+    "mediaType": "IMAGE",
+    "type": "IMAGE",
+    "fileSize": 6238,
+    "sha256": "ed8687d208a0758e8cdcca1990b4bc39d1678aaff61bc7a36d76ab989d012216",
+    "genaiScore": 0.001,
+    "aiScore": 0.001,
+    "deepfakeScore": 0.001,
+    "scores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "confidenceLevel": "HIGH",
+    "verdict": "LIKELY AUTHENTIC",
+    "classification": "LIKELY AUTHENTIC",
+    "confidence": 99,
+    "provider": "Sightengine",
+    "model": "genai,deepfake",
+    "version": "v1.0",
+    "createdAt": "2026-08-12T14:06:11.832Z",
+    "timestamp": "2026-08-12T14:06:11.832Z",
+    "processingStatus": "Completed",
+    "status": "Completed",
+    "errorStatus": null,
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (ed8687d208a0758e8cdcca1990b4bc39d1678aaff61bc7a36d76ab989d012216)."
+    ],
+    "success": true,
+    "rawResult": {
+      "provider": "Sightengine",
+      "requestId": "req_ld6ezFlYKq0K3m7FDgWi7",
+      "status": "success"
+    },
+    "diagnostics": {
+      "apiProvider": "Sightengine",
+      "modelRequested": "genai,deepfake",
+      "requestId": "req_ld6ezFlYKq0K3m7FDgWi7",
+      "preprocessing": {
+        "resized": false,
+        "compressed": false,
+        "encoding": "raw_binary_stream",
+        "bytesTransmitted": 6238
+      },
+      "rawFieldsExtracted": {
+        "rawGenai": 0.001,
+        "rawDeepfake": 0.001
+      },
+      "thresholdsApplied": {
+        "aiHighThreshold": 0.8,
+        "aiUncertainLow": 0.2,
+        "aiUncertainHigh": 0.5
+      },
+      "verdictSource": "SIGHTENGINE_API_MODEL_OUTPUT"
+    },
+    "file": {
+      "filename": "test_portrait.jpg",
+      "mimetype": "image/jpeg",
+      "size": 6238,
+      "dimensions": "200x200",
+      "exifPresent": true,
+      "exifInfo": "Present in container",
+      "exifNote": "EXIF metadata present in file header."
+    },
+    "previewUrl": null,
+    "requestId": "req_ld6ezFlYKq0K3m7FDgWi7"
   },
   {
     "id": "SCN-2026-B4D998",

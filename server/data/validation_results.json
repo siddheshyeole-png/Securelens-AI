@@ -1,0 +1,209 @@
+[
+  {
+    "name": "IMAGE: Authentic Sample",
+    "pass": "PASS",
+    "httpStatus": 200,
+    "processingTimeMs": 2009,
+    "mediaType": "IMAGE",
+    "filename": "test_valid_sample.jpg",
+    "model": "genai,deepfake",
+    "rawScores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "verdict": "LIKELY AUTHENTIC",
+    "confidenceLevel": "HIGH",
+    "sha256": "b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc",
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc)."
+    ]
+  },
+  {
+    "name": "IMAGE: Portrait Sample",
+    "pass": "PASS",
+    "httpStatus": 200,
+    "processingTimeMs": 480,
+    "mediaType": "IMAGE",
+    "filename": "test_portrait.jpg",
+    "model": "genai,deepfake",
+    "rawScores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.001
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 0
+    },
+    "verdict": "LIKELY AUTHENTIC",
+    "confidenceLevel": "HIGH",
+    "sha256": "b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc",
+    "evidence": [
+      "AI-generation model returned a 0% AI-generation probability.",
+      "Deepfake model returned an 0% face-manipulation probability.",
+      "SHA-256 digest generated for file integrity verification (b4d99855065c9bf09338b63c722ba2f5b2b3b1543bf50b06047f19b435ca30dc)."
+    ]
+  },
+  {
+    "name": "VIDEO: MP4 Video Sample",
+    "pass": "PASS",
+    "httpStatus": 200,
+    "processingTimeMs": 25582,
+    "mediaType": "VIDEO",
+    "filename": "test_sample_video.mp4",
+    "model": "PyTorch ResNet-18 Deepfake + Frame-Level GenAI Classifier",
+    "rawScores": {
+      "aiGenerated": 0.001,
+      "deepfake": 0.729
+    },
+    "percentages": {
+      "aiGenerated": 0,
+      "deepfake": 73
+    },
+    "verdict": "LIKELY DEEPFAKE",
+    "confidenceLevel": "HIGH",
+    "sha256": "03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee",
+    "evidence": [
+      "Pretrained PyTorch Deepfake Neural Network (ResNet-18 CPU) executed real model forward pass tensor inference.",
+      "Video Preprocessing Layer inspected 2 keyframes (Resolution: 360x360 @ 30.0 FPS, Duration: 2.0s).",
+      "SHA-256 cryptographic digest verified (03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee).",
+      "No face ROIs detected in keyframes; performed PyTorch spatial tensor inference on full-frame keyframes.",
+      "Temporal aggregation classifier returned an overall Deepfake manipulation score of 0.729 (73% probability).",
+      "Forensic Disclaimer: Deepfake likelihood is derived from real neural feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs.",
+      "Frame-level AI Classifier sampled and analyzed 8 representative keyframes using Sightengine GenAI neural detector (0% AI-generation probability).",
+      "SHA-256 cryptographic digest verified (03d1b094a1b072dcf31161a6f9ce6497300dbcfa1c889beb973fc8cb3c315bee)."
+    ]
+  },
+  {
+    "name": "AUDIO: Speech WAV Sample",
+    "pass": "PASS",
+    "httpStatus": 200,
+    "processingTimeMs": 26069,
+    "mediaType": "AUDIO",
+    "filename": "test_sample_audio.wav",
+    "model": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+    "rawScores": {
+      "aiGenerated": 0.514,
+      "deepfake": null
+    },
+    "percentages": {
+      "aiGenerated": 51,
+      "deepfake": null
+    },
+    "verdict": "LIKELY AI-GENERATED",
+    "confidenceLevel": "HIGH",
+    "sha256": "ce8b3977cdc5218e524e30c5e329e3dd4cbc7c74a33e185c7213efb089ef3f0a",
+    "evidence": [
+      "Pretrained PyTorch Synthetic Voice Classifier (STFT ResNet-18 CPU) executed real spectral forward pass inference.",
+      "Audio Preprocessing Layer inspected 2 speech windows (Sample Rate: 16000 Hz, Channels: 2, Duration: 3.5s).",
+      "SHA-256 cryptographic digest verified (ce8b3977cdc5218e524e30c5e329e3dd4cbc7c74a33e185c7213efb089ef3f0a).",
+      "PyTorch spectral anti-spoof classifier returned an overall synthetic speech score of 0.514 (51% probability).",
+      "Facial manipulation / deepfake scoring is strictly NOT applicable to audio recordings (scores.deepfake = N/A).",
+      "Forensic Disclaimer: Synthetic voice likelihood is derived from real spectral STFT feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs."
+    ]
+  },
+  {
+    "name": "AUDIO: Silent Waveform Sample",
+    "pass": "PASS",
+    "httpStatus": 200,
+    "processingTimeMs": 24412,
+    "mediaType": "AUDIO",
+    "filename": "test_silent_audio.wav",
+    "model": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+    "rawScores": {
+      "aiGenerated": 0.497,
+      "deepfake": null
+    },
+    "percentages": {
+      "aiGenerated": 50,
+      "deepfake": null
+    },
+    "verdict": "UNCERTAIN",
+    "confidenceLevel": "MODERATE",
+    "sha256": "d303811b8c84619667cd0501342f84ec6cbe69f7aa3856dcf52fabda374c92b8",
+    "evidence": [
+      "Pretrained PyTorch Synthetic Voice Classifier (STFT ResNet-18 CPU) executed real spectral forward pass inference.",
+      "Audio Preprocessing Layer inspected 1 speech windows (Sample Rate: 16000 Hz, Channels: 1, Duration: 3.0s).",
+      "SHA-256 cryptographic digest verified (d303811b8c84619667cd0501342f84ec6cbe69f7aa3856dcf52fabda374c92b8).",
+      "RMS energy silence detector flagged audio waveform as low-energy / silent speech segment.",
+      "PyTorch spectral anti-spoof classifier returned an overall synthetic speech score of 0.497 (50% probability).",
+      "Facial manipulation / deepfake scoring is strictly NOT applicable to audio recordings (scores.deepfake = N/A).",
+      "Forensic Disclaimer: Synthetic voice likelihood is derived from real spectral STFT feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs."
+    ]
+  },
+  {
+    "name": "AUDIO: Ultra-short Audio Sample",
+    "pass": "PASS",
+    "httpStatus": 200,
+    "processingTimeMs": 25119,
+    "mediaType": "AUDIO",
+    "filename": "test_short_audio.wav",
+    "model": "STFT ResNet-18 Synthetic Speech Classifier (CPU)",
+    "rawScores": {
+      "aiGenerated": 0.494,
+      "deepfake": null
+    },
+    "percentages": {
+      "aiGenerated": 49,
+      "deepfake": null
+    },
+    "verdict": "UNCERTAIN",
+    "confidenceLevel": "MODERATE",
+    "sha256": "7f0da439233eeb45d815b812e3ef0c909e0ec8cc276fbff0040794b8c5e1300c",
+    "evidence": [
+      "Pretrained PyTorch Synthetic Voice Classifier (STFT ResNet-18 CPU) executed real spectral forward pass inference.",
+      "Audio Preprocessing Layer inspected 1 speech windows (Sample Rate: 16000 Hz, Channels: 1, Duration: 0.5s).",
+      "SHA-256 cryptographic digest verified (7f0da439233eeb45d815b812e3ef0c909e0ec8cc276fbff0040794b8c5e1300c).",
+      "PyTorch spectral anti-spoof classifier returned an overall synthetic speech score of 0.494 (49% probability).",
+      "Facial manipulation / deepfake scoring is strictly NOT applicable to audio recordings (scores.deepfake = N/A).",
+      "Forensic Disclaimer: Synthetic voice likelihood is derived from real spectral STFT feature norms; absolute 100% mathematical certainty cannot be asserted solely on algorithmic outputs."
+    ]
+  },
+  {
+    "name": "EDGE-CASE: Invalid Text File Rejection",
+    "pass": "PASS",
+    "httpStatus": 415,
+    "processingTimeMs": 47,
+    "mediaType": "IMAGE",
+    "filename": "test_invalid_file.txt",
+    "model": "N/A",
+    "rawScores": {
+      "aiGenerated": null,
+      "deepfake": null
+    },
+    "percentages": {
+      "aiGenerated": null,
+      "deepfake": null
+    },
+    "verdict": "REJECTED",
+    "confidenceLevel": "N/A",
+    "sha256": "N/A",
+    "evidence": []
+  },
+  {
+    "name": "EDGE-CASE: Corrupted WAV File",
+    "pass": "PASS",
+    "httpStatus": 400,
+    "processingTimeMs": 20,
+    "mediaType": "AUDIO",
+    "filename": "test_corrupted_file.wav",
+    "model": "N/A",
+    "rawScores": {
+      "aiGenerated": null,
+      "deepfake": null
+    },
+    "percentages": {
+      "aiGenerated": null,
+      "deepfake": null
+    },
+    "verdict": "REJECTED",
+    "confidenceLevel": "N/A",
+    "sha256": "N/A",
+    "evidence": []
+  }
+]

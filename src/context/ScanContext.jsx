@@ -4,6 +4,8 @@ import { detectionService } from "../services/detectionService";
 
 export const ScanContext = createContext();
 
+const previewUrlCache = new Map();
+
 export const ScanProvider = ({ children }) => {
   const { user } = useAuth();
   const userId = user?.email || user?.id || "guest_user";
@@ -14,7 +16,6 @@ export const ScanProvider = ({ children }) => {
       if (saved) {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          // Sort newest first
           return parsed.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
         }
       }
@@ -49,19 +50,29 @@ export const ScanProvider = ({ children }) => {
             setScans((prev) => {
               const prevMap = new Map(prev.map((s) => [s.id || s.detectionId, s]));
               return data.history.map((rec) => {
-                const match = prevMap.get(rec.id || rec.detectionId);
+                const recId = rec.id || rec.detectionId;
+                const recHash = rec.sha256 || rec.fileHash;
+                const match = prevMap.get(recId);
+                const cachedUrl = previewUrlCache.get(recId) || previewUrlCache.get(recHash);
+                const finalPreview = rec.previewUrl || match?.previewUrl || cachedUrl || null;
+                if (finalPreview && recId) previewUrlCache.set(recId, finalPreview);
+                if (finalPreview && recHash) previewUrlCache.set(recHash, finalPreview);
                 return {
                   ...rec,
-                  previewUrl: rec.previewUrl || match?.previewUrl || null
+                  previewUrl: finalPreview
                 };
               });
             });
             if (data.history.length > 0) {
               setActiveScan((prevActive) => {
                 const match = data.history.find((h) => h.id === prevActive?.id || h.detectionId === prevActive?.id);
+                const prevId = prevActive?.id || prevActive?.detectionId;
+                const prevHash = prevActive?.sha256 || prevActive?.fileHash;
+                const cachedUrl = previewUrlCache.get(prevId) || previewUrlCache.get(prevHash);
+                const finalPreview = match?.previewUrl || prevActive?.previewUrl || cachedUrl || null;
                 return match
-                  ? { ...match, previewUrl: match.previewUrl || prevActive?.previewUrl || null }
-                  : data.history[0];
+                  ? { ...match, previewUrl: finalPreview }
+                  : { ...data.history[0], previewUrl: previewUrlCache.get(data.history[0].id) || data.history[0].previewUrl || null };
               });
             }
             return;
@@ -137,12 +148,20 @@ export const ScanProvider = ({ children }) => {
         }
       });
 
+      const finalPreviewUrl = result.previewUrl || (file ? URL.createObjectURL(file) : null);
       const userRecord = {
         ...result,
         userId,
-        previewUrl: result.previewUrl || (file ? URL.createObjectURL(file) : null),
+        previewUrl: finalPreviewUrl,
         fileSize: file?.size || result.fileSize || 0
       };
+
+      if (finalPreviewUrl) {
+        if (userRecord.id) previewUrlCache.set(userRecord.id, finalPreviewUrl);
+        if (userRecord.detectionId) previewUrlCache.set(userRecord.detectionId, finalPreviewUrl);
+        if (userRecord.sha256) previewUrlCache.set(userRecord.sha256, finalPreviewUrl);
+        if (userRecord.fileHash) previewUrlCache.set(userRecord.fileHash, finalPreviewUrl);
+      }
 
       setScans((prev) => [userRecord, ...prev]);
       setActiveScan(userRecord);

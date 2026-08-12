@@ -10,21 +10,21 @@ import {
   Binary,
   Activity,
   Layers,
-  Clock,
   FileCheck,
   ShieldAlert,
   Info,
   UploadCloud,
   ServerOff,
   AlertCircle,
-  RefreshCw
+  Film,
+  Volume2,
+  Image as ImageIcon
 } from "lucide-react";
 import { useScan } from "../../hooks/useScan";
 import { Card } from "../../components/Common/Card";
 import { Button } from "../../components/Common/Button";
 import { Badge } from "../../components/Common/Badge";
 import { Modal } from "../../components/Common/Modal";
-import { formatDate } from "../../utils/helpers";
 import { ConfigureDetectorModal } from "../../components/Common/ConfigureDetectorModal";
 import { PageTransition } from "../../components/Common/PageTransition";
 import { generateForensicPdfReport } from "../../utils/pdfGenerator";
@@ -42,24 +42,37 @@ export const Report = () => {
     ? scans.find((s) => s.id === reportId || s.analysisId === reportId) || activeScan
     : activeScan || scans[0];
 
-  const isModelUnavailable = report?.status === "MODEL_UNAVAILABLE" || report?.classification === "MODEL UNAVAILABLE";
+  const mediaType = (report?.mediaType || report?.type || "IMAGE").toUpperCase();
+
+  const isModelUnavailable = report?.status === "MODEL_UNAVAILABLE" || report?.classification === "MODEL UNAVAILABLE" || report?.verdict === "DETECTION UNAVAILABLE";
   const isAnalysisFailed = report?.status === "FAILED" || report?.classification === "ANALYSIS FAILED";
 
-  const aiPercentage = report?.percentages?.aiGenerated ?? (report?.aiScore != null ? Math.round(report.aiScore * 100) : (report?.aiProbability ?? null));
-  const deepfakePercentage = report?.percentages?.deepfake ?? (report?.deepfakeScore != null ? Math.round(report.deepfakeScore * 100) : (report?.deepfakeProbability ?? null));
+  const aiPercentage = report?.percentages?.aiGenerated ?? (report?.scores?.aiGenerated != null ? Math.round(report.scores.aiGenerated * 100) : (report?.genaiScore != null ? Math.round(report.genaiScore * 100) : (report?.aiScore != null ? Math.round(report.aiScore * 100) : (report?.aiProbability ?? null))));
+  const deepfakePercentage = report?.percentages?.deepfake ?? (report?.scores?.deepfake != null ? Math.round(report.scores.deepfake * 100) : (report?.deepfakeScore != null ? Math.round(report.deepfakeScore * 100) : (report?.deepfakeProbability ?? null)));
 
   let verdict = report?.verdict || report?.classification || "INCONCLUSIVE";
-  if (aiPercentage != null && (verdict === "INCONCLUSIVE" || verdict === "UNAVAILABLE")) {
-    if (aiPercentage >= 80) verdict = "HIGHLY LIKELY AI-GENERATED";
-    else if (aiPercentage >= 50) verdict = "LIKELY AI-GENERATED";
-    else if (aiPercentage >= 20) verdict = "UNCERTAIN";
-    else verdict = "LIKELY AUTHENTIC";
+  if (verdict === "INCONCLUSIVE" || verdict === "UNAVAILABLE") {
+    if (deepfakePercentage != null && deepfakePercentage >= 50) {
+      verdict = deepfakePercentage >= 80 ? "HIGHLY LIKELY DEEPFAKE" : "LIKELY DEEPFAKE";
+    } else if (aiPercentage != null) {
+      if (aiPercentage >= 80) verdict = "HIGHLY LIKELY AI-GENERATED";
+      else if (aiPercentage >= 50) verdict = "LIKELY AI-GENERATED";
+      else if (aiPercentage >= 20) verdict = "UNCERTAIN";
+      else verdict = "LIKELY AUTHENTIC";
+    } else if (deepfakePercentage != null) {
+      if (deepfakePercentage >= 20) verdict = "UNCERTAIN";
+      else verdict = "LOW MANIPULATION SIGNAL";
+    }
   }
 
   const isHighlyAi = verdict === "HIGHLY LIKELY AI-GENERATED";
   const isLikelyAi = verdict === "LIKELY AI-GENERATED";
-  const isUncertain = verdict === "UNCERTAIN" || (aiPercentage != null && aiPercentage >= 20 && aiPercentage < 50);
-  const isAuthentic = verdict === "LIKELY AUTHENTIC" || (aiPercentage != null && aiPercentage < 20);
+  const isHighlyDeepfake = verdict === "HIGHLY LIKELY DEEPFAKE";
+  const isLikelyDeepfake = verdict === "LIKELY DEEPFAKE";
+  const isUncertain = verdict === "UNCERTAIN" || verdict === "INCONCLUSIVE" || verdict === "UNAVAILABLE" || !report;
+  const isAuthentic = (verdict === "LIKELY AUTHENTIC" || verdict === "LOW MANIPULATION SIGNAL") && !isModelUnavailable && !isAnalysisFailed;
+
+  const confidenceLevel = report?.confidenceLevel || (report?.confidence ? `${report.confidence}%` : (aiPercentage != null || deepfakePercentage != null ? "HIGH" : "UNKNOWN"));
 
   const handleShare = () => {
     navigator.clipboard.writeText(window.location.href);
@@ -99,6 +112,9 @@ export const Report = () => {
           <div className="flex items-center space-x-2">
             <Badge variant="cyan">DETECTION VERIFICATION REPORT</Badge>
             <span className="text-xs text-zinc-400 font-mono print:text-black">ID: {report?.id || report?.detectionId || "SCN-2026-N/A"}</span>
+            <span className="text-xs font-mono font-bold px-2 py-0.5 rounded bg-zinc-800 text-blue-400 border border-zinc-700">
+              {mediaType}
+            </span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-1 print:text-black">
             Forensic Media Verification Report
@@ -133,6 +149,11 @@ export const Report = () => {
                   <AlertCircle className="w-4 h-4 mr-2 text-rose-400" />
                   ANALYSIS FAILED
                 </span>
+              ) : isHighlyDeepfake || isLikelyDeepfake ? (
+                <span className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-extrabold bg-rose-500/15 text-rose-400 border border-rose-500/30">
+                  <AlertTriangle className="w-4 h-4 mr-2 text-rose-400" />
+                  {verdict}
+                </span>
               ) : isHighlyAi ? (
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-extrabold bg-rose-500/15 text-rose-400 border border-rose-500/30">
                   <AlertTriangle className="w-4 h-4 mr-2 text-rose-400" />
@@ -143,36 +164,36 @@ export const Report = () => {
                   <AlertTriangle className="w-4 h-4 mr-2 text-rose-400" />
                   LIKELY AI-GENERATED
                 </span>
-              ) : isUncertain ? (
-                <span className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-extrabold bg-yellow-500/15 text-yellow-400 border border-yellow-500/30">
-                  <HelpCircle className="w-4 h-4 mr-2 text-yellow-400" />
-                  UNCERTAIN
-                </span>
-              ) : (
+              ) : isAuthentic ? (
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-extrabold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
                   <CheckCircle2 className="w-4 h-4 mr-2 text-emerald-400" />
                   LIKELY AUTHENTIC
+                </span>
+              ) : (
+                <span className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-extrabold bg-yellow-500/15 text-yellow-400 border border-yellow-500/30">
+                  <HelpCircle className="w-4 h-4 mr-2 text-yellow-400" />
+                  UNCERTAIN
                 </span>
               )}
             </div>
 
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight print:text-black">
-              {report?.target || "Media File"}
+              {report?.target || report?.filename || "Media File"}
             </h2>
 
             <p className="text-xs sm:text-sm text-zinc-400 font-mono flex flex-wrap items-center gap-3 print:text-gray-700">
-              <span>Type: {report?.type || "IMAGE"}</span>
+              <span>Type: {mediaType}</span>
               <span>•</span>
-              <span>Format: {report?.file?.mimetype || report?.mediaCategory || "Unknown"}</span>
+              <span>Provider: {report?.provider || "SecureLens Detector"}</span>
               <span>•</span>
-              <span>Provider: {report?.provider || "Sightengine"}</span>
+              <span>Confidence: {confidenceLevel}</span>
             </p>
           </div>
 
           <div className="lg:col-span-5 bg-zinc-950/80 p-6 rounded-[20px] border border-zinc-800 flex items-center justify-between print:border-gray-300 print:bg-gray-50">
             <div>
               <span className="text-xs font-mono font-bold text-zinc-500 uppercase tracking-wider block print:text-gray-600">
-                AI SCORE
+                AI GENERATED %
               </span>
               <span className={`text-3xl font-black font-mono mt-1 block ${
                 isModelUnavailable || isAnalysisFailed || aiPercentage == null
@@ -191,7 +212,7 @@ export const Report = () => {
 
             <div>
               <span className="text-xs font-mono font-bold text-zinc-500 uppercase tracking-wider block print:text-gray-600">
-                DEEPFAKE SCORE
+                DEEPFAKE / FACE %
               </span>
               <span className={`text-3xl font-black font-mono mt-1 block ${
                 isModelUnavailable || isAnalysisFailed || deepfakePercentage == null
@@ -203,27 +224,6 @@ export const Report = () => {
                   : "text-emerald-400"
               }`}>
                 {deepfakePercentage != null ? `${deepfakePercentage}%` : "N/A"}
-              </span>
-            </div>
-
-            <div className="h-12 w-[1px] bg-zinc-800 print:bg-gray-300" />
-
-            <div className="text-right">
-              <span className="text-xs font-mono font-bold text-zinc-500 uppercase tracking-wider block print:text-gray-600">
-                STATUS
-              </span>
-              <span className={`text-base font-extrabold font-mono mt-1 inline-block px-3 py-1 rounded-lg border ${
-                isModelUnavailable
-                  ? "bg-blue-500/20 text-blue-400 border-blue-500/40"
-                  : isAnalysisFailed
-                  ? "bg-rose-500/20 text-rose-400 border-rose-500/40"
-                  : isHighlyAi || isLikelyAi
-                  ? "bg-rose-500/20 text-rose-400 border-rose-500/40"
-                  : isUncertain
-                  ? "bg-yellow-500/20 text-yellow-400 border-yellow-500/40"
-                  : "bg-emerald-500/20 text-emerald-400 border-emerald-500/40"
-              }`}>
-                {report?.status || "COMPLETED"}
               </span>
             </div>
           </div>
@@ -246,27 +246,30 @@ export const Report = () => {
                     : "bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800"
                 }`}
               >
-                {s.id} ({s.type})
+                {s.id} ({s.type || s.mediaType || "IMAGE"})
               </button>
             ))}
           </div>
         )}
       </div>
 
-      {/* Uploaded Media Preview */}
+      {/* Media Preview */}
       {(report?.previewUrl || report?.file?.previewUrl) && (
         <Card hover={false} className="border-zinc-800 bg-[#18181B]/80 backdrop-blur-xl p-6 space-y-3 print:hidden">
-          <h3 className="text-sm font-bold text-zinc-400 font-mono uppercase tracking-wider">
-            Uploaded Media Preview
+          <h3 className="text-sm font-bold text-zinc-400 font-mono uppercase tracking-wider flex items-center space-x-2">
+            {mediaType === "VIDEO" ? <Film className="w-4 h-4 text-blue-400" /> : mediaType === "AUDIO" ? <Volume2 className="w-4 h-4 text-purple-400" /> : <ImageIcon className="w-4 h-4 text-emerald-400" />}
+            <span>Uploaded {mediaType} Preview</span>
           </h3>
           <div className="rounded-2xl overflow-hidden bg-black/60 border border-zinc-800/80 flex items-center justify-center p-2 min-h-[180px] max-h-[420px]">
-            {(report.type === "VIDEO" || report.mediaType === "VIDEO") ? (
+            {mediaType === "VIDEO" ? (
               <video
                 src={report.previewUrl || report.file?.previewUrl}
                 controls
+                playsInline
+                preload="metadata"
                 className="max-h-[400px] w-auto max-w-full rounded-xl object-contain"
               />
-            ) : (report.type === "AUDIO" || report.mediaType === "AUDIO") ? (
+            ) : mediaType === "AUDIO" ? (
               <div className="py-10 px-6 text-center space-y-3 w-full">
                 <p className="text-sm font-bold text-white font-mono">{report.target || report.filename}</p>
                 <audio src={report.previewUrl || report.file?.previewUrl} controls className="mx-auto w-full max-w-md" />
@@ -292,24 +295,12 @@ export const Report = () => {
             </h3>
 
             <div className="p-4 rounded-xl bg-blue-500/10 border border-blue-500/20 text-xs text-zinc-300 leading-relaxed space-y-3 font-sans print:bg-gray-50 print:text-black">
-              <p>{report?.summary || "Analysis record generated."}</p>
-              {isModelUnavailable && (
-                <div>
-                  <Button
-                    variant="secondary"
-                    size="sm"
-                    icon={ServerOff}
-                    onClick={() => setConfigureModalOpen(true)}
-                  >
-                    Configure Detector
-                  </Button>
-                </div>
-              )}
+              <p>{report?.summary || "Verification analysis completed."}</p>
             </div>
 
             <div className="flex items-center space-x-2 text-[11px] text-zinc-400 font-mono pt-1">
               <Info className="w-3.5 h-3.5 text-zinc-500 shrink-0" />
-              <span>Engine: {report?.provider || "Sightengine API"} • Model: {report?.model || report?.modelName || "genai,deepfake"}</span>
+              <span>Engine: {report?.provider || "SecureLens Detector"} • Model: {report?.model || "Standard Neural Model"}</span>
             </div>
           </Card>
 
@@ -327,7 +318,7 @@ export const Report = () => {
               <Card hover={false} className="border-zinc-800 bg-[#18181B]/80 space-y-3 print:bg-white print:border-gray-300">
                 <h3 className="text-base font-bold text-white flex items-center space-x-2 print:text-black">
                   <ShieldAlert className="w-5 h-5 text-blue-400" />
-                  <span>Verified Model Evidence</span>
+                  <span>Verified Model Evidence ({mediaType})</span>
                 </h3>
                 <div className="space-y-2">
                   {evidenceList.map((ev, idx) => (
@@ -346,7 +337,7 @@ export const Report = () => {
           <Card hover={false} className="border-zinc-800 bg-[#18181B]/80 space-y-4 print:bg-white print:border-gray-300">
             <h3 className="text-base font-bold text-white flex items-center space-x-2 print:text-black">
               <Binary className="w-5 h-5 text-blue-400" />
-              <span>File Metadata & Provenance</span>
+              <span>File Metadata & Diagnostics</span>
             </h3>
 
             <div className="space-y-2.5 text-xs font-mono">
@@ -360,7 +351,7 @@ export const Report = () => {
               </div>
               <div className="flex justify-between py-2 border-b border-zinc-800/80">
                 <span className="text-zinc-500">Media Format:</span>
-                <span className="text-white font-semibold print:text-black">{report?.file?.mimetype || report?.file?.mimeType || report?.mediaCategory || "Unavailable"}</span>
+                <span className="text-white font-semibold print:text-black">{report?.file?.mimetype || report?.file?.mimeType || mediaType}</span>
               </div>
               <div className="flex justify-between py-2 border-b border-zinc-800/80">
                 <span className="text-zinc-500">File Size:</span>
@@ -372,16 +363,35 @@ export const Report = () => {
                     : "Unavailable"}
                 </span>
               </div>
-              <div className="flex justify-between py-2 border-b border-zinc-800/80">
-                <span className="text-zinc-500">Dimensions:</span>
-                <span className="text-white font-semibold print:text-black">{report?.file?.dimensions && report.file.dimensions !== "N/A" ? report.file.dimensions : report?.resolution && report.resolution !== "N/A" ? report.resolution : "Unavailable"}</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-zinc-800/80">
-                <span className="text-zinc-500">EXIF Metadata:</span>
-                <span className="text-white font-semibold truncate max-w-[160px] print:text-black">
-                  {report?.file?.exifInfo || (report?.file?.exifPresent ? "Present" : "Not present")}
-                </span>
-              </div>
+
+              {/* Video-Specific Diagnostics */}
+              {mediaType === "VIDEO" && (
+                <>
+                  <div className="flex justify-between py-2 border-b border-zinc-800/80">
+                    <span className="text-zinc-500">Frames Analyzed:</span>
+                    <span className="text-emerald-400 font-bold print:text-black">{report?.diagnostics?.sampledFrameCount ?? report?.diagnostics?.frameCount ?? "N/A"}</span>
+                  </div>
+                  <div className="flex justify-between py-2 border-b border-zinc-800/80">
+                    <span className="text-zinc-500">Video Duration:</span>
+                    <span className="text-white font-semibold print:text-black">{report?.diagnostics?.duration || report?.file?.duration || "N/A"}</span>
+                  </div>
+                </>
+              )}
+
+              {/* Audio-Specific Diagnostics */}
+              {mediaType === "AUDIO" && (
+                <>
+                  <div className="flex justify-between py-2 border-b border-zinc-800/80">
+                    <span className="text-zinc-500">Speech Windows:</span>
+                    <span className="text-purple-400 font-bold print:text-black">{report?.diagnostics?.numberOfWindows ?? "N/A"}</span>
+                  </div>
+                  <div className="flex justify-between py-2 border-b border-zinc-800/80">
+                    <span className="text-zinc-500">Audio Duration:</span>
+                    <span className="text-white font-semibold print:text-black">{report?.diagnostics?.duration || report?.file?.duration || "N/A"}</span>
+                  </div>
+                </>
+              )}
+
               <div className="flex justify-between py-2 border-b border-zinc-800/80">
                 <span className="text-zinc-500">Request ID:</span>
                 <span
@@ -395,7 +405,7 @@ export const Report = () => {
                 <span className="text-zinc-500">SHA-256 Digest:</span>
                 <button
                   onClick={() => {
-                    const hashVal = report?.sha256 || report?.file?.sha256 || report?.fileHash || report?.checksum;
+                    const hashVal = report?.sha256 || report?.file?.sha256 || report?.fileHash;
                     if (hashVal) {
                       navigator.clipboard.writeText(hashVal);
                       setCopied(true);
@@ -405,12 +415,12 @@ export const Report = () => {
                   className="text-blue-400 font-semibold truncate max-w-[150px] hover:underline focus:outline-none"
                   title="Click to copy full SHA-256 hash"
                 >
-                  {copied ? "Copied!" : (report?.sha256 || report?.file?.sha256 || report?.fileHash || report?.checksum || "Unavailable")}
+                  {copied ? "Copied!" : (report?.sha256 || report?.file?.sha256 || report?.fileHash || "Unavailable")}
                 </button>
               </div>
               <div className="flex justify-between py-2 border-b border-zinc-800/80">
                 <span className="text-zinc-500">Provider & Model:</span>
-                <span className="text-white font-semibold print:text-black">{report?.provider || "Sightengine"} ({report?.model || "genai,deepfake"})</span>
+                <span className="text-white font-semibold print:text-black">{report?.provider || "SecureLens"} ({report?.model || "Neural Model"})</span>
               </div>
               <div className="flex justify-between py-2 border-b border-zinc-800/80">
                 <span className="text-zinc-500">Analysis Timestamp:</span>
@@ -419,12 +429,6 @@ export const Report = () => {
                 </span>
               </div>
             </div>
-
-            <p className="text-[10px] text-zinc-500 pt-1 font-sans">
-              {report?.file?.exifNote || (report?.file?.exifPresent
-                ? "EXIF metadata present in file header."
-                : "EXIF metadata not present. Missing metadata alone does not establish AI generation.")}
-            </p>
           </Card>
         </div>
       </div>
